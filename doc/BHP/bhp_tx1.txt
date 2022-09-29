@@ -1,0 +1,55 @@
+fdd460d7695103ffa41b31cb219a27e4b73cfc22894bca2c62a9c4dc7a2c648f
+
+bcea4a29a3137a5a0ef98202cf5a74a5a7af14629df826b474acb05b7022b4d23c878bd082cdf81456dc7e70b6dd15e5d59ff337e2b97d60f7bef962c62bd27a
+
+02bcea4a29a3137a5a0ef98202cf5a74a5a7af14629df826b474acb05b7022b4d2
+
+Ab29DvVy5j1XztycwasuZZzeMx9e2PUAN4
+
+// mainnet
+seed01.bhpa.io:20555
+seed02.bhpa.io:20555
+seed03.bhpa.io:20555
+seed04.bhpa.io:20555
+seed05.bhpa.io:20555
+
+// testnet
+tseed1.bhpa.io:20555
+tseed2.bhpa.io:20555
+tseed3.bhpa.io:20555
+tseed4.bhpa.io:20555
+
+80		// tx type
+00		// version
+00		// attribute
+01		// input count
+195876cb34364dc38b730077156c6bc3a7fc570044a66fbfeeea56f71327e8ab	// previous tx
+0000	// index
+02		// output count
+
+9b7cffdaa674beae0f930ebe6085af9093e5fe56b34a5c220ccdcf6efc336fc5	// asset id
+00c65eaf44000000	// output amount
+0f9a23e06f74cf86b8827a9108ec2e0f89ad956c		// pubkey hash
+9b7cffdaa674beae0f930ebe6085af9093e5fe56b34a5c220ccdcf6efc336fc5
+0092e14b5e00000		// output amount
+30aab52ad93f6ce17ca07fa88fc191828c58cb71		// pubkey hash
+
+01
+// invocation
+41
+40
+915467ecd359684b2dc358024ca750609591aa731a0b309c7fb3cab5cd0836ad3992aa0a24da431f43b68883ea5651d548feb6bd3c8e16376e6e426f91f84c58
+// verification
+23
+22
+05
+572f35c7819267e721335948d385fae5be66e7ba8c748ac15467dcca0693692d
+ac
+
+17
+0f9a23e06f74cf86b8827a9108ec2e0f89ad956c
+8ce6337d
+
+17
+30aab52ad93f6ce17ca07fa88fc191828c58cb71
+fc71677e

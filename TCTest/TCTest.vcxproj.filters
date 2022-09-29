@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="HttpAPI">
+      <UniqueIdentifier>{b5031669-4aec-45eb-bc1e-7b7202f0a3a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BShield">
+      <UniqueIdentifier>{c246db2e-81cc-4d3e-bc59-5b478d77f0c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BTCTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CosExt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpAPI\AsyncHttpClient.cpp">
+      <Filter>HttpAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpAPI\BaseHttpClient.cpp">
+      <Filter>HttpAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpAPI\BtxonAPI.cpp">
+      <Filter>HttpAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpAPI\BtxonAsyncAPI.cpp">
+      <Filter>HttpAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpAPI\GateIOAsyncAPI.cpp">
+      <Filter>HttpAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="BHPTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="U256Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BShield\BWallet.cpp">
+      <Filter>BShield</Filter>
+    </ClCompile>
+    <ClCompile Include="BShield\Coin.cpp">
+      <Filter>BShield</Filter>
+    </ClCompile>
+    <ClCompile Include="BShield\CoinApiAdapter.cpp">
+      <Filter>BShield</Filter>
+    </ClCompile>
+    <ClCompile Include="CosTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BtxonApiTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EosTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EthTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TronTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BumoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CosExt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpAPI\GateIOAsyncAPI.h">
+      <Filter>HttpAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="BShield\BWallet.h">
+      <Filter>BShield</Filter>
+    </ClInclude>
+    <ClInclude Include="BShield\Coin.h">
+      <Filter>BShield</Filter>
+    </ClInclude>
+    <ClInclude Include="BShield\CoinApiAdapter.h">
+      <Filter>BShield</Filter>
+    </ClInclude>
+    <ClInclude Include="BShield\global.h">
+      <Filter>BShield</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="HttpAPI\AsyncHttpClient.h">
+      <Filter>HttpAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="HttpAPI\BaseHttpClient.h">
+      <Filter>HttpAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="HttpAPI\BtxonAPI.h">
+      <Filter>HttpAPI</Filter>
+    </QtMoc>
+    <QtMoc Include="HttpAPI\BtxonAsyncAPI.h">
+      <Filter>HttpAPI</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

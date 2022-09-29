@@ -1,0 +1,967 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="uEcc">
+      <UniqueIdentifier>{44e48197-a2db-4bfd-a47a-6d830e68e51a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{064e61b8-205d-4796-8b35-ba1880c744c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsoncpp">
+      <UniqueIdentifier>{21daa339-e312-4848-b5f0-0b4143bb514d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tron">
+      <UniqueIdentifier>{d2ff0c3e-a868-4a24-9471-ff736cf8ecf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tron\google">
+      <UniqueIdentifier>{fb5db669-b266-4eff-9d7a-2129c5266883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tron\google\protobuf">
+      <UniqueIdentifier>{a8c2123b-0e5b-40fc-8417-9e760833e59d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tron\google\protobuf\compiler">
+      <UniqueIdentifier>{85e9c11f-978e-440d-9245-b3d8a09ec4f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tron\google\protobuf\io">
+      <UniqueIdentifier>{7c86f8da-5fdb-410b-afa3-0787dda01c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tron\google\protobuf\stubs">
+      <UniqueIdentifier>{9565d028-b0ec-4d80-bfd0-6e2f4fbeb75d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tron\google\protobuf\util">
+      <UniqueIdentifier>{2d884e78-17b4-4913-afcc-4d90e563b95c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tron\google\protobuf\util\internal">
+      <UniqueIdentifier>{1b443b2b-e3cf-463b-b30d-71acb672853b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mbedtls">
+      <UniqueIdentifier>{46635722-9f89-4ffe-afb1-4cc450dab7bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bhp">
+      <UniqueIdentifier>{ddf1894b-2e31-49f0-bf1f-530ccf817117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Usdt">
+      <UniqueIdentifier>{ac47e1c7-0d5c-4aec-ac2d-791390e7c920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Btc">
+      <UniqueIdentifier>{017c2588-aecc-427f-8f8c-6aa210915175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Eth">
+      <UniqueIdentifier>{e2b63892-03d7-4de7-a570-57258fc2f476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Eos">
+      <UniqueIdentifier>{83e423c1-a3d4-4326-a648-fcafabffd1a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bumo">
+      <UniqueIdentifier>{34b77645-97dc-455b-a943-82e9862cacf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bumo\ed25519">
+      <UniqueIdentifier>{c594f63f-30f9-4a18-a796-abd0b141ea4f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="uEcc\uECC.c">
+      <Filter>uEcc</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\base58.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\hash.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\hmac_sha512.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\ripemd160.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\sha1.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\sha256.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\sha512.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\utility_tools.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="BtcApi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EthApi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\util.c">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="EosApi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\bx_plat.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\bx_str.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="BhpApi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TronApi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\keccak256.c">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\cJSON.c">
+      <Filter>Tron</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\CJsonObject.cpp">
+      <Filter>Tron</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\Transaction.pb.cc">
+      <Filter>Tron</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\compiler\importer.cc">
+      <Filter>Tron\google\protobuf\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\compiler\parser.cc">
+      <Filter>Tron\google\protobuf\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\io\coded_stream.cc">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\io\gzip_stream.cc">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\io\printer.cc">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\io\strtod.cc">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\io\tokenizer.cc">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\io\zero_copy_stream.cc">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\io\zero_copy_stream_impl.cc">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\io\zero_copy_stream_impl_lite.cc">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\bytestream.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\common.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\int128.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\io_win32.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\mathlimits.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\status.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\statusor.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\stringpiece.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\stringprintf.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\structurally_valid.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\strutil.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\substitute.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\stubs\time.cc">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\datapiece.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\default_value_objectwriter.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\error_listener.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\field_mask_utility.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\json_escaping.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\json_objectwriter.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\json_stream_parser.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\object_writer.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\proto_writer.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\protostream_objectsource.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\protostream_objectwriter.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\type_info.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\type_info_test_helper.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\internal\utility.cc">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\delimited_message_util.cc">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\field_comparator.cc">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\field_mask_util.cc">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\json_util.cc">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\message_differencer.cc">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\time_util.cc">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\util\type_resolver_util.cc">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\any.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\any.pb.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\api.pb.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\arena.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\arenastring.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\descriptor.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\descriptor.pb.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\descriptor_database.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\duration.pb.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\dynamic_message.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\empty.pb.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\extension_set.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\extension_set_heavy.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\field_mask.pb.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\generated_message_reflection.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\generated_message_table_driven.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\generated_message_util.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\implicit_weak_message.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\map_field.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\message.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\message_lite.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\reflection_ops.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\repeated_field.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\service.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\source_context.pb.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\struct.pb.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\text_format.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\timestamp.pb.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\type.pb.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\unknown_field_set.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\wire_format.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\wire_format_lite.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="Tron\google\protobuf\wrappers.pb.cc">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="jsoncpp\src\lib_json\json_reader.cpp">
+      <Filter>jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsoncpp\src\lib_json\json_value.cpp">
+      <Filter>jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsoncpp\src\lib_json\json_writer.cpp">
+      <Filter>jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\bip.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\library\bignum.c">
+      <Filter>mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\library\ecp.c">
+      <Filter>mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\library\ecp_curves.c">
+      <Filter>mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="u256.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bhp\bhp_transaction.cpp">
+      <Filter>Bhp</Filter>
+    </ClCompile>
+    <ClCompile Include="Usdt\createpayload.cpp">
+      <Filter>Usdt</Filter>
+    </ClCompile>
+    <ClCompile Include="Btc\script.cpp">
+      <Filter>Btc</Filter>
+    </ClCompile>
+    <ClCompile Include="Eth\RLP.c">
+      <Filter>Eth</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\eosapi_utils.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\tx_util.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="uEcc\macroECC.c">
+      <Filter>uEcc</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\eos_key_encode.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\action.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\chainmanager.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\eosbytewriter.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\eosnewaccount.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\packedtransaction.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\signedtransaction.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\transaction.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\transactionextension.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\transactionheader.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\typeaccountpermissionweight.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\typeauthority.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\typekeypermissionweight.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\typename.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\typepermissionlevel.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Eos\typewaitweight.cpp">
+      <Filter>Eos</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\BumoRequest.cpp">
+      <Filter>Bumo</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\chain.pb.cc">
+      <Filter>Bumo</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\common.pb.cc">
+      <Filter>Bumo</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\mongoose.c">
+      <Filter>Bumo</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\ed25519\add_scalar.c">
+      <Filter>Bumo\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\ed25519\ed25519_seed.c">
+      <Filter>Bumo\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\ed25519\ed25519_sha512.c">
+      <Filter>Bumo\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\ed25519\fe.c">
+      <Filter>Bumo\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\ed25519\ge.c">
+      <Filter>Bumo\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\ed25519\key_exchange.c">
+      <Filter>Bumo\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\ed25519\keypair.c">
+      <Filter>Bumo\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\ed25519\sc.c">
+      <Filter>Bumo\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\ed25519\sign.c">
+      <Filter>Bumo\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="Bumo\ed25519\verify.c">
+      <Filter>Bumo\ed25519</Filter>
+    </ClCompile>
+    <ClCompile Include="BumoApi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TokenCommon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\pbkdf2.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\hmac.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\sha2.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\base64.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="Btc\prikey-to-wif.cpp">
+      <Filter>Btc</Filter>
+    </ClCompile>
+    <ClCompile Include="Btc\mnemonic-new.cpp">
+      <Filter>Btc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="uEcc\types.h">
+      <Filter>uEcc</Filter>
+    </ClInclude>
+    <ClInclude Include="uEcc\uECC.h">
+      <Filter>uEcc</Filter>
+    </ClInclude>
+    <ClInclude Include="uEcc\uECC_vli.h">
+      <Filter>uEcc</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\base58.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\hash.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\hmac_sha512.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\ripemd160.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\sha1.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\sha256.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\sha512.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\utility_tools.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="BtcApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EthApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\util.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="EosApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\bx_str.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="BhpApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TokenCommon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TronApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\keccak256.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\cJSON.h">
+      <Filter>Tron</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\CJsonObject.hpp">
+      <Filter>Tron</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\Transaction.pb.h">
+      <Filter>Tron</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\compiler\importer.h">
+      <Filter>Tron\google\protobuf\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\compiler\parser.h">
+      <Filter>Tron\google\protobuf\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\io\gzip_stream.h">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\io\printer.h">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\io\strtod.h">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\io\tokenizer.h">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\io\zero_copy_stream_impl.h">
+      <Filter>Tron\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\stubs\mathlimits.h">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\stubs\substitute.h">
+      <Filter>Tron\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\datapiece.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\default_value_objectwriter.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\error_listener.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\field_mask_utility.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\json_escaping.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\json_objectwriter.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\json_stream_parser.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\object_writer.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\proto_writer.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\protostream_objectsource.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\protostream_objectwriter.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\type_info.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\type_info_test_helper.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\internal\utility.h">
+      <Filter>Tron\google\protobuf\util\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\delimited_message_util.h">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\field_comparator.h">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\field_mask_util.h">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\json_util.h">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\message_differencer.h">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\time_util.h">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\util\type_resolver_util.h">
+      <Filter>Tron\google\protobuf\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\any.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\any.pb.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\api.pb.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\descriptor.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\descriptor.pb.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\descriptor_database.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\duration.pb.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\dynamic_message.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\empty.pb.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\field_mask.pb.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\generated_message_reflection.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\generated_message_table_driven.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\map_field.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\message.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\reflection_ops.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\service.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\source_context.pb.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\struct.pb.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\text_format.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\timestamp.pb.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\type.pb.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\unknown_field_set.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\wire_format.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Tron\google\protobuf\wrappers.pb.h">
+      <Filter>Tron\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\include\json\assertions.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\include\json\autolink.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\include\json\config.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\include\json\features.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\include\json\forwards.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\include\json\json.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\include\json\reader.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\include\json\value.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\include\json\version.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\include\json\writer.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="jsoncpp\src\lib_json\json_tool.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\bip.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\bx_plat.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="mbedtls\include\mbedtls\bignum.h">
+      <Filter>mbedtls</Filter>
+    </ClInclude>
+    <ClInclude Include="mbedtls\include\mbedtls\bn_mul.h">
+      <Filter>mbedtls</Filter>
+    </ClInclude>
+    <ClInclude Include="mbedtls\include\mbedtls\check_config.h">
+      <Filter>mbedtls</Filter>
+    </ClInclude>
+    <ClInclude Include="mbedtls\include\mbedtls\config.h">
+      <Filter>mbedtls</Filter>
+    </ClInclude>
+    <ClInclude Include="mbedtls\include\mbedtls\ecp.h">
+      <Filter>mbedtls</Filter>
+    </ClInclude>
+    <ClInclude Include="mbedtls\include\mbedtls\ecp_internal.h">
+      <Filter>mbedtls</Filter>
+    </ClInclude>
+    <ClInclude Include="mbedtls\include\mbedtls\platform.h">
+      <Filter>mbedtls</Filter>
+    </ClInclude>
+    <ClInclude Include="mbedtls\include\mbedtls\platform_time.h">
+      <Filter>mbedtls</Filter>
+    </ClInclude>
+    <ClInclude Include="mbedtls\include\mbedtls\threading.h">
+      <Filter>mbedtls</Filter>
+    </ClInclude>
+    <ClInclude Include="u256.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bhp\bhp_transaction.h">
+      <Filter>Bhp</Filter>
+    </ClInclude>
+    <ClInclude Include="Usdt\createpayload.h">
+      <Filter>Usdt</Filter>
+    </ClInclude>
+    <ClInclude Include="Btc\script.h">
+      <Filter>Btc</Filter>
+    </ClInclude>
+    <ClInclude Include="Eth\RLP.h">
+      <Filter>Eth</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\eosapi_utils.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eth\sign.h">
+      <Filter>Eth</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\tx_util.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="uEcc\macroECC.h">
+      <Filter>uEcc</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\eos_key_encode.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\action.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\chainbase.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\chainmanager.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\eosbytewriter.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\eosnewaccount.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\packedtransaction.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\signedtransaction.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\transaction.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\transactionextension.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\transactionheader.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\typeaccountpermissionweight.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\typeauthority.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\typekeypermissionweight.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\typename.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\typepermissionlevel.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Eos\typewaitweight.h">
+      <Filter>Eos</Filter>
+    </ClInclude>
+    <ClInclude Include="Bumo\BumoRequest.h">
+      <Filter>Bumo</Filter>
+    </ClInclude>
+    <ClInclude Include="Bumo\chain.pb.h">
+      <Filter>Bumo</Filter>
+    </ClInclude>
+    <ClInclude Include="Bumo\common.pb.h">
+      <Filter>Bumo</Filter>
+    </ClInclude>
+    <ClInclude Include="Bumo\mongoose.h">
+      <Filter>Bumo</Filter>
+    </ClInclude>
+    <ClInclude Include="Bumo\ed25519\ed25519.h">
+      <Filter>Bumo\ed25519</Filter>
+    </ClInclude>
+    <ClInclude Include="Bumo\ed25519\ed25519_sha512.h">
+      <Filter>Bumo\ed25519</Filter>
+    </ClInclude>
+    <ClInclude Include="Bumo\ed25519\fe.h">
+      <Filter>Bumo\ed25519</Filter>
+    </ClInclude>
+    <ClInclude Include="Bumo\ed25519\fixedint.h">
+      <Filter>Bumo\ed25519</Filter>
+    </ClInclude>
+    <ClInclude Include="Bumo\ed25519\ge.h">
+      <Filter>Bumo\ed25519</Filter>
+    </ClInclude>
+    <ClInclude Include="Bumo\ed25519\precomp_data.h">
+      <Filter>Bumo\ed25519</Filter>
+    </ClInclude>
+    <ClInclude Include="Bumo\ed25519\sc.h">
+      <Filter>Bumo\ed25519</Filter>
+    </ClInclude>
+    <ClInclude Include="BumoApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\pbkdf2.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\hmac.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\sha2.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto\base64.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="Btc\prikey-to-wif.h">
+      <Filter>Btc</Filter>
+    </ClInclude>
+    <ClInclude Include="Btc\mnemonic-new.h">
+      <Filter>Btc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="uEcc\curve-specific.inc">
+      <Filter>uEcc</Filter>
+    </None>
+    <None Include="uEcc\platform-specific.inc">
+      <Filter>uEcc</Filter>
+    </None>
+    <None Include="jsoncpp\src\lib_json\json_valueiterator.inl">
+      <Filter>jsoncpp</Filter>
+    </None>
+  </ItemGroup>
+</Project>

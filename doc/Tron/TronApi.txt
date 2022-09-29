@@ -1,0 +1,28 @@
+mainnet
+https://api.trongrid.io/wallet/gettransactionbyid
+https://api.trongrid.io/wallet/broadcasttransaction
+
+testnet
+https://api.shasta.trongrid.io/wallet/getassetissuebyname
+{
+	"value":"6173736574497373756531353436333238313433323738"
+}
+
+https://api.shasta.trongrid.io/wallet/gettransactionsign
+
+https://api.shasta.trongrid.io/wallet/createassetissue
+{
+	"owner_address":"4196c53e5572a128541a8d573b717d9d6b161b2a7e",
+	"name":"0x6173736574497373756531353436333238313433323738",
+	"abbr": "0x6174747231353436333238313433323738",
+	"total_supply" :1000,
+	"trx_num":1,
+	"num":1,
+	"start_time" : 1544857723469,
+	"end_time":1546328952397,
+	"description":"007570646174654e616d6531353330363038383733343633",
+	"url":"007570646174654e616d6531353330363038383733343633",
+	"free_asset_net_limit":1000000,
+	"public_free_asset_net_limit":1000000,
+	"frozen_supply":{"frozen_amount":1, "frozen_days":3}
+}

@@ -1,0 +1,73 @@
+previous tx hash 660b4a95e90c4491baa92d21c07870d839a770ccbd245411fa963d6a5b207e88
+
+-i 660b4a95e90c4491baa92d21c07870d839a770ccbd245411fa963d6a5b207e88:0 
+-o mrXiqxZe1xAvfkdsNuzP5kW9rxUKq5X1Xk:1506100000 
+-o miudPd3uNyqeyN1ktfAWX1YSv2UGEvcF9X:50000
+
+01000000		// version little
+01				// 输入个数
+887e205b6a3d96fa115424bdcc70a739d87078c0212da9ba91440ce9954a0b66	// little
+00000000		// previous tx output index little
+00				// 解锁脚本字节数
+ffffffff
+02		// 输出个数
+
+2043c55900000000	// output count little
+19			// pubkey script count bytes
+76			// OP_DUP
+a9			// OP_HASH160
+14			// push 0x14 bytes to stack
+78ce9278e94d6de90a22b23fc475883dfbc422d5		// pubkey hash
+88			// OP_EQUALVERIFY
+ac			// OP_CHECKSIG
+
+50c3000000000000
+19
+76
+a9
+14
+25322a09dcc10ae461c5ca617818aca8bfc63b3b
+88
+ac
+
+00000000	// locktime
+
+// sign-tx 
+// version + locktime + sign input + output
+
+01000000	// version little		
+01			// input count
+
+887e205b6a3d96fa115424bdcc70a739d87078c0212da9ba91440ce9954a0b66 // previous tx hash little
+00000000	// previous output index   little
+6a			// scriptSig bytes
+47			// push 0x47 bytes to stack
+// signature
+304402203bd2c6d2b90b59280bca5f0234501750e38acf4760ce377263e1df08e6094cef0220383ee9330835e8fc4ad489ee9cedadab4c2dcce17154b79566d317b8fa97b65a
+01			// sign type sign all
+21			// push 0x21 bytes to stack
+02e1858acdf7bcc00ec914b9c1dbc8045c385763487290400df07b647f63aca5b3	// compress pubkey
+
+ffffffff
+
+02			// output count
+
+2043c55900000000	// first output count little
+19
+76
+a9
+14
+78ce9278e94d6de90a22b23fc475883dfbc422d5	// pubkey hash
+88
+ac
+
+50c3000000000000	// second output count little
+19
+76
+a9
+14
+25322a09dcc10ae461c5ca617818aca8bfc63b3b	// pubkey hash
+88
+ac
+
+00000000	// locktime little

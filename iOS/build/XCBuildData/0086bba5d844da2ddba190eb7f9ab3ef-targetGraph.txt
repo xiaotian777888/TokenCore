@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+ZERO_CHECK in Project, no dependencies
+tokencore in Project, depends on:
+ZERO_CHECK in Project (explicit)
+ALL_BUILD in Project, depends on:
+ZERO_CHECK in Project (explicit)
+tokencore in Project (explicit)

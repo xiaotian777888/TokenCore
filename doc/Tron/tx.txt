@@ -1,0 +1,74 @@
+SendCoin TMxbZ97qmYc9sqhKznrbsAeN2B1FMN3B6R 500
+
+txid = bae95aa05a180b0092812df2c1cd33e94936d4ee407cd94753de0abdd54590dd
+
+ljs unsign tx sign
+0a02				// ref_block_bytes
+cf5422084691d1c6	// ref_block_num
+5037f58640d09088	// ref_block_hash
+9cf52c5a66080112	// expiration
+620a2d747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e5472616e73666572436f6e747261637412310a
+15
+4196c53e5572a128541a8d573b717d9d6b161b2a7e	// owner_address
+12
+15 // length
+418383eb7b69453492f5d27146e17e07fc768030ed	// to_address
+18f40370ebd3849cf52c
+
+ljs hash data sign
+bae95aa05a180b0092812df2c1cd33e94936d4ee407cd94753de0abdd54590dd
+
+ljs sign data sign
+0ce36538c9a02c90239882f77fe6afb7f222feaa4c1923ca839cf5b9d56d22cf6519f3b10c2d663bdeb673c4ebb618deb725f4cd3a0e5965199e81c3a4e4675301
+
+ljs sign tx broadcastTransaction
+0a	// 0A是Tag=1<<3 | 2 ，这是proto的序列化规则，1表示其编号,<<3的3是固定的,2是表示这是一个结构类型
+// 84 01是长度的编码, 编码规则是每个字节如果最高bit为1，表示有后续字节，为0表示这是最后一个字节,
+// 每个字节有效位7bit 所以有效位04 01，并且是低位在前
+// 最终解码结果是 01 << 7 | 04
+// =0x84 = 132 也就是说raw_data后面的长度为132字节
+8401
+// raw data
+0a	// ref_block_bytes Tag = 1 << 3 | 2
+02	// len
+cf54	// value
+// 不同的是，如果遇到int64的格式 T = num<<3 | 0, 0表示是int64的类型的, int64的是只有TV没有L
+22 // ref_block_hash Tag
+08 // len
+4691d1c65037f586	// value
+40	// expiration Tag
+d090889cf52c	// expiration value
+
+5a	// Contract Tag
+66	// len
+08	ContractType Tag
+01	// value
+12	// Any Tag
+62	// len
+0a	// type_url Tag
+2d	// len
+// type_url value
+747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e5472616e73666572436f6e7472616374
+
+12 	// value Tag
+31	// len
+0a	// owner_address Tag
+15	// len
+4196c53e5572a128541a8d573b717d9d6b161b2a7e	// value
+12	// to_address Tag
+15	// len
+418383eb7b69453492f5d27146e17e07fc768030ed	// value
+18	// amount Tag
+f403	// value
+
+70	// timestamp Tag
+ebd3849cf52c // value
+
+// sign
+12	//12 = 2<<3 | 2 第一个2是 signature的编号 第二个2是类型
+41
+// 后面65个字节是签名 签名的格式是 r,s,v
+0ce36538c9a02c90239882f77fe6afb7f222feaa4c1923ca839cf5b9d56d22cf	// r
+6519f3b10c2d663bdeb673c4ebb618deb725f4cd3a0e5965199e81c3a4e46753	// s
+01	// v
+

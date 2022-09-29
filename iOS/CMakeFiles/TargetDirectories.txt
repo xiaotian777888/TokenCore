@@ -1,0 +1,3 @@
+/Users/isodev/Desktop/iOS/TokenCore/iOS/CMakeFiles/tokencore.dir
+/Users/isodev/Desktop/iOS/TokenCore/iOS/CMakeFiles/ALL_BUILD.dir
+/Users/isodev/Desktop/iOS/TokenCore/iOS/CMakeFiles/ZERO_CHECK.dir

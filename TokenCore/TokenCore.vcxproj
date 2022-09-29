@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BhpApi.cpp" />
+    <ClCompile Include="Bhp\bhp_transaction.cpp" />
+    <ClCompile Include="BtcApi.cpp" />
+    <ClCompile Include="Btc\mnemonic-new.cpp" />
+    <ClCompile Include="Btc\prikey-to-wif.cpp" />
+    <ClCompile Include="Btc\script.cpp" />
+    <ClCompile Include="BumoApi.cpp" />
+    <ClCompile Include="Bumo\BumoRequest.cpp" />
+    <ClCompile Include="Bumo\chain.pb.cc" />
+    <ClCompile Include="Bumo\common.pb.cc" />
+    <ClCompile Include="Bumo\ed25519\add_scalar.c" />
+    <ClCompile Include="Bumo\ed25519\ed25519_seed.c" />
+    <ClCompile Include="Bumo\ed25519\ed25519_sha512.c" />
+    <ClCompile Include="Bumo\ed25519\fe.c" />
+    <ClCompile Include="Bumo\ed25519\ge.c" />
+    <ClCompile Include="Bumo\ed25519\keypair.c" />
+    <ClCompile Include="Bumo\ed25519\key_exchange.c" />
+    <ClCompile Include="Bumo\ed25519\sc.c" />
+    <ClCompile Include="Bumo\ed25519\sign.c" />
+    <ClCompile Include="Bumo\ed25519\verify.c" />
+    <ClCompile Include="Bumo\mongoose.c" />
+    <ClCompile Include="crypto\base58.cpp" />
+    <ClCompile Include="crypto\base64.cpp" />
+    <ClCompile Include="crypto\bip.cpp" />
+    <ClCompile Include="crypto\bx_plat.cpp" />
+    <ClCompile Include="crypto\bx_str.cpp" />
+    <ClCompile Include="crypto\hash.cpp" />
+    <ClCompile Include="crypto\hmac.cpp" />
+    <ClCompile Include="crypto\hmac_sha512.cpp" />
+    <ClCompile Include="crypto\keccak256.c" />
+    <ClCompile Include="crypto\pbkdf2.cpp" />
+    <ClCompile Include="crypto\ripemd160.cpp" />
+    <ClCompile Include="crypto\sha1.cpp" />
+    <ClCompile Include="crypto\sha2.cpp" />
+    <ClCompile Include="crypto\sha256.cpp" />
+    <ClCompile Include="crypto\sha512.cpp" />
+    <ClCompile Include="crypto\tx_util.cpp" />
+    <ClCompile Include="crypto\util.c" />
+    <ClCompile Include="crypto\utility_tools.cpp" />
+    <ClCompile Include="EosApi.cpp" />
+    <ClCompile Include="Eos\action.cpp" />
+    <ClCompile Include="Eos\chainmanager.cpp" />
+    <ClCompile Include="Eos\eosapi_utils.cpp" />
+    <ClCompile Include="Eos\eosbytewriter.cpp" />
+    <ClCompile Include="Eos\eosnewaccount.cpp" />
+    <ClCompile Include="Eos\eos_key_encode.cpp" />
+    <ClCompile Include="Eos\packedtransaction.cpp" />
+    <ClCompile Include="Eos\signedtransaction.cpp" />
+    <ClCompile Include="Eos\transaction.cpp" />
+    <ClCompile Include="Eos\transactionextension.cpp" />
+    <ClCompile Include="Eos\transactionheader.cpp" />
+    <ClCompile Include="Eos\typeaccountpermissionweight.cpp" />
+    <ClCompile Include="Eos\typeauthority.cpp" />
+    <ClCompile Include="Eos\typekeypermissionweight.cpp" />
+    <ClCompile Include="Eos\typename.cpp" />
+    <ClCompile Include="Eos\typepermissionlevel.cpp" />
+    <ClCompile Include="Eos\typewaitweight.cpp" />
+    <ClCompile Include="EthApi.cpp" />
+    <ClCompile Include="Eth\RLP.c" />
+    <ClCompile Include="jsoncpp\src\lib_json\json_reader.cpp" />
+    <ClCompile Include="jsoncpp\src\lib_json\json_value.cpp" />
+    <ClCompile Include="jsoncpp\src\lib_json\json_writer.cpp" />
+    <ClCompile Include="mbedtls\library\bignum.c" />
+    <ClCompile Include="mbedtls\library\ecp.c" />
+    <ClCompile Include="mbedtls\library\ecp_curves.c" />
+    <ClCompile Include="TokenCommon.cpp" />
+    <ClCompile Include="TronApi.cpp" />
+    <ClCompile Include="Tron\cJSON.c" />
+    <ClCompile Include="Tron\CJsonObject.cpp" />
+    <ClCompile Include="Tron\google\protobuf\any.cc" />
+    <ClCompile Include="Tron\google\protobuf\any.pb.cc" />
+    <ClCompile Include="Tron\google\protobuf\api.pb.cc" />
+    <ClCompile Include="Tron\google\protobuf\arena.cc" />
+    <ClCompile Include="Tron\google\protobuf\arenastring.cc" />
+    <ClCompile Include="Tron\google\protobuf\compiler\importer.cc" />
+    <ClCompile Include="Tron\google\protobuf\compiler\parser.cc" />
+    <ClCompile Include="Tron\google\protobuf\descriptor.cc" />
+    <ClCompile Include="Tron\google\protobuf\descriptor.pb.cc" />
+    <ClCompile Include="Tron\google\protobuf\descriptor_database.cc" />
+    <ClCompile Include="Tron\google\protobuf\duration.pb.cc" />
+    <ClCompile Include="Tron\google\protobuf\dynamic_message.cc" />
+    <ClCompile Include="Tron\google\protobuf\empty.pb.cc" />
+    <ClCompile Include="Tron\google\protobuf\extension_set.cc" />
+    <ClCompile Include="Tron\google\protobuf\extension_set_heavy.cc" />
+    <ClCompile Include="Tron\google\protobuf\field_mask.pb.cc" />
+    <ClCompile Include="Tron\google\protobuf\generated_message_reflection.cc" />
+    <ClCompile Include="Tron\google\protobuf\generated_message_table_driven.cc" />
+    <ClCompile Include="Tron\google\protobuf\generated_message_util.cc" />
+    <ClCompile Include="Tron\google\protobuf\implicit_weak_message.cc" />
+    <ClCompile Include="Tron\google\protobuf\io\coded_stream.cc" />
+    <ClCompile Include="Tron\google\protobuf\io\gzip_stream.cc" />
+    <ClCompile Include="Tron\google\protobuf\io\printer.cc" />
+    <ClCompile Include="Tron\google\protobuf\io\strtod.cc" />
+    <ClCompile Include="Tron\google\protobuf\io\tokenizer.cc" />
+    <ClCompile Include="Tron\google\protobuf\io\zero_copy_stream.cc" />
+    <ClCompile Include="Tron\google\protobuf\io\zero_copy_stream_impl.cc" />
+    <ClCompile Include="Tron\google\protobuf\io\zero_copy_stream_impl_lite.cc" />
+    <ClCompile Include="Tron\google\protobuf\map_field.cc" />
+    <ClCompile Include="Tron\google\protobuf\message.cc" />
+    <ClCompile Include="Tron\google\protobuf\message_lite.cc" />
+    <ClCompile Include="Tron\google\protobuf\reflection_ops.cc" />
+    <ClCompile Include="Tron\google\protobuf\repeated_field.cc" />
+    <ClCompile Include="Tron\google\protobuf\service.cc" />
+    <ClCompile Include="Tron\google\protobuf\source_context.pb.cc" />
+    <ClCompile Include="Tron\google\protobuf\struct.pb.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\bytestream.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\common.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\int128.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\io_win32.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\mathlimits.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\status.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\statusor.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\stringpiece.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\stringprintf.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\structurally_valid.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\strutil.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\substitute.cc" />
+    <ClCompile Include="Tron\google\protobuf\stubs\time.cc" />
+    <ClCompile Include="Tron\google\protobuf\text_format.cc" />
+    <ClCompile Include="Tron\google\protobuf\timestamp.pb.cc" />
+    <ClCompile Include="Tron\google\protobuf\type.pb.cc" />
+    <ClCompile Include="Tron\google\protobuf\unknown_field_set.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\delimited_message_util.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\field_comparator.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\field_mask_util.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\datapiece.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\default_value_objectwriter.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\error_listener.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\field_mask_utility.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\json_escaping.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\json_objectwriter.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\json_stream_parser.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\object_writer.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\protostream_objectsource.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\protostream_objectwriter.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\proto_writer.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\type_info.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\type_info_test_helper.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\internal\utility.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\json_util.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\message_differencer.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\time_util.cc" />
+    <ClCompile Include="Tron\google\protobuf\util\type_resolver_util.cc" />
+    <ClCompile Include="Tron\google\protobuf\wire_format.cc" />
+    <ClCompile Include="Tron\google\protobuf\wire_format_lite.cc" />
+    <ClCompile Include="Tron\google\protobuf\wrappers.pb.cc" />
+    <ClCompile Include="Tron\Transaction.pb.cc" />
+    <ClCompile Include="u256.cpp" />
+    <ClCompile Include="uEcc\macroECC.c" />
+    <ClCompile Include="uEcc\uECC.c" />
+    <ClCompile Include="Usdt\createpayload.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BhpApi.h" />
+    <ClInclude Include="Bhp\bhp_transaction.h" />
+    <ClInclude Include="BtcApi.h" />
+    <ClInclude Include="Btc\mnemonic-new.h" />
+    <ClInclude Include="Btc\prikey-to-wif.h" />
+    <ClInclude Include="Btc\script.h" />
+    <ClInclude Include="BumoApi.h" />
+    <ClInclude Include="Bumo\BumoRequest.h" />
+    <ClInclude Include="Bumo\chain.pb.h" />
+    <ClInclude Include="Bumo\common.pb.h" />
+    <ClInclude Include="Bumo\ed25519\ed25519.h" />
+    <ClInclude Include="Bumo\ed25519\ed25519_sha512.h" />
+    <ClInclude Include="Bumo\ed25519\fe.h" />
+    <ClInclude Include="Bumo\ed25519\fixedint.h" />
+    <ClInclude Include="Bumo\ed25519\ge.h" />
+    <ClInclude Include="Bumo\ed25519\precomp_data.h" />
+    <ClInclude Include="Bumo\ed25519\sc.h" />
+    <ClInclude Include="Bumo\mongoose.h" />
+    <ClInclude Include="crypto\base58.h" />
+    <ClInclude Include="crypto\base64.h" />
+    <ClInclude Include="crypto\bip.h" />
+    <ClInclude Include="crypto\bx_plat.h" />
+    <ClInclude Include="crypto\bx_str.h" />
+    <ClInclude Include="crypto\hash.h" />
+    <ClInclude Include="crypto\hmac.h" />
+    <ClInclude Include="crypto\hmac_sha512.h" />
+    <ClInclude Include="crypto\keccak256.h" />
+    <ClInclude Include="crypto\pbkdf2.h" />
+    <ClInclude Include="crypto\ripemd160.h" />
+    <ClInclude Include="crypto\sha1.h" />
+    <ClInclude Include="crypto\sha2.h" />
+    <ClInclude Include="crypto\sha256.h" />
+    <ClInclude Include="crypto\sha512.h" />
+    <ClInclude Include="crypto\tx_util.h" />
+    <ClInclude Include="crypto\util.h" />
+    <ClInclude Include="crypto\utility_tools.h" />
+    <ClInclude Include="EosApi.h" />
+    <ClInclude Include="Eos\action.h" />
+    <ClInclude Include="Eos\chainbase.h" />
+    <ClInclude Include="Eos\chainmanager.h" />
+    <ClInclude Include="Eos\eosapi_utils.h" />
+    <ClInclude Include="Eos\eosbytewriter.h" />
+    <ClInclude Include="Eos\eosnewaccount.h" />
+    <ClInclude Include="Eos\eos_key_encode.h" />
+    <ClInclude Include="Eos\packedtransaction.h" />
+    <ClInclude Include="Eos\signedtransaction.h" />
+    <ClInclude Include="Eos\transaction.h" />
+    <ClInclude Include="Eos\transactionextension.h" />
+    <ClInclude Include="Eos\transactionheader.h" />
+    <ClInclude Include="Eos\typeaccountpermissionweight.h" />
+    <ClInclude Include="Eos\typeauthority.h" />
+    <ClInclude Include="Eos\typekeypermissionweight.h" />
+    <ClInclude Include="Eos\typename.h" />
+    <ClInclude Include="Eos\typepermissionlevel.h" />
+    <ClInclude Include="Eos\typewaitweight.h" />
+    <ClInclude Include="EthApi.h" />
+    <ClInclude Include="Eth\RLP.h" />
+    <ClInclude Include="Eth\sign.h" />
+    <ClInclude Include="jsoncpp\include\json\assertions.h" />
+    <ClInclude Include="jsoncpp\include\json\autolink.h" />
+    <ClInclude Include="jsoncpp\include\json\config.h" />
+    <ClInclude Include="jsoncpp\include\json\features.h" />
+    <ClInclude Include="jsoncpp\include\json\forwards.h" />
+    <ClInclude Include="jsoncpp\include\json\json.h" />
+    <ClInclude Include="jsoncpp\include\json\reader.h" />
+    <ClInclude Include="jsoncpp\include\json\value.h" />
+    <ClInclude Include="jsoncpp\include\json\version.h" />
+    <ClInclude Include="jsoncpp\include\json\writer.h" />
+    <ClInclude Include="jsoncpp\src\lib_json\json_tool.h" />
+    <ClInclude Include="mbedtls\include\mbedtls\bignum.h" />
+    <ClInclude Include="mbedtls\include\mbedtls\bn_mul.h" />
+    <ClInclude Include="mbedtls\include\mbedtls\check_config.h" />
+    <ClInclude Include="mbedtls\include\mbedtls\config.h" />
+    <ClInclude Include="mbedtls\include\mbedtls\ecp.h" />
+    <ClInclude Include="mbedtls\include\mbedtls\ecp_internal.h" />
+    <ClInclude Include="mbedtls\include\mbedtls\platform.h" />
+    <ClInclude Include="mbedtls\include\mbedtls\platform_time.h" />
+    <ClInclude Include="mbedtls\include\mbedtls\threading.h" />
+    <ClInclude Include="TokenCommon.h" />
+    <ClInclude Include="TronApi.h" />
+    <ClInclude Include="Tron\cJSON.h" />
+    <ClInclude Include="Tron\CJsonObject.hpp" />
+    <ClInclude Include="Tron\google\protobuf\any.h" />
+    <ClInclude Include="Tron\google\protobuf\any.pb.h" />
+    <ClInclude Include="Tron\google\protobuf\api.pb.h" />
+    <ClInclude Include="Tron\google\protobuf\compiler\importer.h" />
+    <ClInclude Include="Tron\google\protobuf\compiler\parser.h" />
+    <ClInclude Include="Tron\google\protobuf\descriptor.h" />
+    <ClInclude Include="Tron\google\protobuf\descriptor.pb.h" />
+    <ClInclude Include="Tron\google\protobuf\descriptor_database.h" />
+    <ClInclude Include="Tron\google\protobuf\duration.pb.h" />
+    <ClInclude Include="Tron\google\protobuf\dynamic_message.h" />
+    <ClInclude Include="Tron\google\protobuf\empty.pb.h" />
+    <ClInclude Include="Tron\google\protobuf\field_mask.pb.h" />
+    <ClInclude Include="Tron\google\protobuf\generated_message_reflection.h" />
+    <ClInclude Include="Tron\google\protobuf\generated_message_table_driven.h" />
+    <ClInclude Include="Tron\google\protobuf\io\gzip_stream.h" />
+    <ClInclude Include="Tron\google\protobuf\io\printer.h" />
+    <ClInclude Include="Tron\google\protobuf\io\strtod.h" />
+    <ClInclude Include="Tron\google\protobuf\io\tokenizer.h" />
+    <ClInclude Include="Tron\google\protobuf\io\zero_copy_stream_impl.h" />
+    <ClInclude Include="Tron\google\protobuf\map_field.h" />
+    <ClInclude Include="Tron\google\protobuf\message.h" />
+    <ClInclude Include="Tron\google\protobuf\reflection_ops.h" />
+    <ClInclude Include="Tron\google\protobuf\service.h" />
+    <ClInclude Include="Tron\google\protobuf\source_context.pb.h" />
+    <ClInclude Include="Tron\google\protobuf\struct.pb.h" />
+    <ClInclude Include="Tron\google\protobuf\stubs\mathlimits.h" />
+    <ClInclude Include="Tron\google\protobuf\stubs\substitute.h" />
+    <ClInclude Include="Tron\google\protobuf\text_format.h" />
+    <ClInclude Include="Tron\google\protobuf\timestamp.pb.h" />
+    <ClInclude Include="Tron\google\protobuf\type.pb.h" />
+    <ClInclude Include="Tron\google\protobuf\unknown_field_set.h" />
+    <ClInclude Include="Tron\google\protobuf\util\delimited_message_util.h" />
+    <ClInclude Include="Tron\google\protobuf\util\field_comparator.h" />
+    <ClInclude Include="Tron\google\protobuf\util\field_mask_util.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\datapiece.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\default_value_objectwriter.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\error_listener.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\field_mask_utility.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\json_escaping.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\json_objectwriter.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\json_stream_parser.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\object_writer.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\protostream_objectsource.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\protostream_objectwriter.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\proto_writer.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\type_info.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\type_info_test_helper.h" />
+    <ClInclude Include="Tron\google\protobuf\util\internal\utility.h" />
+    <ClInclude Include="Tron\google\protobuf\util\json_util.h" />
+    <ClInclude Include="Tron\google\protobuf\util\message_differencer.h" />
+    <ClInclude Include="Tron\google\protobuf\util\time_util.h" />
+    <ClInclude Include="Tron\google\protobuf\util\type_resolver_util.h" />
+    <ClInclude Include="Tron\google\protobuf\wire_format.h" />
+    <ClInclude Include="Tron\google\protobuf\wrappers.pb.h" />
+    <ClInclude Include="Tron\Transaction.pb.h" />
+    <ClInclude Include="u256.h" />
+    <ClInclude Include="uEcc\macroECC.h" />
+    <ClInclude Include="uEcc\types.h" />
+    <ClInclude Include="uEcc\uECC.h" />
+    <ClInclude Include="uEcc\uECC_vli.h" />
+    <ClInclude Include="Usdt\createpayload.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="jsoncpp\src\lib_json\json_valueiterator.inl" />
+    <None Include="uEcc\curve-specific.inc" />
+    <None Include="uEcc\platform-specific.inc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{826FF900-1556-48B4-BE92-615062A50ADA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TokenCore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;./jsoncpp/include;./mbedtls/include;./Tron;./Bumo</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;./jsoncpp/include;./mbedtls/include;./Tron;./Bumo</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>$(ProjectDir)CopyFile.bat Debug</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;./jsoncpp/include;./mbedtls/include;./Tron;./Bumo</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;./jsoncpp/include;./mbedtls/include;./Tron;./mbedtls/include/mbedtls</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>$(ProjectDir)CopyFile.bat Release</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

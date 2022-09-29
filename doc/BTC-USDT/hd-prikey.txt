@@ -1,0 +1,18 @@
+hd-prikey
+xprv9s21ZrQH143K31xYSDQpPDxsXRTUcvj2iNHm5NUtrGiGG5e2DtALGdso3pGz6ssrdK4PFmM8NSpSBHNqPqm55Qn3LqFtT2emdEXVYsCzC2U
+0488ade4		// version
+00				// depth
+00000000		// parent_fingerprint
+00000000		// child_number
+60499f801b896d83179a4374aeb7822aaeaceaa0db1f85ee3e904c4defbd9689	// chain code
+00	// prikey padding
+4b03d6fc340455b363f51020ad3ecca4f0850280cf436c70c727923f6db46c3e	// prikey
+61e16479
+
+0488b21e
+00
+00000000
+00000000
+873dff81c02f525623fd1fe5167eac3a55a049de3d314bb42ee227ffed37d508
+0339a36013301597daef41fbe593a02cc513d0b55527ec2df1050e2e8ff49c85c2
+ab473b21

@@ -1,0 +1,9 @@
+Locktime, 也被称为nLockTime, 它定义了个最早时间，只有过了这个最早时间，这个transaction可以被发送到比特币网络。通常被设置为0，表示transaction一创建好就马上发送到比特币网络。如果nLocktime的时间在1到5亿之间，则表示该transaction只会被添加到区块高度大于或等于nLocktime的区块中去。如果nLocktime的值超过5亿，则表示从1970年01月01日开始算，加上nLocktime 秒之后的一个时间点，如果transaction被创建的时间早于那个时间点，则该transaction不会被发送到比特币网路。带locktime的transaction，指明了transactions在未来的一个区块或者未来的一个时间点，才会被验证并发送到比特币网络上去
+
+
+nSequence这个字段，如果输入的交易的序列值小于2^32(0xffffffff)，就表示尚未确定的交易。
+这样的交易将保存在内存池中，直到被另一个交易消耗相同输入并且具有较大nSequence的值替代。
+一旦收到一个交易，其输入的nSequence的值为2^32，那么它将被视为最终确定并开采。
+nSequence的原始含义从未被正确实现，并且在不利用时间锁定的交易中nSequence的值通常设置为2^32.
+对于具有nLocktime或者CHECKLOCKTIMEVERIFY的交易，nSequence值必须设置为小于2^32，以使时间
+锁定器有效，通常设置为2^32-1(0xfffffffe)

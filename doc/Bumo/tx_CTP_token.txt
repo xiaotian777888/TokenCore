@@ -1,0 +1,143 @@
+// 通过合约地址查看余额
+http://seed1.bumotest.io:26002/getAccount?address=buQpqMjJDMi9ULzGBc3wfvzzBreeQ7Q6ERGy
+
+{
+	"source_address": "buQWJce6vcaRvRmoifX27Zt7MXGJqJfkT99P",
+	"fee_limit": 1000000,
+	"gas_price": 1000,
+	"nonce": 6,
+	"operations": [{
+	"pay_coin": {
+	  "amount": 0,
+	  "dest_address": "buQpqMjJDMi9ULzGBc3wfvzzBreeQ7Q6ERGy",
+	  "input":"{\"method\":\"transfer\",\"params\":{\"to\":\"buQnGKQnLZ4tRjoGK6AoWvmKCephAXSE8bdw\",\"value\":\"1\"}}"
+	},
+	"source_address": "buQWJce6vcaRvRmoifX27Zt7MXGJqJfkT99P",
+	"type": 7
+	}]
+}
+
+65367663615276526d6f69665832375a74374d58474a714a666b543939505280010a2462755170714d6a4a444d6939554c7a474263337766767a7a4272656551375136455247791a587b226d6574686f64223a227472616e73666572222c22706172616d73223a7b22746f223a226275516e474b516e4c5a3474526a6f474b36416f57766d4b436570684158534538626477222c2276616c7565223a2231227d7d
+
+0a	// source_adddress tag
+24	// len
+627551574a6365367663615276526d6f69665832375a74374d58474a714a666b54393950
+10	// nonce tag
+05	// nonce value
+18	// fee_limit tag
+c0843d	// 1000000 fee_limit value
+20	// gas_price tag
+e807	// 1000 gas_price value
+3a	// operation tag
+5a	// len
+08	// type tag
+07	// pay_coin type
+12	// source_adddress tag
+24	// len
+627551574a6365367663615276526d6f69665832375a74374d58474a714a666b54393950
+52	// pay_coin tag
+30	// len
+0a	// dest_address tag
+24	// len
+62755170714d6a4a444d6939554c7a474263337766767a7a427265655137513645524779
+1a	// input tag
+58 	// len
+7b226d6574686f64223a227472616e73666572222c22706172616d73223a7b22746f223a226275516e474b516e4c5a3474526a6f474b36416f57766d4b436570684158534538626477222c2276616c7565223a2231227d7d
+
+std::string make_unsigned_tx_CTP_token(
+	const std::string &str_source_address,
+	const std::string &str_dest_address,
+	uint64_t coin_amount,
+	const std::string &str_contract_address,
+	uint64_t token_amount,
+	uint64_t nonce,
+	uint64_t gas_price,
+	uint64_t fee_limit
+);
+
+std::string make_unsigned_tx_CTP_token(
+		const std::string &str_source_address,
+		const std::string &str_dest_address,
+		uint64_t coin_amount,
+		const std::string &str_contract_address,
+		uint64_t token_amount,
+		uint64_t nonce,
+		uint64_t gas_price,
+		uint64_t fee_limit
+) {
+	if (str_source_address.size() != 36 ||
+		str_dest_address.size() != 36 ||
+		str_contract_address.size() != 36) {
+		return std::string("");
+	}
+	
+	nonce = get_nonce(str_source_address);
+	//std::cout << nonce << std::endl;
+	nonce++;
+
+	gas_price = get_gas_price();
+	//std::cout << gas_price << std::endl;
+
+	bumoProtocol::Transaction tx;
+	bumoProtocol::Operation *lp_operation = tx.add_operations();
+	lp_operation->set_type(bumoProtocol::Operation_Type_PAY_COIN);
+	lp_operation->set_source_address(str_source_address.c_str(), str_source_address.size());
+
+	bumoProtocol::OperationPayCoin *lp_paycoin = lp_operation->mutable_pay_coin();
+	lp_paycoin->set_amount(coin_amount);
+	lp_paycoin->set_dest_address(str_contract_address.c_str(), str_contract_address.size());
+
+	std::string str_token_amount = std::to_string(token_amount);
+	std::string str_input = "{\"method\":\"transfer\",\"params\":{\"to\":\"";
+	str_input += str_dest_address;
+	str_input += "\",\"value\":\"";
+	str_input += str_token_amount;
+	str_input += "\"}}";
+
+	lp_paycoin->set_input(str_input.c_str(), str_input.size());
+
+	tx.set_source_address(str_source_address.c_str(), str_source_address.size());
+	tx.set_nonce(nonce);
+	tx.set_fee_limit(fee_limit);
+	tx.set_gas_price(gas_price);
+
+	int len = tx.ByteSize();
+	Binary sz_unsign_tx(len);
+	tx.SerializeToArray(sz_unsign_tx.data(), len);
+	std::string str_unsign_tx = Binary::encode(sz_unsign_tx);
+	return str_unsign_tx;
+}
+
+void test_CTP_token() {
+	string str_source_address = "buQWJce6vcaRvRmoifX27Zt7MXGJqJfkT99P";
+	string str_source_prikey = "11ec18b7cffacfb46c57e027bd63f6558a78ec4ee4e929c07c12345678abcdef";
+	string str_source_pubkey = "d342fb43be2c61e425cd3448d457de446d87e518a865878a737755600c9076fb";
+	string str_source_bumo_pubkey = "b001d342fb43be2c61e425cd3448d457de446d87e518a865878a737755600c9076fba89e5910";
+
+	string str_dest_address = "buQnGKQnLZ4tRjoGK6AoWvmKCephAXSE8bdw";
+	string str_contract_address = "buQpqMjJDMi9ULzGBc3wfvzzBreeQ7Q6ERGy";
+	uint64_t coin_amount = 0;
+	uint64_t token_amount = 1;
+	uint64_t nonce = 0;
+	uint64_t gas_price = 1000;
+	uint64_t fee_limit = 1000000;
+
+	string str_unsign_tx = BUMOAPI::make_unsigned_tx_CTP_token(
+		str_source_address, str_dest_address, coin_amount,
+		str_contract_address, token_amount,
+		nonce, gas_price, fee_limit);
+	cout << "str_unsign_tx:\n" << str_unsign_tx << endl;
+
+	string str_sign = BUMOAPI::sign_tx(str_unsign_tx, str_source_prikey, str_source_pubkey);
+	cout << "str_sign:\n" << str_sign << endl;
+
+	string str_sign_tx_json = BUMOAPI::make_sign_tx(
+		str_unsign_tx, str_sign, str_source_bumo_pubkey);
+	cout << "str_sign_tx_json:\n" << str_sign_tx_json << endl;
+
+	bool is_broadcast_ok = BUMOAPI::broadcast_transaction_json(str_sign_tx_json);
+	if (is_broadcast_ok)
+		cout << "broadcast tx ok." << endl;
+	else
+		cout << "broadcast tx failed." << endl;
+}

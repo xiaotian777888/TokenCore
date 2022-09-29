@@ -1,0 +1,71 @@
+RegisterWallet
+ImportWallet
+ImportWalletByBase64
+ChangePassword
+Login
+Logout
+BackupWallet
+BackupWallet2Base64
+GenerateAAddress
+GetAddress
+GetBalance
+GetAccount
+GetAssetIssueByAccount
+GetAccountNet
+GetAccountResource
+GetAssetIssueByName
+GetAssetIssueListByName
+GetAssetIssueById
+SendCoin
+TransferAsset
+ParticipateAssetIssue
+AssetIssue
+CreateAccount
+CreateWitness
+UpdateWitness
+VoteWitness
+ListWitnesses
+ListAssetIssue
+ListNodes
+ListProposals
+GetBlock
+GetTransactionCountByBlockNum
+GetTotalTransaction
+GetNextMaintenanceTime
+GetTransactionById
+getTransactionInfoById
+GetTransactionsFromThis
+GetTransactionsToThis
+GetProposalById
+GetBlockById
+GetBlockByLimitNext
+GetBlockByLatestNum
+FreezeBalance
+UnfreezeBalance
+GetDelegatedResource
+GetDelegatedResourceAccountIndex
+WithdrawBalance
+UpdateAccount
+SetAccountId
+Unfreezeasset
+DeployContract contractName ABI byteCode constructor params isHex fee_limit consume_user_resource_percent origin_energy_limit value token_value token_id <library:address,library:address,...>
+UpdateSetting contract_address consume_user_resource_percent
+UpdateEnergyLimit contract_address energy_limit
+TriggerContract contractAddress method args isHex fee_limit value
+GetContract contractAddress
+UpdateAsset
+UnfreezeAsset
+CreateProposal
+ListProposals
+listproposalpaginated
+GetProposal
+ApproveProposal
+DeleteProposal
+ExchangeCreate
+ExchangeInject
+ExchangeWithdraw
+ExchangeTransaction
+ListExchanges
+ListExchangespaginated
+GetExchange
+Exit or Quit

@@ -1,0 +1,44 @@
+01000000		// 版本号的Little-Endian(反序)格式
+01				// 输入未花费交易(UTXO)的数量,输入个数
+// 上一笔交易输出的哈希Little-Endian格式
+b3807042c92f449bbf79b33ca59d7dfec7f4cc71096704a9c526dddf496ee097	// Little-Endian
+97e06e49dfdd26c5a904670971ccf4c7fe7d9da53cb379bf9b442fc9427080b3	// Big-Endian
+00000000		// 该笔交易在上一笔交易输出所在的位置Little-Endian
+00			// 解锁脚本字节数
+ffffffff		顺序编号，在该笔交易中为不可用。如果locktime为非零，则至少一笔输入交易的顺序编号必须小于0xffffffff
+01				// 输出交易的数量
+c8af000000000000	// 交易数额Little-Endian
+19			// 上锁脚本P2PKH的大小，后面为该脚本的内容
+76			// OP_DUP scriptPubKey的一部分
+a9			// OP_HASH160 scriptPubKey的一部分
+14			// 将0x14个字节压入栈，scriptPubKey的一部分
+58b7a60f11a904feef35a639b6048de8dd4d9f1c	// pubkey hash
+88			// OP_EQUALVERIFY
+ac			// OP_CHECKSIG
+00000000	// nLockTime UNIX时间截或者区块高度
+
+
+01000000			// 版本号Little-Endian
+01					// 输入个数
+// 上笔交易hash, Little-Endian
+96c472ac5cbc3cf6acae1493d4d32f119f39ec9e440176b2fb7de6e6024b9f21
+01000000	// 该输入在上笔交易输出的位置output_no Little-Endian
+6a			// 解锁脚本字节数
+47			// PUSHDATA 47, 将0x47个字节的数据压入栈中
+3044022034519a85fb5299e180865dda936c5d53edabaaf6d15cd1740aac9878b76238	// 签名
+e002207345fcb5a62deeb8d9d80e5b412bd24d09151c2008b7fef10eb5f13e484d1e0d
+01			// SIGHASH_ALL,签名类型
+21			// PUSHDATA 21 将0x21个字节的数据压入栈中
+// 压缩公钥格式 big-endian
+0207c9ece04a9b5ef3ff441f3aad6bb63e323c05047a820ab45ebbe61385aa7446
+ffffffff // 顺序编号，在该笔交易中为不可用。如果locktime为非零，则至少一笔输入交易的顺序编号必须小于0xffffffff
+01					// 输出个数
+40420f0000000000	// 输出数量 Little-Endian
+19					// 上锁脚本P2PKH的大小，后面为该脚本的内容
+76					// OP_DUP
+a9					// OP_HASH160
+14					// 将0x14个字节压入栈，scriptPubKey的一部分
+053496c1ea3d54d649ed54de490fda3425222440	// pubkey hash
+88					// OP_EQUALVERIFY
+ac					// OP_CHECKSIG
+00000000			// nLockTime UNIX时间截或者区块高度

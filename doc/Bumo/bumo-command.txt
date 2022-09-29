@@ -1,0 +1,24 @@
+--dropdb                                                      clean up database
+--peer-address <node-priv-key>                                get peer address from crypted node private key
+--create-account [crypto]                                     create account, support ed25519
+--get-address <node-priv-key>                                 get address from private key
+--get-address-from-pubkey <public-key>                        get address from public key
+--sign-data <node-priv-key> <blob data>                       sign blob data
+--check-signed-data <blob data> <signed data> <public key>    check signed data
+--check-address <address>                                     check address
+--hardware-address                                            get local hardware address
+--clear-consensus-status                                      delete consensus status
+--sm3 <arg>                                                   generate sm3 hash 
+--sm3-hex <arg>                                               generate sm3 hash from hex format 
+--aes-crypto <value>                                          crypto value
+--version                                                     display version information
+--create-hardfork                                             create hard fork ledger
+--clear-peer-addresses                                        clear peer list
+--create-keystore <password>                                  create key store
+--create-keystore-list <path> <nums> <password>               create a number of keystores into path with same password  
+--create-keystore-from-privatekey <private key> <password>    create key store from private key
+--sign-data-with-keystore <keystore> <password> <blob data>   sign blob data with keystore
+--check-keystore <keystore> <password>                        check password match the keystore
+--get-privatekey-from-keystore <keystore> <password>          check password match the keystore
+--log-dest <dest>                                             set log dest, LIKE FILE+STDOUT+STDERR
+--help                                                        display this help

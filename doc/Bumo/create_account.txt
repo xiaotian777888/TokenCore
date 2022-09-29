@@ -1,0 +1,55 @@
+{
+  "type": 1,
+  "create_account": {
+	"dest_address": "buQgmhhxLwhdUvcWijzxumUHaNqZtJpWvNsf",
+	"contract": {
+	  "payload": ""
+	},
+	"init_balance": 100000,  //init_balance to this account
+	"init_input" : "",  // if create contract , then init with this input
+	"metadatas": [{
+		"key": "111",
+		"value": "hello 111!",
+		"version": 0
+	  }, {
+		"key": "222",
+		"value": "hello 222!",
+		"version": 0
+	  }
+	],
+	"priv":  {
+	  "master_weight": 1,
+	  "thresholds": {
+		  "tx_threshold": 1
+	  }
+	}
+  }
+}
+
+0a	// dest_address tag
+24	// len
+627551574a6365367663615276526d6f69665832375a74374d58474a714a666b54393950
+12	// contract tag
+00
+
+1a	// priv tag
+06	// len
+08	// master_weight tag
+01	// value
+1a	// thresholds tag
+02	// len
+08	// tx_threshold tag
+01	// value
+
+22	// metadatas tag
+11	// len
+0a	// key tag
+03	// len
+313131
+12 // value tag
+0a len
+68656c6c6f203131312e
+22
+11
+0a03323232120a68656c6c6f203232322e
+

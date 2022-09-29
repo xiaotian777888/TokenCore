@@ -1,0 +1,38 @@
+linux: usdt 腾讯云
+140.143.26.31:22	ubuntu/gunship!201808
+
+windows:usdt
+192.144.191.254? 	Administrator/gunship!201808
+
+bumo
+47.75.251.248
+		root	
+gunship!201808
+
+usdt 阿里云
+47.52.230.162
+		root	
+gunship!201808
+
+bhp
+150.109.38.165		ubuntu	gunship11
+
+Shadowsocks访问国外VPS
+韩国VPS
+
+IP:137.59.17.208
+
+端口:8476
+
+密码:HQ3fpfReS1
+
+
+
+
+香港VPS
+
+IP:154.95.188.167
+
+端口:7524
+
+密码:qfW62zbTxC

@@ -1,0 +1,48 @@
+// 下面给出的两笔交易是特殊的交易
+// tx id
+a4bfa8ab6435ae5f25dae9d89e4eb67dfa94283ca751f393c1ddc5a837bbc31b
+
+010000000127b56fdd4be1fd69a2b6545194d32c9a04853e249bd3bae13c4a54c1b493b316010000006c493046022100bc4add188fd3f3857b66b71f83c558b84ccae792aa549c90a93dc7b0842ac2d1022100e2648f9998a32a01a6d6c25e62d6f385b42b6bed896539ce95547a9ee76473d101210368e828b31aeddf82a53bdf803065aac378b7c330299189d277c1ff182724c967ffffffff0100e1f5050000000023aa206fe28c0ab6f1b372c1a6a246ae63f74f931e8365e15a089c68d61900000000008700000000
+
+01000000
+01
+27b56fdd4be1fd69a2b6545194d32c9a04853e249bd3bae13c4a54c1b493b316
+01000000
+6c
+49
+3046022100bc4add188fd3f3857b66b71f83c558b84ccae792aa549c90a93dc7b0842ac2d1022100e2648f9998a32a01a6d6c25e62d6f385b42b6bed896539ce95547a9ee76473d101
+2103
+68e828b31aeddf82a53bdf803065aac378b7c330299189d277c1ff182724c967
+ffffffff
+01
+00e1f50500000000	// output value
+23	// len
+aa	// OP_HASH256
+20	// len
+// 将这个BTC输出值锁定到这个哈希数据中
+// To spend the transaction you need to come up with some data such that hashing the data twice results in the given hash
+6fe28c0ab6f1b372c1a6a246ae63f74f931e8365e15a089c68d6190000000000
+87	// OP_EQUAL
+00000000	// nLockTime
+
+// tx id
+09f691b2263260e71f363d1db51ff3100d285956a40cc0e4f8c8c2c4a80559b1
+
+01000000011bc3bb37a8c5ddc193f351a73c2894fa7db64e9ed8e9da255fae3564aba8bfa400000000524c500100000000000000000000000000000000000000000000000000000000000000000000003ba3edfd7a7b12b27ac72c3e67768f617fc81bc3888a51323a9fb8aa4b1e5e4a29ab5f49ffff001d1dac2b7cffffffff01c09ee605000000001976a914788464014149d93b4a6135f3d665a0a2d743e6c388ac00000000
+
+01000000
+01
+1bc3bb37a8c5ddc193f351a73c2894fa7db64e9ed8e9da255fae3564aba8bfa4
+00000000
+52	// push 0x52 bytes to stack
+4c	// OP_PUSHDATA1 The next byte contains the number of bytes to be pushed onto the stack
+50	// push 0x50 bytes to stack
+// 下面这0x50个字节做两次sha256后正好等于上面的交易a4bfa8ab6435ae5f25dae9d89e4eb67dfa94283ca751f393c1ddc5a837bbc31b的输出锁定的哈希值，因此可以花费上面交易的输出，
+// https://en.bitcoin.it/wiki/Genesis_block
+// The required data happened to be the Genesis block, and the given hash in the script was the genesis block header hashed twice with SHA-256. Note that while transactions like this are fun, they are not secure, because they do not contain any signatures and thus any transaction attempting to spend them can be replaced with a different transaction sending the funds somewhere else
+0100000000000000000000000000000000000000000000000000000000000000000000003ba3edfd7a7b12b27ac72c3e67768f617fc81bc3888a51323a9fb8aa4b1e5e4a29ab5f49ffff001d1dac2b7c
+ffffffff
+01c09ee60500000000
+1976a914
+788464014149d93b4a6135f3d665a0a2d743e6c388ac
+00000000

@@ -1,0 +1,90 @@
+// 获取一个账号的详细信息包括nonce值
+http://seed1.bumo.io:16002/getAccount?address=buQWJce6vcaRvRmoifX27Zt7MXGJqJfkT99P
+
+// 获取一个账号的基本信息包括nonce值
+getAccountBase?address=buQs9npaCq9mNFZG18qu88ZcmXYqd6bqpTU3
+
+// 查询交易
+http://seed1.bumo.io:16002/getTransactionHistory?hash=6e7cc81490e2a89ae1c667d086a71fac0684bf69577a6e5f083b11f6f345a576
+
+// 发送数据得到交易串
+http://seed1.bumotest.io:26002/getTransactionBlob
+
+// 得到gas_price
+http://seed1.bumo.io:16002/getLedger?with_fee=true
+"fees": 
+{
+	"base_reserve": 1000000,	// 账户中存在最少的mo，即0.1个bu    1bu=10^8mo
+	"gas_price": 1000
+},
+
+In the BUMO network, a block is generated every 10 seconds, and each transaction only needs one confirmation to get its final state
+
+The current (2018-04-23) lowest value of gasPrice is 1000MO
+It is recommended to fill in 1000000 MO for feeLimit, which equals to 0.01BU
+
+source_address: 交易源账号，即交易发起方的账号。当这笔交易成功后，交易源账号的nonce字段会自动加1。账号中的nonce意义是本账号作为交易源执行过的交易数量。
+nonce:其值必须等于交易源账号的当前nonce+1，这是为了防止重放攻击而设计的。如何查询一个账号的nonce可参考查询账号。若查询账号没有显示nonce值，说明账号的当前nonce是0.
+fee_limit:本交易能接受的最大的手续费。交易首先会按照这个费用收取手续费，若交易执行成功，则会收取实际的花费，否则将收取这个字段的费用。
+gas_price:用于计算每个操作的手续费，还参与交易字节费的计算。
+ceil_ledger_seq:针对本交易的区块高度限制条件，高级功能。
+operations:操作列表。本交易的有效负载，即本交易想要做什么事情。见操作
+metadata:用户自定义字段，可以不填写，备注用。
+
+{
+	"source_address": "buQWJce6vcaRvRmoifX27Zt7MXGJqJfkT99P",
+	"fee_limit": 1000000,
+	"gas_price": 1000,
+	"nonce": 1,
+	"operations": [{
+	"pay_coin": {
+	  "amount": 1,
+	  "dest_address": "buQnGKQnLZ4tRjoGK6AoWvmKCephAXSE8bdw"
+	},
+	"source_address": "buQWJce6vcaRvRmoifX27Zt7MXGJqJfkT99P",
+	"type": 7
+	}]
+}
+
+0a24627551574a6365367663615276526d6f69665832375a74374d58474a714a666b54393950100118c0843d20e8073a5208071224627551574a6365367663615276526d6f69665832375a74374d58474a714a666b5439395052280a246275516e474b516e4c5a3474526a6f474b36416f57766d4b4365706841585345386264771001
+
+0a24627551574a6365367663615276526d6f69665832375a74374d58474a714a666b54393950100118c0843d20e8073a5208071224627551574a6365367663615276526d6f69665832375a74374d58474a714a666b5439395052280a246275516e474b516e4c5a3474526a6f474b36416f57766d4b4365706841585345386264771001
+0a	// source_address tag
+24	// len 36bytes
+627551574a6365367663615276526d6f69665832375a74374d58474a714a666b54393950
+10	// nonce tag
+01	// nonce value
+18	// fee_limit tag
+c0843d	// 1000000 fee_limit value
+20	// gas_price tag
+e807	// gas_price value 1000
+3a	// operations tag
+52	// len
+08	// type tag
+07	// type value pay_coin
+12	// source_address tag
+24	// len
+627551574a6365367663615276526d6f69665832375a74374d58474a714a666b54393950
+52	// pay_coin tag
+28	// len
+0a	// dest_address tag
+24	// len
+6275516e474b516e4c5a3474526a6f474b36416f57766d4b436570684158534538626477
+10	// amount tag
+01	// amount value
+
+// sign 
+41d6e882361dc6546e2d096806c8fa84825b3c7a9bfb203b22a073f15d9be643dc6e6a30c429f3e4c17679411cc5f2331888f3e73b6ce97f8941eda800de1204
+
+{
+    "items" : [{
+        "transaction_blob" : "0a24627551574a6365367663615276526d6f69665832375a74374d58474a714a666b54393950100118c0843d20e8073a5208071224627551574a6365367663615276526d6f69665832375a74374d58474a714a666b5439395052280a246275516e474b516e4c5a3474526a6f474b36416f57766d4b4365706841585345386264771001",
+        "signatures" : [{
+            "sign_data" : "41d6e882361dc6546e2d096806c8fa84825b3c7a9bfb203b22a073f15d9be643dc6e6a30c429f3e4c17679411cc5f2331888f3e73b6ce97f8941eda800de1204",
+            "public_key" : "b001d342fb43be2c61e425cd3448d457de446d87e518a865878a737755600c9076fba89e5910"
+         }
+         ]
+    }
+    ]
+}
+

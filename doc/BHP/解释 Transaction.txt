@@ -1,0 +1,95 @@
+查询地址：exp.bhpa.io:20557
+txid: 0x3ab912222c3ee06eda8837c5c4f5f7088ab08003a2b77dd7a23db672ab41664b
+请求数据：
+{
+  "jsonrpc": "2.0",
+  "method": "getrawtransaction",
+  "params": ["0x19b24c0d647fbe69da4347b40e5e733bcbc7a6393cc73f904200830269b4e05b"],
+  "id": 1
+}
+返回数据
+{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "8000000182921e72356f7b55bd72d502549f9fb42d5e976fa024063ef8d5df905ab88e0900000254a80a4c72f6157a7af0a753fc4ac4af6b159a17634dd57fecf319feab6ff7134e2b573c00000000d31d373e02f5d9e3e1580cf2981167995c5b537754a80a4c72f6157a7af0a753fc4ac4af6b159a17634dd57fecf319feab6ff713b2741b1218090000b8d64d959e48b3075823b808d9ae7aee7361cbba014140b16256b97ce0f5eb624a8326c47d47000184ceccc6a0e4d6e2b2532f97107a7cb550693243e8249d61fae393943ffe9907d1f05d317795cf9ba203b47ab9cb9d2321036bae36a9f3ee6d11d343706fe98bb7ad826738be701a8662d4271ad4c4049086ac"
+}
+
+---------------数据解释-------------------
+//小端模式
+1.Type 交易类型:  80 //转账（ContractTransaction）
+2.Version版本号:  00  
+3.Attributes 属性: 00 
+
+4.Inputs Length:   01 //交易输入长度
+5.txid: 65fd27388c77b701169396ac959b0e4a5afe906b8725bb67d6f92af20bed2ac1
+6.txIndex: 0100 //第1个输入
+
+7.Outputs Length:   03 //
+
+8.assetid: 54a80a4c72f6157a7af0a753fc4ac4af6b159a17634dd57fecf319feab6ff713
+9.value: 0900000000000000
+10.addressHash: f722e5c61da77ba16134e6ef2b9f5b412a98549b
+
+11.assetid: 54a80a4c72f6157a7af0a753fc4ac4af6b159a17634dd57fecf319feab6ff713
+12.value: 0800000000000000
+13.addressHash: f722e5c61da77ba16134e6ef2b9f5b412a98549b
+
+14.assetid: 54a80a4c72f6157a7af0a753fc4ac4af6b159a17634dd57fecf319feab6ff713
+15.value: 8f86010000000000
+16.addressHash: 079f71ebf0e8e90ab1dbb0b428d0168316550260
+
+Witnesses:
+17.invocation:调用脚本（添加的见证者，即输入交易所属地址的签名信息）
+014140d951496f4eb61de9fcb9e9e90fc732f57886017e12ec0fba6af4be1be0c0ed4e7d4fcb21debd764a3ad2b37570b4eced155fd72733b8f74c0cb9ba115cc461b023
+
+18.verification:验证脚本
+210291f8544b9a1a5ceb7471d31b3fc1c281385908b13b3cab9f469436ab179550d9 （这个是输入交易所属地址的公钥）
+
+ 源码：Bhp.SmartContract.Contract
+ public static byte[] CreateSignatureRedeemScript(ECPoint publicKey)
+        {
+            using (ScriptBuilder sb = new ScriptBuilder())
+            {
+                sb.EmitPush(publicKey.EncodePoint(true));
+                sb.Emit(OpCode.CHECKSIG);
+                return sb.ToArray();
+            }
+        }
+		
+ 对应的解码:Bhp.Cryptography.ECC
+ public static ECPoint DecodePoint(byte[] encoded, ECCurve curve) //
+ ECPoint.DecodePoint(p.HexToBytes(), ECCurve.Secp256r1);
+ 
+19.CHECKSIG: ac
+
+#####################################################################################
+1.BHP的每一个账户地址都是一段脚本，该脚本是一个两条指令的智能合约，伪代码为:
+Push publickey
+Syscall Checkwitness
+该脚本的hash值就是用户地址，通常用户地址用该hash值加盐加验证做base58之后的字符串形式表达。字符串形式和hash值完全等价。
+
+BHP的地址，就是智能合约的hash值。反过来也成立，BHP每个智能合约的hash值，都是一个地址。 
+
+所以，我可以向一个智能合约转账，也可以从一个智能合约取钱，因为我的地址，其实也是一个智能合约地址。
+ 
+
+2.见证人的校验脚本就是该地址对应的智能合约，且不可修改，hash不一样通不过校验。
+
+3.见证人的执行脚本是用来像校验脚本提供参数的智能合约.
+
+所以我们再来看从我的地址给别人转账发生了什么。
+
+1.给别人转账，必须输入里面有来自我的地址的utxo
+
+2.构造交易
+
+3.添加见证人，校验脚本就是我的脚本
+
+4.设置见证人执行脚本，他是一个一条指令的智能合约，伪代码为：
+
+Push signdata
+
+5.发送包含交易数据和见证人数据的rawdata
+
+6.校验交易，执行脚本 push signdata，结束，校验脚本 push 自己的pubkey，然后checksig，该函数两个参数，正好是signdata 和 pubkey，检查，如果成功，交易成立。否则交易不成立。
+ 

@@ -1,0 +1,1672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		759A930033FA4B419A4D6C05 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E5958754516E4051B0E02A9D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				978801CE64D49F6FAF28A2AC /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		85E86B10F5154E07B44C4583 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 09EEEB0E2B854D69B6A018C7 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				F5B1ACEE20D40102FF221438 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				4153573114754D43AF83B1AD /* PBXTargetDependency */,
+				54110D1656F041F5891E5807 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00B29132A953403F9AB1ECD7 /* stringpiece.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5199449DAB6648F5815721E7 /* stringpiece.cc */; };
+		021913B0D9BD4A159F732AD6 /* io_win32.cc in Sources */ = {isa = PBXBuildFile; fileRef = 02237C6165444877A737519E /* io_win32.cc */; };
+		03E85B9124E1419587495D97 /* eosbytewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D633014098C64752AB88401B /* eosbytewriter.cpp */; };
+		05BEC6BCE3424A68840EC82D /* stringprintf.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0D5AA82BA8474FD0BF98A175 /* stringprintf.cc */; };
+		05EBFD59E5BD4B0897B38330 /* hmac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A843EFACC6524D42A47D8CF2 /* hmac.cpp */; };
+		07C10A32B39A40769ADCC2F0 /* parser.cc in Sources */ = {isa = PBXBuildFile; fileRef = 15769469803445EAA8E3E46E /* parser.cc */; };
+		085F5B8952E843D3B5B2AF45 /* pbkdf2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF2EF1B28D429BA54E8C80 /* pbkdf2.cpp */; };
+		0B2BB42A4F6A491A82BB6DCC /* bignum.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E5DD1A1124C4151873BE29E /* bignum.c */; };
+		0C03F268FBB64128A828DB51 /* signedtransaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0ED06C476BD4E15A90A59E8 /* signedtransaction.cpp */; };
+		0C5BF66D28284AC9B9A48C0D /* utility_tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12417AA4BA914E1D964F2106 /* utility_tools.cpp */; };
+		0C8B13CA30F94DFAAF9C7D06 /* duration.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = DB4A2058D41F4BA39BCC08B2 /* duration.pb.cc */; };
+		0DB8506FC3E84E2FA72B04AE /* int128.cc in Sources */ = {isa = PBXBuildFile; fileRef = 87F6148791BB43C3B1B68954 /* int128.cc */; };
+		0E433B1BFD3C45308D5C2296 /* ripemd160.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CED37AFED0944C2829E08AF /* ripemd160.cpp */; };
+		0E6AF6CEB7074E7691922123 /* macroECC.c in Sources */ = {isa = PBXBuildFile; fileRef = CFDCFF0793F54E76ABADB7F9 /* macroECC.c */; };
+		0F8535BF9F43474C95315F51 /* delimited_message_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA0F3C30C9AC470A89AB6671 /* delimited_message_util.cc */; };
+		1055715578984894B97FBB8F /* any.cc in Sources */ = {isa = PBXBuildFile; fileRef = 58EDB5C51E2747E29503F12F /* any.cc */; };
+		11A7C396896A4DF4B1FDDD06 /* utility.cc in Sources */ = {isa = PBXBuildFile; fileRef = 83506A8D1B45401A99CDF89E /* utility.cc */; };
+		13444639409A412F9A4890C9 /* error_listener.cc in Sources */ = {isa = PBXBuildFile; fileRef = EBEC23848F194BCB8149AA0F /* error_listener.cc */; };
+		1379467274674918B4B4354B /* sha2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D319127D9042475A8A67A496 /* sha2.cpp */; };
+		13D881F3E6274E43B6514E16 /* object_writer.cc in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A38356594165AF2C2DA0 /* object_writer.cc */; };
+		148AD2431D784E0B98A527BF /* map_field.cc in Sources */ = {isa = PBXBuildFile; fileRef = B03E9762DF6A46F8928052E5 /* map_field.cc */; };
+		17A19E56F9CA4FA8A5BB4E0D /* unknown_field_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4F2805534D8E420384BBBE93 /* unknown_field_set.cc */; };
+		21E534982365468E93967D1A /* transactionextension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E983125AB0943B99457EE86 /* transactionextension.cpp */; };
+		22EECF1B8BD549DB80EE55A9 /* descriptor_database.cc in Sources */ = {isa = PBXBuildFile; fileRef = AB1057E187ED44089D32FBEA /* descriptor_database.cc */; };
+		236FEF145444421AB228781A /* typename.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5851980AF25E44F8943C5A2F /* typename.cpp */; };
+		277916B1BF5C4FB8B47D03B7 /* packedtransaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B48DB5B0DB2240D997AC481B /* packedtransaction.cpp */; };
+		278F43E25324490DA9218C63 /* zero_copy_stream_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 454D201CD3454E4A9387BE1A /* zero_copy_stream_impl.cc */; };
+		2C2072500F59422EBD9CDEE7 /* chainmanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622C8F045DEF4DF1B6406BDB /* chainmanager.cpp */; };
+		2C7483D46601429FB63534D8 /* wrappers.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = C9EE6B9312864359934C9831 /* wrappers.pb.cc */; };
+		2CDD23E91236454AA8042F1D /* strutil.cc in Sources */ = {isa = PBXBuildFile; fileRef = B325ED13A6FD44E985B26196 /* strutil.cc */; };
+		2DC5AE9E96C14C54AC402BC2 /* bx_plat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5636402CBDAC4BF78677BEB4 /* bx_plat.cpp */; };
+		33CF1DBB6B2940E795B6ED30 /* eosapi_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4EE2C420CDF4EB1A2C081A9 /* eosapi_utils.cpp */; };
+		34245B49D82547CABBF917F4 /* Transaction.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = AFEE2734F7CA49DE9C75B1F9 /* Transaction.pb.cc */; };
+		35A1EDC7B6C64DF89B17D7C3 /* any.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = F17E55BD5F5E47D8B57EF3A8 /* any.pb.cc */; };
+		3711A31739844305B798B71B /* repeated_field.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7A23E9D2D0ED4201952A5925 /* repeated_field.cc */; };
+		37AF5E36FC2A4048AC0DCFC1 /* bip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35FE45B6B2674794AF749EB1 /* bip.cpp */; };
+		39196333289B40989BA51B69 /* dynamic_message.cc in Sources */ = {isa = PBXBuildFile; fileRef = D628FA62C29D4256869AFA02 /* dynamic_message.cc */; };
+		3AFC98920DD84A2BB3E00E88 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38C1A3F68AE7420C92D8B4CF /* json_reader.cpp */; };
+		3C077CFF91414CEE95A8B68E /* BhpApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9836D72EE994C309A517664 /* BhpApi.cpp */; };
+		3FA7E161F5A24430B9B02AB9 /* TronApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AA96FBFB9B24BA1AC8F42A7 /* TronApi.cpp */; };
+		4C0515E077D14C708C0B3A34 /* typeauthority.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1AB4A0301404B61B7B6F78B /* typeauthority.cpp */; };
+		4E5DC02BE8A842DFA0319B3D /* generated_message_table_driven.cc in Sources */ = {isa = PBXBuildFile; fileRef = CCC4F0471D204D85978E1091 /* generated_message_table_driven.cc */; };
+		4F0248B1F8604091A5872461 /* type_info.cc in Sources */ = {isa = PBXBuildFile; fileRef = D4D2611A1A0A44D5A3A22ED2 /* type_info.cc */; };
+		4F0EB84BA9BD4ECF8501B868 /* transactionheader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2959799DEC6B4043B2055AE2 /* transactionheader.cpp */; };
+		4F362E90094541E8BCF4FB59 /* hmac_sha512.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3D60DE287DE4A2D94112E66 /* hmac_sha512.cpp */; };
+		4F57E246527346DB928CFAD8 /* importer.cc in Sources */ = {isa = PBXBuildFile; fileRef = A1C0F0AE8EF447F2A8B1BB69 /* importer.cc */; };
+		4FA12E05EB7A44468A728AF0 /* ecp.c in Sources */ = {isa = PBXBuildFile; fileRef = F550D467612744B58806BCF8 /* ecp.c */; };
+		50AE3ACE22054EC6B3A1B5DC /* api.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = A033D935A5D943A488A54157 /* api.pb.cc */; };
+		53552C8F7E064D9FA1D410AD /* generated_message_reflection.cc in Sources */ = {isa = PBXBuildFile; fileRef = DC99A799084547E2AB7E3CA4 /* generated_message_reflection.cc */; };
+		53CE56F36328402399445C13 /* struct.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6A68123EB0D24345BEB5F24E /* struct.pb.cc */; };
+		5641CB24FD2B49BDA97F6CEC /* bhp_transaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2AA855660124CA4829DC875 /* bhp_transaction.cpp */; };
+		57312BA381364F68B3BBA633 /* cJsonObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AACD3C6FC7D54508AC5D0782 /* cJsonObject.cpp */; };
+		58554B1253F0421EA1628E72 /* message_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 51FEEA3B9E014EBBA70AC983 /* message_lite.cc */; };
+		5B7523DF6EEC4DCD9C106883 /* generated_message_table_driven_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1B4C107AA8B74FD5B63D826E /* generated_message_table_driven_lite.cc */; };
+		5E053E9D182B4DBA810C2B21 /* EthApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E0480E57BC415F9E73FF0D /* EthApi.cpp */; };
+		5F4023E31424436C8A3B44B8 /* substitute.cc in Sources */ = {isa = PBXBuildFile; fileRef = 52B59D9B4D9B495096C7D54F /* substitute.cc */; };
+		6844C1CD0EA14F3DA90E42F9 /* base58.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3417C9711AC4E6DA934D472 /* base58.cpp */; };
+		68D4B771FFCE4050BAD9B52F /* TokenCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8341B74E7BE4A5DB34975A7 /* TokenCommon.cpp */; };
+		6D7578BE82C3485D9FD8E955 /* proto_writer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1BC56F2329E342A9B522B08B /* proto_writer.cc */; };
+		706830642682488088A496F9 /* protostream_objectsource.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A9A6C50984751A4ECDE2F /* protostream_objectsource.cc */; };
+		7385541501FE4635BE68F710 /* json_objectwriter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 03AE1C64F539456FB4960FE5 /* json_objectwriter.cc */; };
+		738E494EE2674C09A5F3FBA0 /* wire_format_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 82A8D985D4A843F4A7A3B058 /* wire_format_lite.cc */; };
+		7410A937F7F04B45800F6760 /* typekeypermissionweight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A3C46343FB24214943F2971 /* typekeypermissionweight.cpp */; };
+		74E409338CB948848E1DCEB4 /* time.cc in Sources */ = {isa = PBXBuildFile; fileRef = 542C185B640744B197CE3CF8 /* time.cc */; };
+		79440549DCD240BF9D6FE70F /* time_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = FA0F70CBE4C542188DAB24DA /* time_util.cc */; };
+		797295E7A22B4BA9A1846A20 /* generated_message_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = CB24C973A1444C2BA38C1CD3 /* generated_message_util.cc */; };
+		7B0D1AF1534F485F83F8FE28 /* extension_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = A19B8D8D234D407F8B4785DA /* extension_set.cc */; };
+		7B21C3A6278F4E42B25D700F /* common.cc in Sources */ = {isa = PBXBuildFile; fileRef = 17670931459A4A0A8A9C95CD /* common.cc */; };
+		7C0E8EC8D7A64053A8BF6C03 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D97A5179B4B64DF19C8B7BC0 /* json_value.cpp */; };
+		7C9F930739024EBB83C7FD0D /* field_mask_utility.cc in Sources */ = {isa = PBXBuildFile; fileRef = A26A9A8A5226450095DAE189 /* field_mask_utility.cc */; };
+		7D4FF3D763AD48DEA39AE087 /* implicit_weak_message.cc in Sources */ = {isa = PBXBuildFile; fileRef = F4A9FA1966B44CF98726FCE9 /* implicit_weak_message.cc */; };
+		7D54A05126F14F939EE13EFB /* protostream_objectwriter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2B271AD0C71E454BA27399E1 /* protostream_objectwriter.cc */; };
+		7E768DEDAC254EC78187FD29 /* uECC.c in Sources */ = {isa = PBXBuildFile; fileRef = D41E896A30034973911650FA /* uECC.c */; };
+		7F46788E0FC7401CB1EC1DB8 /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = 35B2780CEA8946D896B0ADD1 /* cJSON.c */; };
+		8103AC7F25A14B7BB4D08577 /* sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C3366F785F64BC6A60DC0AD /* sha1.cpp */; };
+		83C0ABCF65DE450D99A0DC5B /* strtod.cc in Sources */ = {isa = PBXBuildFile; fileRef = 24C8B2ECAC234D38AB5DF2B0 /* strtod.cc */; };
+		85C850855B3B4B37B49B1523 /* printer.cc in Sources */ = {isa = PBXBuildFile; fileRef = CAD2300C31484EA7839C1C4A /* printer.cc */; };
+		877E8CCD37094E63AFC417E7 /* tokenizer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 432EBC1423A241A5B0210053 /* tokenizer.cc */; };
+		87D392B108E247EA98339726 /* sha256.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4CB7D0E06004E62A705EB38 /* sha256.cpp */; };
+		90B4E8EE32F0412E88AC3864 /* statusor.cc in Sources */ = {isa = PBXBuildFile; fileRef = 084564DD0CC44E0695651FD7 /* statusor.cc */; };
+		927C243F46DB4B96A909E3D4 /* arenastring.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2978CCD3F66849D490FFB523 /* arenastring.cc */; };
+		937FBE1B25C44E64B969619D /* zero_copy_stream_impl_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = D0876CBFA1A14139938B4C1D /* zero_copy_stream_impl_lite.cc */; };
+		953AFDE2F8504D018E3D6808 /* ecp_curves.c in Sources */ = {isa = PBXBuildFile; fileRef = 3CB548C1D0B14719B4EA075E /* ecp_curves.c */; };
+		95C3ACE260A24CC295E371C4 /* default_value_objectwriter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 44324526DF9C4F52A23F3681 /* default_value_objectwriter.cc */; };
+		95D0676567DD4893B4FC23EB /* typeaccountpermissionweight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EE1C9E42355492A8E1C53B5 /* typeaccountpermissionweight.cpp */; };
+		98FDB650D1DD4C9ABE667B8C /* message_differencer.cc in Sources */ = {isa = PBXBuildFile; fileRef = B332DF5180774D1E9C9DB8EF /* message_differencer.cc */; };
+		998A1FC62779F5CB00216057 /* TokenCoreHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 998A1FC52779F5CB00216057 /* TokenCoreHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		998A1FC82779F8C100216057 /* BhpApi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54E092192A7042F0801F056E /* BhpApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		998A1FC92779F8C300216057 /* BtcApi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03413A9527DD4B57AFBB4C14 /* BtcApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		998A1FCA2779F8C600216057 /* EosApi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA9A69019D784500BCA17349 /* EosApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		998A1FCB2779F8CC00216057 /* TronApi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFFCF6A5C0654B9EABBC4B46 /* TronApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		998A1FCC2779F8CF00216057 /* EthApi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ED386F809054786AFB05CF2 /* EthApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		998A1FCD2779F8F100216057 /* TokenCommon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71A840D0DDF746968C57CFE3 /* TokenCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		998A1FCE2779F91B00216057 /* u256.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF27D23BBFE74E64AA7CE141 /* u256.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C5E6BCA4ED74620A7DE3C43 /* descriptor.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA70E2A0AF0A4481B76AF07C /* descriptor.pb.cc */; };
+		9C81D43BAA044CB3A2CF5A93 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2271DD1196947BCB37246AF /* json_writer.cpp */; };
+		A0979CB1DA744DBCA0B728EC /* arena.cc in Sources */ = {isa = PBXBuildFile; fileRef = F9AE3C4D7BD34F1F98905CFD /* arena.cc */; };
+		A132D067EFA94096B5E8F0FB /* script.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FA29F1BA94E44248347EA70 /* script.cpp */; };
+		A64DEC51613D4BBB87282114 /* structurally_valid.cc in Sources */ = {isa = PBXBuildFile; fileRef = F99BED147EC24C8690191E96 /* structurally_valid.cc */; };
+		B08FDBB7A2424ACCAA1EC458 /* type_info_test_helper.cc in Sources */ = {isa = PBXBuildFile; fileRef = E725F51FF40846648088F05F /* type_info_test_helper.cc */; };
+		B25872C7FB244D87917D2263 /* transaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66B86B308E654C1193792003 /* transaction.cpp */; };
+		B25BDDDD1728414CB10824F1 /* json_escaping.cc in Sources */ = {isa = PBXBuildFile; fileRef = B1928F33EC254D558778B779 /* json_escaping.cc */; };
+		BBB85BAF76A14F36888A70C0 /* EosApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3BAC5ABDE444D66BEA5B4BA /* EosApi.cpp */; };
+		BC08E9E64E9647598A74569D /* sha512.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5400C64B4EFF4BEAB5C796CE /* sha512.cpp */; };
+		BC1EE12F3F8F48F89BA8C4A4 /* coded_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = FEE04A1F6B344033BFAA5F4E /* coded_stream.cc */; };
+		BC4AB64E893C4FB7945FBEBC /* service.cc in Sources */ = {isa = PBXBuildFile; fileRef = C09141C6C0734B96A283405F /* service.cc */; };
+		BFFDCDA3A96743EAA08876BE /* field_mask.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 14FAA54D991841639106EEE4 /* field_mask.pb.cc */; };
+		C603E154A4BC46AEB52A4E5B /* keccak256.c in Sources */ = {isa = PBXBuildFile; fileRef = C141A6F4BBFA427E8DBC8CC8 /* keccak256.c */; };
+		C6FCA33AE03444738405B7CA /* zero_copy_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7E7DF65CF79047389D32B9AE /* zero_copy_stream.cc */; };
+		C959688B6513447E8A9ADCCC /* status.cc in Sources */ = {isa = PBXBuildFile; fileRef = 47F5F32F8829407FA65F38A1 /* status.cc */; };
+		C97C790718D24B8B84A9C46B /* bx_str.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0744B96E20A848388487C150 /* bx_str.cpp */; };
+		CD170F399DB042DABB7BCF97 /* createpayload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0013BCF81F8D41EEAA536CB9 /* createpayload.cpp */; };
+		CD17D579751844ED86FFB68C /* eosnewaccount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4083144937414355BFE02C53 /* eosnewaccount.cpp */; };
+		CD5A712DCC8E4925AFD8FFE4 /* gzip_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1B97E329FC49419886A7166F /* gzip_stream.cc */; };
+		CDF79815FE1F4CFDA3D9DD6E /* wire_format.cc in Sources */ = {isa = PBXBuildFile; fileRef = AFD08981F25D4C52A1F112D4 /* wire_format.cc */; };
+		CF101938811A447CB9EBBC25 /* text_format.cc in Sources */ = {isa = PBXBuildFile; fileRef = B57C1475F054401BA28CFFFC /* text_format.cc */; };
+		D014AF680C314E6D93E399CE /* extension_set_heavy.cc in Sources */ = {isa = PBXBuildFile; fileRef = 45787200D1354D55B241170E /* extension_set_heavy.cc */; };
+		D42C792BA94B4D1D8D7C4756 /* type_resolver_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7A0BF9CB7A504208B9C9DC30 /* type_resolver_util.cc */; };
+		D45E943CB1B2406C933D5481 /* reflection_ops.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4096F995FBE0427AA550FA78 /* reflection_ops.cc */; };
+		D5A20F09CC2B439FADEF037C /* u256.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B87669043463E80D7370F /* u256.cpp */; };
+		D75F18CE86314D28A6178240 /* field_comparator.cc in Sources */ = {isa = PBXBuildFile; fileRef = B31D93299B4949B98A515F9C /* field_comparator.cc */; };
+		D874CE351BAC4F55827BA721 /* descriptor.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6A3CC86D384D44A18A6CBD77 /* descriptor.cc */; };
+		E1E753A0C96A4851911D425D /* typewaitweight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 651DF8649D814013AD087335 /* typewaitweight.cpp */; };
+		E5AD1035EAB84B4A98197FBE /* action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42CBD839C4AF4A249B4B32C5 /* action.cpp */; };
+		E6BAEAAA56804A28984DCF7C /* json_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE7E0ABB448A447C8CA284BA /* json_util.cc */; };
+		E8B651B09C594B0BAA1A00CB /* tx_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AE84E3B9699434B8AB9CF11 /* tx_util.cpp */; };
+		EA32692FD36F4A17BD1DEC97 /* timestamp.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 526B1ED9EB0C4B6186B51105 /* timestamp.pb.cc */; };
+		EB33AFE525C542398E6140AF /* datapiece.cc in Sources */ = {isa = PBXBuildFile; fileRef = F696A9AF91724EE593E89849 /* datapiece.cc */; };
+		EB9C47C20D19461888732EE1 /* type.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 960A335A220641E2AF7542B8 /* type.pb.cc */; };
+		EC876E8A241C4681A7268CAC /* message.cc in Sources */ = {isa = PBXBuildFile; fileRef = 53BB29C4DDC546819E3A854C /* message.cc */; };
+		ECFF6063068045F392F81F25 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D60A529D66749ED9AF0BAF4 /* util.c */; };
+		ED9E1FB0FE9C4E20966B920B /* RLP.c in Sources */ = {isa = PBXBuildFile; fileRef = 048AB886C0E24A23A84DB149 /* RLP.c */; };
+		EE2B98BA28334A9497433417 /* eos_key_encode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C440F4B78409464F953E2500 /* eos_key_encode.cpp */; };
+		EF1CA88ED9BC463CABE4C590 /* typepermissionlevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A506E3059D5423099531551 /* typepermissionlevel.cpp */; };
+		EF1F138DB9144066AD4F765D /* hash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7224DE5218ED4D73A18752B4 /* hash.cpp */; };
+		F06EF9FA6C224EA28547385C /* field_mask_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 813C8947FAE94896AC8D378B /* field_mask_util.cc */; };
+		F2052FB6879E43A2B15136AC /* bytestream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0E629C816E364887A182C711 /* bytestream.cc */; };
+		F2B347B5CCDF4B8BB921EFED /* empty.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = ABB3498B9BFD4B2DBF52DE39 /* empty.pb.cc */; };
+		F7D25BA751F448F995A62A8D /* json_stream_parser.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3E4C28BA34DFFAF85E71D /* json_stream_parser.cc */; };
+		FACAD19D8F21474781E6B6E7 /* BtcApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7453707A220B4922B91D2F02 /* BtcApi.cpp */; };
+		FE450DE6A16448B6B93670FE /* mathlimits.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8942D4B6E64749BEA96EE12F /* mathlimits.cc */; };
+		FFBCE2BEA72C462884A903E0 /* source_context.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = CC6A3957A97742E4AF31CF75 /* source_context.pb.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B794CF456194AC1A1326703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9FE8AD649244185B8D6A109 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1A98FA29340491BAAFEC1AA;
+			remoteInfo = tokencore;
+		};
+		BE6B840133DA4F19993AA425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9FE8AD649244185B8D6A109 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 759A930033FA4B419A4D6C05;
+			remoteInfo = ZERO_CHECK;
+		};
+		F62126FB9CD74962A11FFC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9FE8AD649244185B8D6A109 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 759A930033FA4B419A4D6C05;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99FCE7F52773808800EC1ADF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = tokencore/classes;
+			dstSubfolderSpec = 16;
+			files = (
+				998A1FC62779F5CB00216057 /* TokenCoreHeader.h in CopyFiles */,
+				998A1FCC2779F8CF00216057 /* EthApi.h in CopyFiles */,
+				998A1FCB2779F8CC00216057 /* TronApi.h in CopyFiles */,
+				998A1FCD2779F8F100216057 /* TokenCommon.h in CopyFiles */,
+				998A1FCE2779F91B00216057 /* u256.h in CopyFiles */,
+				998A1FC82779F8C100216057 /* BhpApi.h in CopyFiles */,
+				998A1FCA2779F8C600216057 /* EosApi.h in CopyFiles */,
+				998A1FC92779F8C300216057 /* BtcApi.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0013BCF81F8D41EEAA536CB9 /* createpayload.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = createpayload.cpp; path = ../../TokenCore/Usdt/createpayload.cpp; sourceTree = SOURCE_ROOT; };
+		016F964B3CC04D568B0591BC /* wire_format_lite_inl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wire_format_lite_inl.h; path = ../../TokenCore/Tron/google/protobuf/wire_format_lite_inl.h; sourceTree = SOURCE_ROOT; };
+		02237C6165444877A737519E /* io_win32.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = io_win32.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/io_win32.cc; sourceTree = SOURCE_ROOT; };
+		03310B6EF10A4C6990618822 /* bytestream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bytestream.h; path = ../../TokenCore/Tron/google/protobuf/stubs/bytestream.h; sourceTree = SOURCE_ROOT; };
+		03413A9527DD4B57AFBB4C14 /* BtcApi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BtcApi.h; path = ../../TokenCore/BtcApi.h; sourceTree = SOURCE_ROOT; };
+		03AE1C64F539456FB4960FE5 /* json_objectwriter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = json_objectwriter.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/json_objectwriter.cc; sourceTree = SOURCE_ROOT; };
+		048AB886C0E24A23A84DB149 /* RLP.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = RLP.c; path = ../../TokenCore/Eth/RLP.c; sourceTree = SOURCE_ROOT; };
+		0744B96E20A848388487C150 /* bx_str.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bx_str.cpp; path = ../../TokenCore/crypto/bx_str.cpp; sourceTree = SOURCE_ROOT; };
+		084564DD0CC44E0695651FD7 /* statusor.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = statusor.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/statusor.cc; sourceTree = SOURCE_ROOT; };
+		09EC011B6FB642B298BF4C5C /* type_info_test_helper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = type_info_test_helper.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/type_info_test_helper.h; sourceTree = SOURCE_ROOT; };
+		0CED37AFED0944C2829E08AF /* ripemd160.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ripemd160.cpp; path = ../../TokenCore/crypto/ripemd160.cpp; sourceTree = SOURCE_ROOT; };
+		0D0459D4C1D94BD1809C9994 /* descriptor.pb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = descriptor.pb.h; path = ../../TokenCore/Tron/google/protobuf/descriptor.pb.h; sourceTree = SOURCE_ROOT; };
+		0D570C5F31204FD6B4C1AB2F /* descriptor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = descriptor.h; path = ../../TokenCore/Tron/google/protobuf/descriptor.h; sourceTree = SOURCE_ROOT; };
+		0D5AA82BA8474FD0BF98A175 /* stringprintf.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stringprintf.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/stringprintf.cc; sourceTree = SOURCE_ROOT; };
+		0DB3E4C28BA34DFFAF85E71D /* json_stream_parser.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = json_stream_parser.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/json_stream_parser.cc; sourceTree = SOURCE_ROOT; };
+		0DC3B0E7C6D24700BC74CD9A /* service.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = service.h; path = ../../TokenCore/Tron/google/protobuf/service.h; sourceTree = SOURCE_ROOT; };
+		0E629C816E364887A182C711 /* bytestream.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bytestream.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/bytestream.cc; sourceTree = SOURCE_ROOT; };
+		0ED386F809054786AFB05CF2 /* EthApi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EthApi.h; path = ../../TokenCore/EthApi.h; sourceTree = SOURCE_ROOT; };
+		0F696A8070D048F69D4207AA /* field_mask.pb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = field_mask.pb.h; path = ../../TokenCore/Tron/google/protobuf/field_mask.pb.h; sourceTree = SOURCE_ROOT; };
+		1136BA533B3244FC91E5D00E /* bignum.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bignum.h; path = ../../TokenCore/mbedtls/include/mbedtls/bignum.h; sourceTree = SOURCE_ROOT; };
+		12417AA4BA914E1D964F2106 /* utility_tools.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = utility_tools.cpp; path = ../../TokenCore/crypto/utility_tools.cpp; sourceTree = SOURCE_ROOT; };
+		12A425BFF032410F9EF3BA8A /* type_resolver_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = type_resolver_util.h; path = ../../TokenCore/Tron/google/protobuf/util/type_resolver_util.h; sourceTree = SOURCE_ROOT; };
+		12CD5996DA324EADA73059C8 /* utility_tools.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = utility_tools.h; path = ../../TokenCore/crypto/utility_tools.h; sourceTree = SOURCE_ROOT; };
+		1305AD7E147D4184B5A77459 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		13E5BED81489459AA07D2BCC /* hmac.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hmac.h; path = ../../TokenCore/crypto/hmac.h; sourceTree = SOURCE_ROOT; };
+		1447B233BBD04FB6A449B66D /* message_lite.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = message_lite.h; path = ../../TokenCore/Tron/google/protobuf/message_lite.h; sourceTree = SOURCE_ROOT; };
+		14FAA54D991841639106EEE4 /* field_mask.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = field_mask.pb.cc; path = ../../TokenCore/Tron/google/protobuf/field_mask.pb.cc; sourceTree = SOURCE_ROOT; };
+		15769469803445EAA8E3E46E /* parser.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parser.cc; path = ../../TokenCore/Tron/google/protobuf/compiler/parser.cc; sourceTree = SOURCE_ROOT; };
+		1599A9BCEA89439FA16E8972 /* assertions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = assertions.h; path = ../../TokenCore/jsoncpp/include/json/assertions.h; sourceTree = SOURCE_ROOT; };
+		17670931459A4A0A8A9C95CD /* common.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = common.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/common.cc; sourceTree = SOURCE_ROOT; };
+		19D412AACABF4CACB10A0782 /* protostream_objectsource.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = protostream_objectsource.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/protostream_objectsource.h; sourceTree = SOURCE_ROOT; };
+		1A3C46343FB24214943F2971 /* typekeypermissionweight.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = typekeypermissionweight.cpp; path = ../../TokenCore/Eos/typekeypermissionweight.cpp; sourceTree = SOURCE_ROOT; };
+		1A506E3059D5423099531551 /* typepermissionlevel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = typepermissionlevel.cpp; path = ../../TokenCore/Eos/typepermissionlevel.cpp; sourceTree = SOURCE_ROOT; };
+		1B4C107AA8B74FD5B63D826E /* generated_message_table_driven_lite.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = generated_message_table_driven_lite.cc; path = ../../TokenCore/Tron/google/protobuf/generated_message_table_driven_lite.cc; sourceTree = SOURCE_ROOT; };
+		1B97E329FC49419886A7166F /* gzip_stream.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gzip_stream.cc; path = ../../TokenCore/Tron/google/protobuf/io/gzip_stream.cc; sourceTree = SOURCE_ROOT; };
+		1BB94AC50B0C4CA78BB657E7 /* macros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = macros.h; path = ../../TokenCore/Tron/google/protobuf/stubs/macros.h; sourceTree = SOURCE_ROOT; };
+		1BC56F2329E342A9B522B08B /* proto_writer.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = proto_writer.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/proto_writer.cc; sourceTree = SOURCE_ROOT; };
+		1BCF2EF1B28D429BA54E8C80 /* pbkdf2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pbkdf2.cpp; path = ../../TokenCore/crypto/pbkdf2.cpp; sourceTree = SOURCE_ROOT; };
+		1BFCF4AB904B41FEAB59EB26 /* field_mask_utility.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = field_mask_utility.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/field_mask_utility.h; sourceTree = SOURCE_ROOT; };
+		1D1CC7626B0B416F991E4E66 /* type_resolver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = type_resolver.h; path = ../../TokenCore/Tron/google/protobuf/util/type_resolver.h; sourceTree = SOURCE_ROOT; };
+		1E54304F03114C859AC18772 /* any.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = any.h; path = ../../TokenCore/Tron/google/protobuf/any.h; sourceTree = SOURCE_ROOT; };
+		1EC301D8704D450C82FC2687 /* error_listener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = error_listener.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/error_listener.h; sourceTree = SOURCE_ROOT; };
+		1EE2C25240F54D1BB723D1ED /* timestamp.pb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = timestamp.pb.h; path = ../../TokenCore/Tron/google/protobuf/timestamp.pb.h; sourceTree = SOURCE_ROOT; };
+		20A5CFF455FD4833AD409334 /* ripemd160.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ripemd160.h; path = ../../TokenCore/crypto/ripemd160.h; sourceTree = SOURCE_ROOT; };
+		21554D69DF874D8A85323C2C /* coded_stream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = coded_stream.h; path = ../../TokenCore/Tron/google/protobuf/io/coded_stream.h; sourceTree = SOURCE_ROOT; };
+		219E7D3047714765A9378063 /* coded_stream_inl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = coded_stream_inl.h; path = ../../TokenCore/Tron/google/protobuf/io/coded_stream_inl.h; sourceTree = SOURCE_ROOT; };
+		21BDF005C2AE4C718F9A2FAA /* zero_copy_stream_impl_lite.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = zero_copy_stream_impl_lite.h; path = ../../TokenCore/Tron/google/protobuf/io/zero_copy_stream_impl_lite.h; sourceTree = SOURCE_ROOT; };
+		24C7F7E9519845978C1FE902 /* map_field_lite.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = map_field_lite.h; path = ../../TokenCore/Tron/google/protobuf/map_field_lite.h; sourceTree = SOURCE_ROOT; };
+		24C8B2ECAC234D38AB5DF2B0 /* strtod.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = strtod.cc; path = ../../TokenCore/Tron/google/protobuf/io/strtod.cc; sourceTree = SOURCE_ROOT; };
+		26563D237CA1481AA8FB4FC2 /* utility.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = utility.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/utility.h; sourceTree = SOURCE_ROOT; };
+		27B3310551994E53B95F53B7 /* map.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = map.h; path = ../../TokenCore/Tron/google/protobuf/map.h; sourceTree = SOURCE_ROOT; };
+		2883097E708F4242BF6AF7C7 /* reflection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reflection.h; path = ../../TokenCore/Tron/google/protobuf/reflection.h; sourceTree = SOURCE_ROOT; };
+		28D76E4993984138995744C0 /* bhp_transaction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bhp_transaction.h; path = ../../TokenCore/Bhp/bhp_transaction.h; sourceTree = SOURCE_ROOT; };
+		2959799DEC6B4043B2055AE2 /* transactionheader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = transactionheader.cpp; path = ../../TokenCore/Eos/transactionheader.cpp; sourceTree = SOURCE_ROOT; };
+		2978CCD3F66849D490FFB523 /* arenastring.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = arenastring.cc; path = ../../TokenCore/Tron/google/protobuf/arenastring.cc; sourceTree = SOURCE_ROOT; };
+		2986B3BF2FA5418C9A3BCC2C /* dynamic_message.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dynamic_message.h; path = ../../TokenCore/Tron/google/protobuf/dynamic_message.h; sourceTree = SOURCE_ROOT; };
+		2B271AD0C71E454BA27399E1 /* protostream_objectwriter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = protostream_objectwriter.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/protostream_objectwriter.cc; sourceTree = SOURCE_ROOT; };
+		30343516335B445D97452C93 /* has_bits.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = has_bits.h; path = ../../TokenCore/Tron/google/protobuf/has_bits.h; sourceTree = SOURCE_ROOT; };
+		31DF5BD4998541B39D9BA2AC /* generated_message_table_driven_lite.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = generated_message_table_driven_lite.h; path = ../../TokenCore/Tron/google/protobuf/generated_message_table_driven_lite.h; sourceTree = SOURCE_ROOT; };
+		32E6BF5199164BDA87A69186 /* any.pb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = any.pb.h; path = ../../TokenCore/Tron/google/protobuf/any.pb.h; sourceTree = SOURCE_ROOT; };
+		33A3202BB1664A40A7789EBD /* generated_message_table_driven.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = generated_message_table_driven.h; path = ../../TokenCore/Tron/google/protobuf/generated_message_table_driven.h; sourceTree = SOURCE_ROOT; };
+		34CE3B13CFFF4ADAAC8D293A /* util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = util.h; path = ../../TokenCore/crypto/util.h; sourceTree = SOURCE_ROOT; };
+		3516807221B047A0B92DCE5F /* map_entry_lite.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = map_entry_lite.h; path = ../../TokenCore/Tron/google/protobuf/map_entry_lite.h; sourceTree = SOURCE_ROOT; };
+		353C2A2059324179B24C9187 /* forwards.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = forwards.h; path = ../../TokenCore/jsoncpp/include/json/forwards.h; sourceTree = SOURCE_ROOT; };
+		35A62224FFA64AE290455407 /* chainbase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = chainbase.h; path = ../../TokenCore/Eos/chainbase.h; sourceTree = SOURCE_ROOT; };
+		35B2780CEA8946D896B0ADD1 /* cJSON.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cJSON.c; path = ../../TokenCore/Tron/cJSON.c; sourceTree = SOURCE_ROOT; };
+		35FE45B6B2674794AF749EB1 /* bip.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bip.cpp; path = ../../TokenCore/crypto/bip.cpp; sourceTree = SOURCE_ROOT; };
+		36F2F2BEB1184E65B9F4A078 /* stringpiece.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stringpiece.h; path = ../../TokenCore/Tron/google/protobuf/stubs/stringpiece.h; sourceTree = SOURCE_ROOT; };
+		3851D4E30EEA4051BAE1CE8F /* fastmem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = fastmem.h; path = ../../TokenCore/Tron/google/protobuf/stubs/fastmem.h; sourceTree = SOURCE_ROOT; };
+		38C1A3F68AE7420C92D8B4CF /* json_reader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = json_reader.cpp; path = ../../TokenCore/jsoncpp/src/lib_json/json_reader.cpp; sourceTree = SOURCE_ROOT; };
+		391860AD2887479999472F70 /* generated_enum_reflection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = generated_enum_reflection.h; path = ../../TokenCore/Tron/google/protobuf/generated_enum_reflection.h; sourceTree = SOURCE_ROOT; };
+		3BF3A66CB6D54C31BFAB69AE /* empty.pb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = empty.pb.h; path = ../../TokenCore/Tron/google/protobuf/empty.pb.h; sourceTree = SOURCE_ROOT; };
+		3CB548C1D0B14719B4EA075E /* ecp_curves.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ecp_curves.c; path = ../../TokenCore/mbedtls/library/ecp_curves.c; sourceTree = SOURCE_ROOT; };
+		3CCD258B0C1447B3BBBAFBA3 /* reader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reader.h; path = ../../TokenCore/jsoncpp/include/json/reader.h; sourceTree = SOURCE_ROOT; };
+		3D60A529D66749ED9AF0BAF4 /* util.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = util.c; path = ../../TokenCore/crypto/util.c; sourceTree = SOURCE_ROOT; };
+		3E1EE4DFC413452C90168D79 /* once.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = once.h; path = ../../TokenCore/Tron/google/protobuf/stubs/once.h; sourceTree = SOURCE_ROOT; };
+		3F153B59CD5D481EA726D244 /* printer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = printer.h; path = ../../TokenCore/Tron/google/protobuf/io/printer.h; sourceTree = SOURCE_ROOT; };
+		4083144937414355BFE02C53 /* eosnewaccount.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = eosnewaccount.cpp; path = ../../TokenCore/Eos/eosnewaccount.cpp; sourceTree = SOURCE_ROOT; };
+		4096F995FBE0427AA550FA78 /* reflection_ops.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reflection_ops.cc; path = ../../TokenCore/Tron/google/protobuf/reflection_ops.cc; sourceTree = SOURCE_ROOT; };
+		40F2A2BFD6EC467C9B788DAA /* repeated_field.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = repeated_field.h; path = ../../TokenCore/Tron/google/protobuf/repeated_field.h; sourceTree = SOURCE_ROOT; };
+		41F2AD361668416796EF8877 /* zero_copy_stream_impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = zero_copy_stream_impl.h; path = ../../TokenCore/Tron/google/protobuf/io/zero_copy_stream_impl.h; sourceTree = SOURCE_ROOT; };
+		42CBD839C4AF4A249B4B32C5 /* action.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = action.cpp; path = ../../TokenCore/Eos/action.cpp; sourceTree = SOURCE_ROOT; };
+		432EBC1423A241A5B0210053 /* tokenizer.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tokenizer.cc; path = ../../TokenCore/Tron/google/protobuf/io/tokenizer.cc; sourceTree = SOURCE_ROOT; };
+		44324526DF9C4F52A23F3681 /* default_value_objectwriter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = default_value_objectwriter.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/default_value_objectwriter.cc; sourceTree = SOURCE_ROOT; };
+		454D201CD3454E4A9387BE1A /* zero_copy_stream_impl.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = zero_copy_stream_impl.cc; path = ../../TokenCore/Tron/google/protobuf/io/zero_copy_stream_impl.cc; sourceTree = SOURCE_ROOT; };
+		45787200D1354D55B241170E /* extension_set_heavy.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = extension_set_heavy.cc; path = ../../TokenCore/Tron/google/protobuf/extension_set_heavy.cc; sourceTree = SOURCE_ROOT; };
+		458D56119EAE43AF8CAAEA8E /* map_field.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = map_field.h; path = ../../TokenCore/Tron/google/protobuf/map_field.h; sourceTree = SOURCE_ROOT; };
+		45AAF679AC484D109CB0EACC /* time.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = time.h; path = ../../TokenCore/Tron/google/protobuf/stubs/time.h; sourceTree = SOURCE_ROOT; };
+		45CE615AB04C46D081122E52 /* mutex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mutex.h; path = ../../TokenCore/Tron/google/protobuf/stubs/mutex.h; sourceTree = SOURCE_ROOT; };
+		47B493D4A38041FA9373664F /* tx_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tx_util.h; path = ../../TokenCore/crypto/tx_util.h; sourceTree = SOURCE_ROOT; };
+		47F5F32F8829407FA65F38A1 /* status.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = status.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/status.cc; sourceTree = SOURCE_ROOT; };
+		4844721B28CD462F8E8AAA8F /* hash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hash.h; path = ../../TokenCore/crypto/hash.h; sourceTree = SOURCE_ROOT; };
+		4AE84E3B9699434B8AB9CF11 /* tx_util.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tx_util.cpp; path = ../../TokenCore/crypto/tx_util.cpp; sourceTree = SOURCE_ROOT; };
+		4BC36EDFB3FD457EA8830E72 /* common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = common.h; path = ../../TokenCore/Tron/google/protobuf/stubs/common.h; sourceTree = SOURCE_ROOT; };
+		4C26719388784A76907BF7F1 /* zero_copy_stream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = zero_copy_stream.h; path = ../../TokenCore/Tron/google/protobuf/io/zero_copy_stream.h; sourceTree = SOURCE_ROOT; };
+		4F2805534D8E420384BBBE93 /* unknown_field_set.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = unknown_field_set.cc; path = ../../TokenCore/Tron/google/protobuf/unknown_field_set.cc; sourceTree = SOURCE_ROOT; };
+		503428FF02AD4450BFB103D9 /* sha2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sha2.h; path = ../../TokenCore/crypto/sha2.h; sourceTree = SOURCE_ROOT; };
+		50794A3BCCAE45C0B2F0AC48 /* extension_set.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = extension_set.h; path = ../../TokenCore/Tron/google/protobuf/extension_set.h; sourceTree = SOURCE_ROOT; };
+		50C8E82739BF4BB799469ADF /* action.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = action.h; path = ../../TokenCore/Eos/action.h; sourceTree = SOURCE_ROOT; };
+		5199449DAB6648F5815721E7 /* stringpiece.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stringpiece.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/stringpiece.cc; sourceTree = SOURCE_ROOT; };
+		51FEEA3B9E014EBBA70AC983 /* message_lite.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = message_lite.cc; path = ../../TokenCore/Tron/google/protobuf/message_lite.cc; sourceTree = SOURCE_ROOT; };
+		526B1ED9EB0C4B6186B51105 /* timestamp.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timestamp.pb.cc; path = ../../TokenCore/Tron/google/protobuf/timestamp.pb.cc; sourceTree = SOURCE_ROOT; };
+		52B59D9B4D9B495096C7D54F /* substitute.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = substitute.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/substitute.cc; sourceTree = SOURCE_ROOT; };
+		532CADFA27524402AB1DB0A4 /* value.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = value.h; path = ../../TokenCore/jsoncpp/include/json/value.h; sourceTree = SOURCE_ROOT; };
+		53BB29C4DDC546819E3A854C /* message.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = message.cc; path = ../../TokenCore/Tron/google/protobuf/message.cc; sourceTree = SOURCE_ROOT; };
+		5400C64B4EFF4BEAB5C796CE /* sha512.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sha512.cpp; path = ../../TokenCore/crypto/sha512.cpp; sourceTree = SOURCE_ROOT; };
+		542C185B640744B197CE3CF8 /* time.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = time.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/time.cc; sourceTree = SOURCE_ROOT; };
+		54E092192A7042F0801F056E /* BhpApi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BhpApi.h; path = ../../TokenCore/BhpApi.h; sourceTree = SOURCE_ROOT; };
+		550DE0BD502C47ACA5AF6869 /* mathutil.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mathutil.h; path = ../../TokenCore/Tron/google/protobuf/stubs/mathutil.h; sourceTree = SOURCE_ROOT; };
+		55468B0DA1C74CE2AA6999A4 /* map_entry.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = map_entry.h; path = ../../TokenCore/Tron/google/protobuf/map_entry.h; sourceTree = SOURCE_ROOT; };
+		5577F5A4174B4058AC3A1B8F /* hash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hash.h; path = ../../TokenCore/Tron/google/protobuf/stubs/hash.h; sourceTree = SOURCE_ROOT; };
+		5636402CBDAC4BF78677BEB4 /* bx_plat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bx_plat.cpp; path = ../../TokenCore/crypto/bx_plat.cpp; sourceTree = SOURCE_ROOT; };
+		5719DF9A70404B96A58AF7DB /* macroECC.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = macroECC.h; path = ../../TokenCore/uEcc/macroECC.h; sourceTree = SOURCE_ROOT; };
+		5851980AF25E44F8943C5A2F /* typename.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = typename.cpp; path = ../../TokenCore/Eos/typename.cpp; sourceTree = SOURCE_ROOT; };
+		58EDB5C51E2747E29503F12F /* any.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = any.cc; path = ../../TokenCore/Tron/google/protobuf/any.cc; sourceTree = SOURCE_ROOT; };
+		597774BB46B249A1911B202C /* types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = types.h; path = ../../TokenCore/uEcc/types.h; sourceTree = SOURCE_ROOT; };
+		5A5B2168E78B43D681101696 /* source_context.pb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = source_context.pb.h; path = ../../TokenCore/Tron/google/protobuf/source_context.pb.h; sourceTree = SOURCE_ROOT; };
+		5AFD6FD16F0E4CB6882DB52C /* json_objectwriter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = json_objectwriter.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/json_objectwriter.h; sourceTree = SOURCE_ROOT; };
+		5B5C119CD8D0496987762B46 /* typeauthority.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = typeauthority.h; path = ../../TokenCore/Eos/typeauthority.h; sourceTree = SOURCE_ROOT; };
+		5C5AB03F5B31488E97351DC1 /* json_stream_parser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = json_stream_parser.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/json_stream_parser.h; sourceTree = SOURCE_ROOT; };
+		5C67280A4F93437CAE7C1911 /* generated_message_reflection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = generated_message_reflection.h; path = ../../TokenCore/Tron/google/protobuf/generated_message_reflection.h; sourceTree = SOURCE_ROOT; };
+		5E240A2B633343189A3E2DB8 /* status_macros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = status_macros.h; path = ../../TokenCore/Tron/google/protobuf/stubs/status_macros.h; sourceTree = SOURCE_ROOT; };
+		5E8C221E6E2D4B52902F132E /* curve-specific.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "curve-specific.inc"; path = "../../TokenCore/uEcc/curve-specific.inc"; sourceTree = SOURCE_ROOT; };
+		5E983125AB0943B99457EE86 /* transactionextension.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = transactionextension.cpp; path = ../../TokenCore/Eos/transactionextension.cpp; sourceTree = SOURCE_ROOT; };
+		6106D54894E841D4985FDCBF /* parser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = parser.h; path = ../../TokenCore/Tron/google/protobuf/compiler/parser.h; sourceTree = SOURCE_ROOT; };
+		622C8F045DEF4DF1B6406BDB /* chainmanager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = chainmanager.cpp; path = ../../TokenCore/Eos/chainmanager.cpp; sourceTree = SOURCE_ROOT; };
+		63C5A4C258A542518F54A6BD /* RLP.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RLP.h; path = ../../TokenCore/Eth/RLP.h; sourceTree = SOURCE_ROOT; };
+		6481B57F62F848F9AF81F84C /* protostream_objectwriter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = protostream_objectwriter.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/protostream_objectwriter.h; sourceTree = SOURCE_ROOT; };
+		651DF8649D814013AD087335 /* typewaitweight.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = typewaitweight.cpp; path = ../../TokenCore/Eos/typewaitweight.cpp; sourceTree = SOURCE_ROOT; };
+		66B86B308E654C1193792003 /* transaction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = transaction.cpp; path = ../../TokenCore/Eos/transaction.cpp; sourceTree = SOURCE_ROOT; };
+		6953555066374510A30A6874 /* map_field_inl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = map_field_inl.h; path = ../../TokenCore/Tron/google/protobuf/map_field_inl.h; sourceTree = SOURCE_ROOT; };
+		6A3CC86D384D44A18A6CBD77 /* descriptor.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = descriptor.cc; path = ../../TokenCore/Tron/google/protobuf/descriptor.cc; sourceTree = SOURCE_ROOT; };
+		6A68123EB0D24345BEB5F24E /* struct.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = struct.pb.cc; path = ../../TokenCore/Tron/google/protobuf/struct.pb.cc; sourceTree = SOURCE_ROOT; };
+		6B10F027A8E34ED4805C82AF /* object_writer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = object_writer.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/object_writer.h; sourceTree = SOURCE_ROOT; };
+		6B2A9A6C50984751A4ECDE2F /* protostream_objectsource.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = protostream_objectsource.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/protostream_objectsource.cc; sourceTree = SOURCE_ROOT; };
+		6B354243F0D34985802B0149 /* hmac_sha512.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hmac_sha512.h; path = ../../TokenCore/crypto/hmac_sha512.h; sourceTree = SOURCE_ROOT; };
+		6C280C98C9414D9EB9620FE6 /* arenastring.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = arenastring.h; path = ../../TokenCore/Tron/google/protobuf/arenastring.h; sourceTree = SOURCE_ROOT; };
+		6C3366F785F64BC6A60DC0AD /* sha1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sha1.cpp; path = ../../TokenCore/crypto/sha1.cpp; sourceTree = SOURCE_ROOT; };
+		6EA6A2AF9BC64D50B64D6BB6 /* sha1.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sha1.h; path = ../../TokenCore/crypto/sha1.h; sourceTree = SOURCE_ROOT; };
+		6EAAFDD8E13C40158B5678CA /* mathlimits.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mathlimits.h; path = ../../TokenCore/Tron/google/protobuf/stubs/mathlimits.h; sourceTree = SOURCE_ROOT; };
+		6EFBB652FADF4564895F9040 /* tokenizer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tokenizer.h; path = ../../TokenCore/Tron/google/protobuf/io/tokenizer.h; sourceTree = SOURCE_ROOT; };
+		6FBCE75EE632452691A2CF9F /* arena.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = arena.h; path = ../../TokenCore/Tron/google/protobuf/arena.h; sourceTree = SOURCE_ROOT; };
+		70963E79DD1F41238D490618 /* createpayload.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = createpayload.h; path = ../../TokenCore/Usdt/createpayload.h; sourceTree = SOURCE_ROOT; };
+		71A840D0DDF746968C57CFE3 /* TokenCommon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TokenCommon.h; path = ../../TokenCore/TokenCommon.h; sourceTree = SOURCE_ROOT; };
+		7224DE5218ED4D73A18752B4 /* hash.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = hash.cpp; path = ../../TokenCore/crypto/hash.cpp; sourceTree = SOURCE_ROOT; };
+		7453707A220B4922B91D2F02 /* BtcApi.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BtcApi.cpp; path = ../../TokenCore/BtcApi.cpp; sourceTree = SOURCE_ROOT; };
+		7502B4A273C34FBC8BE1CF2E /* proto_writer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = proto_writer.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/proto_writer.h; sourceTree = SOURCE_ROOT; };
+		753FA1C798684F29AFC87842 /* wire_format.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wire_format.h; path = ../../TokenCore/Tron/google/protobuf/wire_format.h; sourceTree = SOURCE_ROOT; };
+		75B6E88BFD0A40519E55F15E /* message.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = message.h; path = ../../TokenCore/Tron/google/protobuf/message.h; sourceTree = SOURCE_ROOT; };
+		764122F81DE043F0A2581C5D /* datapiece.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = datapiece.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/datapiece.h; sourceTree = SOURCE_ROOT; };
+		7853C1EB396C4E30853A69D5 /* type.pb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = type.pb.h; path = ../../TokenCore/Tron/google/protobuf/type.pb.h; sourceTree = SOURCE_ROOT; };
+		790CCD794CF34A91AB4CFFB5 /* map_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = map_util.h; path = ../../TokenCore/Tron/google/protobuf/stubs/map_util.h; sourceTree = SOURCE_ROOT; };
+		7A0A294FDE424D358359CC95 /* eosnewaccount.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = eosnewaccount.h; path = ../../TokenCore/Eos/eosnewaccount.h; sourceTree = SOURCE_ROOT; };
+		7A0BF9CB7A504208B9C9DC30 /* type_resolver_util.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = type_resolver_util.cc; path = ../../TokenCore/Tron/google/protobuf/util/type_resolver_util.cc; sourceTree = SOURCE_ROOT; };
+		7A23E9D2D0ED4201952A5925 /* repeated_field.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = repeated_field.cc; path = ../../TokenCore/Tron/google/protobuf/repeated_field.cc; sourceTree = SOURCE_ROOT; };
+		7AA96FBFB9B24BA1AC8F42A7 /* TronApi.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TronApi.cpp; path = ../../TokenCore/TronApi.cpp; sourceTree = SOURCE_ROOT; };
+		7C8B79B804A04946A48DEDDE /* reflection_ops.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reflection_ops.h; path = ../../TokenCore/Tron/google/protobuf/reflection_ops.h; sourceTree = SOURCE_ROOT; };
+		7E5DD1A1124C4151873BE29E /* bignum.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bignum.c; path = ../../TokenCore/mbedtls/library/bignum.c; sourceTree = SOURCE_ROOT; };
+		7E7DF65CF79047389D32B9AE /* zero_copy_stream.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = zero_copy_stream.cc; path = ../../TokenCore/Tron/google/protobuf/io/zero_copy_stream.cc; sourceTree = SOURCE_ROOT; };
+		7EE97645231B4166803A9A9D /* json_tool.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = json_tool.h; path = ../../TokenCore/jsoncpp/src/lib_json/json_tool.h; sourceTree = SOURCE_ROOT; };
+		7F10DEAC73C04B55BDC40D96 /* typeaccountpermissionweight.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = typeaccountpermissionweight.h; path = ../../TokenCore/Eos/typeaccountpermissionweight.h; sourceTree = SOURCE_ROOT; };
+		7FA29F1BA94E44248347EA70 /* script.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = script.cpp; path = ../../TokenCore/Btc/script.cpp; sourceTree = SOURCE_ROOT; };
+		8110868BC2424783B3BFA071 /* duration.pb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = duration.pb.h; path = ../../TokenCore/Tron/google/protobuf/duration.pb.h; sourceTree = SOURCE_ROOT; };
+		813C8947FAE94896AC8D378B /* field_mask_util.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = field_mask_util.cc; path = ../../TokenCore/Tron/google/protobuf/util/field_mask_util.cc; sourceTree = SOURCE_ROOT; };
+		82A8D985D4A843F4A7A3B058 /* wire_format_lite.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wire_format_lite.cc; path = ../../TokenCore/Tron/google/protobuf/wire_format_lite.cc; sourceTree = SOURCE_ROOT; };
+		82D128FF672144AB8A0BF81D /* eos_key_encode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = eos_key_encode.h; path = ../../TokenCore/Eos/eos_key_encode.h; sourceTree = SOURCE_ROOT; };
+		83506A8D1B45401A99CDF89E /* utility.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = utility.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/utility.cc; sourceTree = SOURCE_ROOT; };
+		83613868525E47D98ACA19A4 /* io_win32.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = io_win32.h; path = ../../TokenCore/Tron/google/protobuf/stubs/io_win32.h; sourceTree = SOURCE_ROOT; };
+		856F7D889B2C4FF4BCB8F258 /* casts.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = casts.h; path = ../../TokenCore/Tron/google/protobuf/stubs/casts.h; sourceTree = SOURCE_ROOT; };
+		8687E5AEF8BC43289C37248F /* config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = config.h; path = ../../TokenCore/jsoncpp/include/json/config.h; sourceTree = SOURCE_ROOT; };
+		87E0480E57BC415F9E73FF0D /* EthApi.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EthApi.cpp; path = ../../TokenCore/EthApi.cpp; sourceTree = SOURCE_ROOT; };
+		87F6148791BB43C3B1B68954 /* int128.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = int128.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/int128.cc; sourceTree = SOURCE_ROOT; };
+		88DC0AD82C6944B2A1F90848 /* transaction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = transaction.h; path = ../../TokenCore/Eos/transaction.h; sourceTree = SOURCE_ROOT; };
+		8942D4B6E64749BEA96EE12F /* mathlimits.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mathlimits.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/mathlimits.cc; sourceTree = SOURCE_ROOT; };
+		8C953434682B40B1AE906847 /* writer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = writer.h; path = ../../TokenCore/jsoncpp/include/json/writer.h; sourceTree = SOURCE_ROOT; };
+		8EE1C9E42355492A8E1C53B5 /* typeaccountpermissionweight.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = typeaccountpermissionweight.cpp; path = ../../TokenCore/Eos/typeaccountpermissionweight.cpp; sourceTree = SOURCE_ROOT; };
+		8F629CDA4A294099AC1CA3C2 /* typewaitweight.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = typewaitweight.h; path = ../../TokenCore/Eos/typewaitweight.h; sourceTree = SOURCE_ROOT; };
+		906FCED8922E4A7B9D547E6D /* importer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = importer.h; path = ../../TokenCore/Tron/google/protobuf/compiler/importer.h; sourceTree = SOURCE_ROOT; };
+		913836D41C084941B0651A2B /* singleton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = singleton.h; path = ../../TokenCore/Tron/google/protobuf/stubs/singleton.h; sourceTree = SOURCE_ROOT; };
+		915FAD28F91E4B25B0F329A3 /* constants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = constants.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/constants.h; sourceTree = SOURCE_ROOT; };
+		941BF51F953D47C49DBF0C23 /* location_tracker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = location_tracker.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/location_tracker.h; sourceTree = SOURCE_ROOT; };
+		946FD7D505274027815D6905 /* ecp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ecp.h; path = ../../TokenCore/mbedtls/include/mbedtls/ecp.h; sourceTree = SOURCE_ROOT; };
+		949136A15C524BB8A8F6638F /* strutil.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = strutil.h; path = ../../TokenCore/Tron/google/protobuf/stubs/strutil.h; sourceTree = SOURCE_ROOT; };
+		95FD4C7E4BDB4CE189E01D0A /* inlined_string_field.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = inlined_string_field.h; path = ../../TokenCore/Tron/google/protobuf/inlined_string_field.h; sourceTree = SOURCE_ROOT; };
+		960A335A220641E2AF7542B8 /* type.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = type.pb.cc; path = ../../TokenCore/Tron/google/protobuf/type.pb.cc; sourceTree = SOURCE_ROOT; };
+		9634975A96DE425C9945949D /* descriptor_database.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = descriptor_database.h; path = ../../TokenCore/Tron/google/protobuf/descriptor_database.h; sourceTree = SOURCE_ROOT; };
+		998A1FC52779F5CB00216057 /* TokenCoreHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TokenCoreHeader.h; sourceTree = "<group>"; };
+		9BAE25BE45EC4E94A6ABFA1A /* struct.pb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = struct.pb.h; path = ../../TokenCore/Tron/google/protobuf/struct.pb.h; sourceTree = SOURCE_ROOT; };
+		9D1CA513B8FB4EBAA4441092 /* cJSON.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cJSON.h; path = ../../TokenCore/Tron/cJSON.h; sourceTree = SOURCE_ROOT; };
+		9D25B4BD334B42149071842D /* bip.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bip.h; path = ../../TokenCore/crypto/bip.h; sourceTree = SOURCE_ROOT; };
+		9DD010A772AC437491C9F64D /* libtokencore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtokencore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E4B87669043463E80D7370F /* u256.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = u256.cpp; path = ../../TokenCore/u256.cpp; sourceTree = SOURCE_ROOT; };
+		A033D935A5D943A488A54157 /* api.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = api.pb.cc; path = ../../TokenCore/Tron/google/protobuf/api.pb.cc; sourceTree = SOURCE_ROOT; };
+		A0ED06C476BD4E15A90A59E8 /* signedtransaction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = signedtransaction.cpp; path = ../../TokenCore/Eos/signedtransaction.cpp; sourceTree = SOURCE_ROOT; };
+		A19B8D8D234D407F8B4785DA /* extension_set.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = extension_set.cc; path = ../../TokenCore/Tron/google/protobuf/extension_set.cc; sourceTree = SOURCE_ROOT; };
+		A1C0F0AE8EF447F2A8B1BB69 /* importer.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = importer.cc; path = ../../TokenCore/Tron/google/protobuf/compiler/importer.cc; sourceTree = SOURCE_ROOT; };
+		A1E47ECC53E2477F9F7F4BB6 /* uECC.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = uECC.h; path = ../../TokenCore/uEcc/uECC.h; sourceTree = SOURCE_ROOT; };
+		A26A9A8A5226450095DAE189 /* field_mask_utility.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = field_mask_utility.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/field_mask_utility.cc; sourceTree = SOURCE_ROOT; };
+		A2C0C1BB93D74CB385B7FF5B /* eosapi_utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = eosapi_utils.h; path = ../../TokenCore/Eos/eosapi_utils.h; sourceTree = SOURCE_ROOT; };
+		A2F4FC2C5DD04B67B3A09220 /* typepermissionlevel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = typepermissionlevel.h; path = ../../TokenCore/Eos/typepermissionlevel.h; sourceTree = SOURCE_ROOT; };
+		A49F329C6CA24B0EA91028C8 /* typename.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = typename.h; path = ../../TokenCore/Eos/typename.h; sourceTree = SOURCE_ROOT; };
+		A52AF8B6AECA4549A8A9E49D /* statusor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = statusor.h; path = ../../TokenCore/Tron/google/protobuf/stubs/statusor.h; sourceTree = SOURCE_ROOT; };
+		A6B8C52DE2C7460A8A3BA2E3 /* status.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = status.h; path = ../../TokenCore/Tron/google/protobuf/stubs/status.h; sourceTree = SOURCE_ROOT; };
+		A8341B74E7BE4A5DB34975A7 /* TokenCommon.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TokenCommon.cpp; path = ../../TokenCore/TokenCommon.cpp; sourceTree = SOURCE_ROOT; };
+		A843EFACC6524D42A47D8CF2 /* hmac.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = hmac.cpp; path = ../../TokenCore/crypto/hmac.cpp; sourceTree = SOURCE_ROOT; };
+		A9F2A38356594165AF2C2DA0 /* object_writer.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = object_writer.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/object_writer.cc; sourceTree = SOURCE_ROOT; };
+		AA0C3B04B5B64C93832C5B69 /* config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = config.h; path = ../../TokenCore/mbedtls/include/mbedtls/config.h; sourceTree = SOURCE_ROOT; };
+		AACD3C6FC7D54508AC5D0782 /* cJsonObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cJsonObject.cpp; path = ../../TokenCore/Tron/cJsonObject.cpp; sourceTree = SOURCE_ROOT; };
+		AB1057E187ED44089D32FBEA /* descriptor_database.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = descriptor_database.cc; path = ../../TokenCore/Tron/google/protobuf/descriptor_database.cc; sourceTree = SOURCE_ROOT; };
+		ABB3498B9BFD4B2DBF52DE39 /* empty.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = empty.pb.cc; path = ../../TokenCore/Tron/google/protobuf/empty.pb.cc; sourceTree = SOURCE_ROOT; };
+		AD980E83E08441A9979D7EE2 /* Transaction.pb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Transaction.pb.h; path = ../../TokenCore/Tron/Transaction.pb.h; sourceTree = SOURCE_ROOT; };
+		AE7E0ABB448A447C8CA284BA /* json_util.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = json_util.cc; path = ../../TokenCore/Tron/google/protobuf/util/json_util.cc; sourceTree = SOURCE_ROOT; };
+		AF27D23BBFE74E64AA7CE141 /* u256.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = u256.h; path = ../../TokenCore/u256.h; sourceTree = SOURCE_ROOT; };
+		AFD08981F25D4C52A1F112D4 /* wire_format.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wire_format.cc; path = ../../TokenCore/Tron/google/protobuf/wire_format.cc; sourceTree = SOURCE_ROOT; };
+		AFEE2734F7CA49DE9C75B1F9 /* Transaction.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Transaction.pb.cc; path = ../../TokenCore/Tron/Transaction.pb.cc; sourceTree = SOURCE_ROOT; };
+		AFFCF6A5C0654B9EABBC4B46 /* TronApi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TronApi.h; path = ../../TokenCore/TronApi.h; sourceTree = SOURCE_ROOT; };
+		B00518BE61C941CB8264F109 /* callback.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = callback.h; path = ../../TokenCore/Tron/google/protobuf/stubs/callback.h; sourceTree = SOURCE_ROOT; };
+		B0237661ABB14B2A9328A486 /* uECC_vli.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = uECC_vli.h; path = ../../TokenCore/uEcc/uECC_vli.h; sourceTree = SOURCE_ROOT; };
+		B03E9762DF6A46F8928052E5 /* map_field.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = map_field.cc; path = ../../TokenCore/Tron/google/protobuf/map_field.cc; sourceTree = SOURCE_ROOT; };
+		B17EB72141A5402FB585E47D /* default_value_objectwriter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = default_value_objectwriter.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/default_value_objectwriter.h; sourceTree = SOURCE_ROOT; };
+		B1928F33EC254D558778B779 /* json_escaping.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = json_escaping.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/json_escaping.cc; sourceTree = SOURCE_ROOT; };
+		B21544AAD6014CA289F32A2C /* features.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = features.h; path = ../../TokenCore/jsoncpp/include/json/features.h; sourceTree = SOURCE_ROOT; };
+		B31D93299B4949B98A515F9C /* field_comparator.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = field_comparator.cc; path = ../../TokenCore/Tron/google/protobuf/util/field_comparator.cc; sourceTree = SOURCE_ROOT; };
+		B325ED13A6FD44E985B26196 /* strutil.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = strutil.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/strutil.cc; sourceTree = SOURCE_ROOT; };
+		B332DF5180774D1E9C9DB8EF /* message_differencer.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = message_differencer.cc; path = ../../TokenCore/Tron/google/protobuf/util/message_differencer.cc; sourceTree = SOURCE_ROOT; };
+		B3D1DB1D84A843A1872C7144 /* unknown_field_set.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = unknown_field_set.h; path = ../../TokenCore/Tron/google/protobuf/unknown_field_set.h; sourceTree = SOURCE_ROOT; };
+		B48DB5B0DB2240D997AC481B /* packedtransaction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = packedtransaction.cpp; path = ../../TokenCore/Eos/packedtransaction.cpp; sourceTree = SOURCE_ROOT; };
+		B4D825AAECFF465BB9FD94F0 /* int128.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = int128.h; path = ../../TokenCore/Tron/google/protobuf/stubs/int128.h; sourceTree = SOURCE_ROOT; };
+		B4EE2C420CDF4EB1A2C081A9 /* eosapi_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = eosapi_utils.cpp; path = ../../TokenCore/Eos/eosapi_utils.cpp; sourceTree = SOURCE_ROOT; };
+		B57C1475F054401BA28CFFFC /* text_format.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = text_format.cc; path = ../../TokenCore/Tron/google/protobuf/text_format.cc; sourceTree = SOURCE_ROOT; };
+		B8484B4BB15041549569183E /* generated_message_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = generated_message_util.h; path = ../../TokenCore/Tron/google/protobuf/generated_message_util.h; sourceTree = SOURCE_ROOT; };
+		BA70E2A0AF0A4481B76AF07C /* descriptor.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = descriptor.pb.cc; path = ../../TokenCore/Tron/google/protobuf/descriptor.pb.cc; sourceTree = SOURCE_ROOT; };
+		BD8EA72C547B4A328CDF6C6F /* gzip_stream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gzip_stream.h; path = ../../TokenCore/Tron/google/protobuf/io/gzip_stream.h; sourceTree = SOURCE_ROOT; };
+		BDA158E862264BEE9EEB5127 /* keccak256.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = keccak256.h; path = ../../TokenCore/crypto/keccak256.h; sourceTree = SOURCE_ROOT; };
+		BF66A958052842C6A6A75216 /* metadata.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = metadata.h; path = ../../TokenCore/Tron/google/protobuf/metadata.h; sourceTree = SOURCE_ROOT; };
+		BF86CEA23D5B4D509D23A62E /* platform_macros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = platform_macros.h; path = ../../TokenCore/Tron/google/protobuf/stubs/platform_macros.h; sourceTree = SOURCE_ROOT; };
+		BF8C6915CCE74AE7B110627F /* port.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = port.h; path = ../../TokenCore/Tron/google/protobuf/stubs/port.h; sourceTree = SOURCE_ROOT; };
+		C09141C6C0734B96A283405F /* service.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = service.cc; path = ../../TokenCore/Tron/google/protobuf/service.cc; sourceTree = SOURCE_ROOT; };
+		C0C70835F8C142D5B706B310 /* autolink.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = autolink.h; path = ../../TokenCore/jsoncpp/include/json/autolink.h; sourceTree = SOURCE_ROOT; };
+		C141A6F4BBFA427E8DBC8CC8 /* keccak256.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = keccak256.c; path = ../../TokenCore/crypto/keccak256.c; sourceTree = SOURCE_ROOT; };
+		C16B5843F26443A5982F35AC /* sign.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sign.h; path = ../../TokenCore/Eth/sign.h; sourceTree = SOURCE_ROOT; };
+		C17A9F1662B64AA6B69C1844 /* type_info.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = type_info.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/type_info.h; sourceTree = SOURCE_ROOT; };
+		C2AA855660124CA4829DC875 /* bhp_transaction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bhp_transaction.cpp; path = ../../TokenCore/Bhp/bhp_transaction.cpp; sourceTree = SOURCE_ROOT; };
+		C3A24AEDFF764B21A93AA537 /* substitute.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = substitute.h; path = ../../TokenCore/Tron/google/protobuf/stubs/substitute.h; sourceTree = SOURCE_ROOT; };
+		C3D60DE287DE4A2D94112E66 /* hmac_sha512.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = hmac_sha512.cpp; path = ../../TokenCore/crypto/hmac_sha512.cpp; sourceTree = SOURCE_ROOT; };
+		C440F4B78409464F953E2500 /* eos_key_encode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = eos_key_encode.cpp; path = ../../TokenCore/Eos/eos_key_encode.cpp; sourceTree = SOURCE_ROOT; };
+		C4529E4DF6514D7AADA2B5FE /* json_escaping.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = json_escaping.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/json_escaping.h; sourceTree = SOURCE_ROOT; };
+		C4CB7D0E06004E62A705EB38 /* sha256.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sha256.cpp; path = ../../TokenCore/crypto/sha256.cpp; sourceTree = SOURCE_ROOT; };
+		C52B4BB65F5145809C14E6BB /* stringprintf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stringprintf.h; path = ../../TokenCore/Tron/google/protobuf/stubs/stringprintf.h; sourceTree = SOURCE_ROOT; };
+		C656C5EEA1C94E7FA2FFB445 /* json.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = json.h; path = ../../TokenCore/jsoncpp/include/json/json.h; sourceTree = SOURCE_ROOT; };
+		C76CC391F0374B24AC7DC854 /* field_comparator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = field_comparator.h; path = ../../TokenCore/Tron/google/protobuf/util/field_comparator.h; sourceTree = SOURCE_ROOT; };
+		C7BFDBCF7A244A028B53C766 /* reflection_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reflection_internal.h; path = ../../TokenCore/Tron/google/protobuf/reflection_internal.h; sourceTree = SOURCE_ROOT; };
+		C8036F745CEC458A963BA1D4 /* object_source.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = object_source.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/object_source.h; sourceTree = SOURCE_ROOT; };
+		C91E14EB0A12496F8DAEDFB7 /* script.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = script.h; path = ../../TokenCore/Btc/script.h; sourceTree = SOURCE_ROOT; };
+		C9836D72EE994C309A517664 /* BhpApi.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BhpApi.cpp; path = ../../TokenCore/BhpApi.cpp; sourceTree = SOURCE_ROOT; };
+		C9B7B7D8299648399B0F79F5 /* field_mask_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = field_mask_util.h; path = ../../TokenCore/Tron/google/protobuf/util/field_mask_util.h; sourceTree = SOURCE_ROOT; };
+		C9EE6B9312864359934C9831 /* wrappers.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wrappers.pb.cc; path = ../../TokenCore/Tron/google/protobuf/wrappers.pb.cc; sourceTree = SOURCE_ROOT; };
+		CAD2300C31484EA7839C1C4A /* printer.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = printer.cc; path = ../../TokenCore/Tron/google/protobuf/io/printer.cc; sourceTree = SOURCE_ROOT; };
+		CB24C973A1444C2BA38C1CD3 /* generated_message_util.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = generated_message_util.cc; path = ../../TokenCore/Tron/google/protobuf/generated_message_util.cc; sourceTree = SOURCE_ROOT; };
+		CC6A3957A97742E4AF31CF75 /* source_context.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = source_context.pb.cc; path = ../../TokenCore/Tron/google/protobuf/source_context.pb.cc; sourceTree = SOURCE_ROOT; };
+		CCC4F0471D204D85978E1091 /* generated_message_table_driven.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = generated_message_table_driven.cc; path = ../../TokenCore/Tron/google/protobuf/generated_message_table_driven.cc; sourceTree = SOURCE_ROOT; };
+		CE3AA3743004435CB49BF52D /* implicit_weak_message.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = implicit_weak_message.h; path = ../../TokenCore/Tron/google/protobuf/implicit_weak_message.h; sourceTree = SOURCE_ROOT; };
+		CE3CB98D15D84F7CAD5729C9 /* logging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = logging.h; path = ../../TokenCore/Tron/google/protobuf/stubs/logging.h; sourceTree = SOURCE_ROOT; };
+		CFDCFF0793F54E76ABADB7F9 /* macroECC.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = macroECC.c; path = ../../TokenCore/uEcc/macroECC.c; sourceTree = SOURCE_ROOT; };
+		D02739B78AFC44D8B1CE3412 /* transactionheader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = transactionheader.h; path = ../../TokenCore/Eos/transactionheader.h; sourceTree = SOURCE_ROOT; };
+		D053E8F91E2C4645A2AD3A09 /* map_type_handler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = map_type_handler.h; path = ../../TokenCore/Tron/google/protobuf/map_type_handler.h; sourceTree = SOURCE_ROOT; };
+		D0876CBFA1A14139938B4C1D /* zero_copy_stream_impl_lite.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = zero_copy_stream_impl_lite.cc; path = ../../TokenCore/Tron/google/protobuf/io/zero_copy_stream_impl_lite.cc; sourceTree = SOURCE_ROOT; };
+		D0A66B2A25D244ECB8190378 /* strtod.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = strtod.h; path = ../../TokenCore/Tron/google/protobuf/io/strtod.h; sourceTree = SOURCE_ROOT; };
+		D103CD7D4D7B42C1B46A37CE /* generated_enum_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = generated_enum_util.h; path = ../../TokenCore/Tron/google/protobuf/generated_enum_util.h; sourceTree = SOURCE_ROOT; };
+		D18E17CCCF7A48CA9F77C8EE /* base58.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = base58.h; path = ../../TokenCore/crypto/base58.h; sourceTree = SOURCE_ROOT; };
+		D2271DD1196947BCB37246AF /* json_writer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = json_writer.cpp; path = ../../TokenCore/jsoncpp/src/lib_json/json_writer.cpp; sourceTree = SOURCE_ROOT; };
+		D319127D9042475A8A67A496 /* sha2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sha2.cpp; path = ../../TokenCore/crypto/sha2.cpp; sourceTree = SOURCE_ROOT; };
+		D41E896A30034973911650FA /* uECC.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = uECC.c; path = ../../TokenCore/uEcc/uECC.c; sourceTree = SOURCE_ROOT; };
+		D4D2611A1A0A44D5A3A22ED2 /* type_info.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = type_info.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/type_info.cc; sourceTree = SOURCE_ROOT; };
+		D4D4A27A03BC494985FAB5F5 /* sha512.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sha512.h; path = ../../TokenCore/crypto/sha512.h; sourceTree = SOURCE_ROOT; };
+		D628FA62C29D4256869AFA02 /* dynamic_message.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dynamic_message.cc; path = ../../TokenCore/Tron/google/protobuf/dynamic_message.cc; sourceTree = SOURCE_ROOT; };
+		D633014098C64752AB88401B /* eosbytewriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = eosbytewriter.cpp; path = ../../TokenCore/Eos/eosbytewriter.cpp; sourceTree = SOURCE_ROOT; };
+		D806427F51DE47079BB46CFB /* object_location_tracker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = object_location_tracker.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/object_location_tracker.h; sourceTree = SOURCE_ROOT; };
+		D97A5179B4B64DF19C8B7BC0 /* json_value.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = json_value.cpp; path = ../../TokenCore/jsoncpp/src/lib_json/json_value.cpp; sourceTree = SOURCE_ROOT; };
+		D98E72AE09704536A8E63379 /* metadata_lite.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = metadata_lite.h; path = ../../TokenCore/Tron/google/protobuf/metadata_lite.h; sourceTree = SOURCE_ROOT; };
+		DA9A69019D784500BCA17349 /* EosApi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EosApi.h; path = ../../TokenCore/EosApi.h; sourceTree = SOURCE_ROOT; };
+		DB092FAD9ABA41D2BB8221CE /* stl_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stl_util.h; path = ../../TokenCore/Tron/google/protobuf/stubs/stl_util.h; sourceTree = SOURCE_ROOT; };
+		DB4A2058D41F4BA39BCC08B2 /* duration.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = duration.pb.cc; path = ../../TokenCore/Tron/google/protobuf/duration.pb.cc; sourceTree = SOURCE_ROOT; };
+		DC99A799084547E2AB7E3CA4 /* generated_message_reflection.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = generated_message_reflection.cc; path = ../../TokenCore/Tron/google/protobuf/generated_message_reflection.cc; sourceTree = SOURCE_ROOT; };
+		DD54EBDCD7E6410191E487FA /* version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = version.h; path = ../../TokenCore/jsoncpp/include/json/version.h; sourceTree = SOURCE_ROOT; };
+		E05961ACD7D24389B684777C /* arena_impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = arena_impl.h; path = ../../TokenCore/Tron/google/protobuf/arena_impl.h; sourceTree = SOURCE_ROOT; };
+		E3B6CEF6C02C4924A4679444 /* message_differencer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = message_differencer.h; path = ../../TokenCore/Tron/google/protobuf/util/message_differencer.h; sourceTree = SOURCE_ROOT; };
+		E3BAC5ABDE444D66BEA5B4BA /* EosApi.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EosApi.cpp; path = ../../TokenCore/EosApi.cpp; sourceTree = SOURCE_ROOT; };
+		E4163F56BEEA407E9EABCDE1 /* structured_objectwriter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = structured_objectwriter.h; path = ../../TokenCore/Tron/google/protobuf/util/internal/structured_objectwriter.h; sourceTree = SOURCE_ROOT; };
+		E464B9A650C24D12A5C9AC76 /* packedtransaction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = packedtransaction.h; path = ../../TokenCore/Eos/packedtransaction.h; sourceTree = SOURCE_ROOT; };
+		E4FDD6305609409C94945238 /* json_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = json_util.h; path = ../../TokenCore/Tron/google/protobuf/util/json_util.h; sourceTree = SOURCE_ROOT; };
+		E51D79F89389427F884DC7DB /* platform-specific.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "platform-specific.inc"; path = "../../TokenCore/uEcc/platform-specific.inc"; sourceTree = SOURCE_ROOT; };
+		E60F2B0BC5DC40039C83DDE5 /* transactionextension.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = transactionextension.h; path = ../../TokenCore/Eos/transactionextension.h; sourceTree = SOURCE_ROOT; };
+		E6DD30E1805C490381219C49 /* cJsonObject.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = cJsonObject.hpp; path = ../../TokenCore/Tron/cJsonObject.hpp; sourceTree = SOURCE_ROOT; };
+		E7106100A4A54286916C4AC8 /* delimited_message_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = delimited_message_util.h; path = ../../TokenCore/Tron/google/protobuf/util/delimited_message_util.h; sourceTree = SOURCE_ROOT; };
+		E725F51FF40846648088F05F /* type_info_test_helper.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = type_info_test_helper.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/type_info_test_helper.cc; sourceTree = SOURCE_ROOT; };
+		E79D31449E6D47808FF26364 /* pbkdf2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pbkdf2.h; path = ../../TokenCore/crypto/pbkdf2.h; sourceTree = SOURCE_ROOT; };
+		E90705DB189C4B4EB5DB585A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		EB305C8C7A98461AAA17D1DE /* sha256.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sha256.h; path = ../../TokenCore/crypto/sha256.h; sourceTree = SOURCE_ROOT; };
+		EBEC23848F194BCB8149AA0F /* error_listener.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = error_listener.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/error_listener.cc; sourceTree = SOURCE_ROOT; };
+		EBFDD1853A72423B86F942CD /* wire_format_lite.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wire_format_lite.h; path = ../../TokenCore/Tron/google/protobuf/wire_format_lite.h; sourceTree = SOURCE_ROOT; };
+		EC6B406B705F426794E27984 /* time_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = time_util.h; path = ../../TokenCore/Tron/google/protobuf/util/time_util.h; sourceTree = SOURCE_ROOT; };
+		EFB4D04C1CE649D2856F198D /* chainmanager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = chainmanager.h; path = ../../TokenCore/Eos/chainmanager.h; sourceTree = SOURCE_ROOT; };
+		F018C389A333456E83DDCE58 /* wrappers.pb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wrappers.pb.h; path = ../../TokenCore/Tron/google/protobuf/wrappers.pb.h; sourceTree = SOURCE_ROOT; };
+		F17E55BD5F5E47D8B57EF3A8 /* any.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = any.pb.cc; path = ../../TokenCore/Tron/google/protobuf/any.pb.cc; sourceTree = SOURCE_ROOT; };
+		F1AB4A0301404B61B7B6F78B /* typeauthority.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = typeauthority.cpp; path = ../../TokenCore/Eos/typeauthority.cpp; sourceTree = SOURCE_ROOT; };
+		F2E228699BC9467682EB0165 /* bx_plat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bx_plat.h; path = ../../TokenCore/crypto/bx_plat.h; sourceTree = SOURCE_ROOT; };
+		F2E24F2FD13648A3880DF460 /* eosbytewriter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = eosbytewriter.h; path = ../../TokenCore/Eos/eosbytewriter.h; sourceTree = SOURCE_ROOT; };
+		F3417C9711AC4E6DA934D472 /* base58.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base58.cpp; path = ../../TokenCore/crypto/base58.cpp; sourceTree = SOURCE_ROOT; };
+		F4A9FA1966B44CF98726FCE9 /* implicit_weak_message.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = implicit_weak_message.cc; path = ../../TokenCore/Tron/google/protobuf/implicit_weak_message.cc; sourceTree = SOURCE_ROOT; };
+		F51A654CD8E54F279F9B722C /* api.pb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = api.pb.h; path = ../../TokenCore/Tron/google/protobuf/api.pb.h; sourceTree = SOURCE_ROOT; };
+		F550D467612744B58806BCF8 /* ecp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ecp.c; path = ../../TokenCore/mbedtls/library/ecp.c; sourceTree = SOURCE_ROOT; };
+		F56DB8AED4FA4D529D2402C5 /* text_format.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = text_format.h; path = ../../TokenCore/Tron/google/protobuf/text_format.h; sourceTree = SOURCE_ROOT; };
+		F696A9AF91724EE593E89849 /* datapiece.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = datapiece.cc; path = ../../TokenCore/Tron/google/protobuf/util/internal/datapiece.cc; sourceTree = SOURCE_ROOT; };
+		F7F68C20C3ED4C51914ECD12 /* json_valueiterator.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = json_valueiterator.inl; path = ../../TokenCore/jsoncpp/src/lib_json/json_valueiterator.inl; sourceTree = SOURCE_ROOT; };
+		F93AD94FCC7C487999279C18 /* signedtransaction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = signedtransaction.h; path = ../../TokenCore/Eos/signedtransaction.h; sourceTree = SOURCE_ROOT; };
+		F9590B1D42334A1C96FC0D95 /* bx_str.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bx_str.h; path = ../../TokenCore/crypto/bx_str.h; sourceTree = SOURCE_ROOT; };
+		F99BED147EC24C8690191E96 /* structurally_valid.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = structurally_valid.cc; path = ../../TokenCore/Tron/google/protobuf/stubs/structurally_valid.cc; sourceTree = SOURCE_ROOT; };
+		F9AE3C4D7BD34F1F98905CFD /* arena.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = arena.cc; path = ../../TokenCore/Tron/google/protobuf/arena.cc; sourceTree = SOURCE_ROOT; };
+		FA0F3C30C9AC470A89AB6671 /* delimited_message_util.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = delimited_message_util.cc; path = ../../TokenCore/Tron/google/protobuf/util/delimited_message_util.cc; sourceTree = SOURCE_ROOT; };
+		FA0F70CBE4C542188DAB24DA /* time_util.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = time_util.cc; path = ../../TokenCore/Tron/google/protobuf/util/time_util.cc; sourceTree = SOURCE_ROOT; };
+		FAC1E8B86A1C431FAF09049E /* typekeypermissionweight.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = typekeypermissionweight.h; path = ../../TokenCore/Eos/typekeypermissionweight.h; sourceTree = SOURCE_ROOT; };
+		FEE04A1F6B344033BFAA5F4E /* coded_stream.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = coded_stream.cc; path = ../../TokenCore/Tron/google/protobuf/io/coded_stream.cc; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34F920BE423D490B8362B22D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12521EEEE83D4718B38A49E4 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				CE27033C0F264F9DAD0A8577 /* CMake Rules */,
+				1305AD7E147D4184B5A77459 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		126CA7A0CF3E452E96D34B8E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2AA855660124CA4829DC875 /* bhp_transaction.cpp */,
+				C9836D72EE994C309A517664 /* BhpApi.cpp */,
+				7FA29F1BA94E44248347EA70 /* script.cpp */,
+				7453707A220B4922B91D2F02 /* BtcApi.cpp */,
+				42CBD839C4AF4A249B4B32C5 /* action.cpp */,
+				622C8F045DEF4DF1B6406BDB /* chainmanager.cpp */,
+				C440F4B78409464F953E2500 /* eos_key_encode.cpp */,
+				B4EE2C420CDF4EB1A2C081A9 /* eosapi_utils.cpp */,
+				D633014098C64752AB88401B /* eosbytewriter.cpp */,
+				4083144937414355BFE02C53 /* eosnewaccount.cpp */,
+				B48DB5B0DB2240D997AC481B /* packedtransaction.cpp */,
+				A0ED06C476BD4E15A90A59E8 /* signedtransaction.cpp */,
+				66B86B308E654C1193792003 /* transaction.cpp */,
+				5E983125AB0943B99457EE86 /* transactionextension.cpp */,
+				2959799DEC6B4043B2055AE2 /* transactionheader.cpp */,
+				8EE1C9E42355492A8E1C53B5 /* typeaccountpermissionweight.cpp */,
+				F1AB4A0301404B61B7B6F78B /* typeauthority.cpp */,
+				1A3C46343FB24214943F2971 /* typekeypermissionweight.cpp */,
+				5851980AF25E44F8943C5A2F /* typename.cpp */,
+				1A506E3059D5423099531551 /* typepermissionlevel.cpp */,
+				651DF8649D814013AD087335 /* typewaitweight.cpp */,
+				E3BAC5ABDE444D66BEA5B4BA /* EosApi.cpp */,
+				048AB886C0E24A23A84DB149 /* RLP.c */,
+				87E0480E57BC415F9E73FF0D /* EthApi.cpp */,
+				A8341B74E7BE4A5DB34975A7 /* TokenCommon.cpp */,
+				AFEE2734F7CA49DE9C75B1F9 /* Transaction.pb.cc */,
+				35B2780CEA8946D896B0ADD1 /* cJSON.c */,
+				AACD3C6FC7D54508AC5D0782 /* cJsonObject.cpp */,
+				58EDB5C51E2747E29503F12F /* any.cc */,
+				F17E55BD5F5E47D8B57EF3A8 /* any.pb.cc */,
+				A033D935A5D943A488A54157 /* api.pb.cc */,
+				F9AE3C4D7BD34F1F98905CFD /* arena.cc */,
+				2978CCD3F66849D490FFB523 /* arenastring.cc */,
+				A1C0F0AE8EF447F2A8B1BB69 /* importer.cc */,
+				15769469803445EAA8E3E46E /* parser.cc */,
+				6A3CC86D384D44A18A6CBD77 /* descriptor.cc */,
+				BA70E2A0AF0A4481B76AF07C /* descriptor.pb.cc */,
+				AB1057E187ED44089D32FBEA /* descriptor_database.cc */,
+				DB4A2058D41F4BA39BCC08B2 /* duration.pb.cc */,
+				D628FA62C29D4256869AFA02 /* dynamic_message.cc */,
+				ABB3498B9BFD4B2DBF52DE39 /* empty.pb.cc */,
+				A19B8D8D234D407F8B4785DA /* extension_set.cc */,
+				45787200D1354D55B241170E /* extension_set_heavy.cc */,
+				14FAA54D991841639106EEE4 /* field_mask.pb.cc */,
+				DC99A799084547E2AB7E3CA4 /* generated_message_reflection.cc */,
+				CCC4F0471D204D85978E1091 /* generated_message_table_driven.cc */,
+				1B4C107AA8B74FD5B63D826E /* generated_message_table_driven_lite.cc */,
+				CB24C973A1444C2BA38C1CD3 /* generated_message_util.cc */,
+				F4A9FA1966B44CF98726FCE9 /* implicit_weak_message.cc */,
+				FEE04A1F6B344033BFAA5F4E /* coded_stream.cc */,
+				1B97E329FC49419886A7166F /* gzip_stream.cc */,
+				CAD2300C31484EA7839C1C4A /* printer.cc */,
+				24C8B2ECAC234D38AB5DF2B0 /* strtod.cc */,
+				432EBC1423A241A5B0210053 /* tokenizer.cc */,
+				7E7DF65CF79047389D32B9AE /* zero_copy_stream.cc */,
+				454D201CD3454E4A9387BE1A /* zero_copy_stream_impl.cc */,
+				D0876CBFA1A14139938B4C1D /* zero_copy_stream_impl_lite.cc */,
+				B03E9762DF6A46F8928052E5 /* map_field.cc */,
+				53BB29C4DDC546819E3A854C /* message.cc */,
+				51FEEA3B9E014EBBA70AC983 /* message_lite.cc */,
+				4096F995FBE0427AA550FA78 /* reflection_ops.cc */,
+				7A23E9D2D0ED4201952A5925 /* repeated_field.cc */,
+				C09141C6C0734B96A283405F /* service.cc */,
+				CC6A3957A97742E4AF31CF75 /* source_context.pb.cc */,
+				6A68123EB0D24345BEB5F24E /* struct.pb.cc */,
+				0E629C816E364887A182C711 /* bytestream.cc */,
+				17670931459A4A0A8A9C95CD /* common.cc */,
+				87F6148791BB43C3B1B68954 /* int128.cc */,
+				02237C6165444877A737519E /* io_win32.cc */,
+				8942D4B6E64749BEA96EE12F /* mathlimits.cc */,
+				47F5F32F8829407FA65F38A1 /* status.cc */,
+				084564DD0CC44E0695651FD7 /* statusor.cc */,
+				5199449DAB6648F5815721E7 /* stringpiece.cc */,
+				0D5AA82BA8474FD0BF98A175 /* stringprintf.cc */,
+				F99BED147EC24C8690191E96 /* structurally_valid.cc */,
+				B325ED13A6FD44E985B26196 /* strutil.cc */,
+				52B59D9B4D9B495096C7D54F /* substitute.cc */,
+				542C185B640744B197CE3CF8 /* time.cc */,
+				B57C1475F054401BA28CFFFC /* text_format.cc */,
+				526B1ED9EB0C4B6186B51105 /* timestamp.pb.cc */,
+				960A335A220641E2AF7542B8 /* type.pb.cc */,
+				4F2805534D8E420384BBBE93 /* unknown_field_set.cc */,
+				FA0F3C30C9AC470A89AB6671 /* delimited_message_util.cc */,
+				B31D93299B4949B98A515F9C /* field_comparator.cc */,
+				813C8947FAE94896AC8D378B /* field_mask_util.cc */,
+				F696A9AF91724EE593E89849 /* datapiece.cc */,
+				44324526DF9C4F52A23F3681 /* default_value_objectwriter.cc */,
+				EBEC23848F194BCB8149AA0F /* error_listener.cc */,
+				A26A9A8A5226450095DAE189 /* field_mask_utility.cc */,
+				B1928F33EC254D558778B779 /* json_escaping.cc */,
+				03AE1C64F539456FB4960FE5 /* json_objectwriter.cc */,
+				0DB3E4C28BA34DFFAF85E71D /* json_stream_parser.cc */,
+				A9F2A38356594165AF2C2DA0 /* object_writer.cc */,
+				1BC56F2329E342A9B522B08B /* proto_writer.cc */,
+				6B2A9A6C50984751A4ECDE2F /* protostream_objectsource.cc */,
+				2B271AD0C71E454BA27399E1 /* protostream_objectwriter.cc */,
+				D4D2611A1A0A44D5A3A22ED2 /* type_info.cc */,
+				E725F51FF40846648088F05F /* type_info_test_helper.cc */,
+				83506A8D1B45401A99CDF89E /* utility.cc */,
+				AE7E0ABB448A447C8CA284BA /* json_util.cc */,
+				B332DF5180774D1E9C9DB8EF /* message_differencer.cc */,
+				FA0F70CBE4C542188DAB24DA /* time_util.cc */,
+				7A0BF9CB7A504208B9C9DC30 /* type_resolver_util.cc */,
+				AFD08981F25D4C52A1F112D4 /* wire_format.cc */,
+				82A8D985D4A843F4A7A3B058 /* wire_format_lite.cc */,
+				C9EE6B9312864359934C9831 /* wrappers.pb.cc */,
+				7AA96FBFB9B24BA1AC8F42A7 /* TronApi.cpp */,
+				0013BCF81F8D41EEAA536CB9 /* createpayload.cpp */,
+				F3417C9711AC4E6DA934D472 /* base58.cpp */,
+				35FE45B6B2674794AF749EB1 /* bip.cpp */,
+				5636402CBDAC4BF78677BEB4 /* bx_plat.cpp */,
+				0744B96E20A848388487C150 /* bx_str.cpp */,
+				7224DE5218ED4D73A18752B4 /* hash.cpp */,
+				A843EFACC6524D42A47D8CF2 /* hmac.cpp */,
+				C3D60DE287DE4A2D94112E66 /* hmac_sha512.cpp */,
+				C141A6F4BBFA427E8DBC8CC8 /* keccak256.c */,
+				1BCF2EF1B28D429BA54E8C80 /* pbkdf2.cpp */,
+				0CED37AFED0944C2829E08AF /* ripemd160.cpp */,
+				6C3366F785F64BC6A60DC0AD /* sha1.cpp */,
+				D319127D9042475A8A67A496 /* sha2.cpp */,
+				C4CB7D0E06004E62A705EB38 /* sha256.cpp */,
+				5400C64B4EFF4BEAB5C796CE /* sha512.cpp */,
+				4AE84E3B9699434B8AB9CF11 /* tx_util.cpp */,
+				3D60A529D66749ED9AF0BAF4 /* util.c */,
+				12417AA4BA914E1D964F2106 /* utility_tools.cpp */,
+				38C1A3F68AE7420C92D8B4CF /* json_reader.cpp */,
+				D97A5179B4B64DF19C8B7BC0 /* json_value.cpp */,
+				D2271DD1196947BCB37246AF /* json_writer.cpp */,
+				7E5DD1A1124C4151873BE29E /* bignum.c */,
+				F550D467612744B58806BCF8 /* ecp.c */,
+				3CB548C1D0B14719B4EA075E /* ecp_curves.c */,
+				9E4B87669043463E80D7370F /* u256.cpp */,
+				CFDCFF0793F54E76ABADB7F9 /* macroECC.c */,
+				D41E896A30034973911650FA /* uECC.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		18B56C508C61477189C22265 /* tokencore */ = {
+			isa = PBXGroup;
+			children = (
+				35F29A060F1E40489BF139F5 /* Header Files */,
+				126CA7A0CF3E452E96D34B8E /* Source Files */,
+				5E8C221E6E2D4B52902F132E /* curve-specific.inc */,
+				E51D79F89389427F884DC7DB /* platform-specific.inc */,
+				E90705DB189C4B4EB5DB585A /* CMakeLists.txt */,
+				998A1FC52779F5CB00216057 /* TokenCoreHeader.h */,
+			);
+			name = tokencore;
+			sourceTree = "<group>";
+		};
+		35F29A060F1E40489BF139F5 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				50C8E82739BF4BB799469ADF /* action.h */,
+				1E54304F03114C859AC18772 /* any.h */,
+				32E6BF5199164BDA87A69186 /* any.pb.h */,
+				F51A654CD8E54F279F9B722C /* api.pb.h */,
+				E05961ACD7D24389B684777C /* arena_impl.h */,
+				6FBCE75EE632452691A2CF9F /* arena.h */,
+				6C280C98C9414D9EB9620FE6 /* arenastring.h */,
+				1599A9BCEA89439FA16E8972 /* assertions.h */,
+				C0C70835F8C142D5B706B310 /* autolink.h */,
+				D18E17CCCF7A48CA9F77C8EE /* base58.h */,
+				28D76E4993984138995744C0 /* bhp_transaction.h */,
+				54E092192A7042F0801F056E /* BhpApi.h */,
+				1136BA533B3244FC91E5D00E /* bignum.h */,
+				9D25B4BD334B42149071842D /* bip.h */,
+				03413A9527DD4B57AFBB4C14 /* BtcApi.h */,
+				F2E228699BC9467682EB0165 /* bx_plat.h */,
+				F9590B1D42334A1C96FC0D95 /* bx_str.h */,
+				03310B6EF10A4C6990618822 /* bytestream.h */,
+				B00518BE61C941CB8264F109 /* callback.h */,
+				856F7D889B2C4FF4BCB8F258 /* casts.h */,
+				35A62224FFA64AE290455407 /* chainbase.h */,
+				EFB4D04C1CE649D2856F198D /* chainmanager.h */,
+				9D1CA513B8FB4EBAA4441092 /* cJSON.h */,
+				E6DD30E1805C490381219C49 /* cJsonObject.hpp */,
+				219E7D3047714765A9378063 /* coded_stream_inl.h */,
+				21554D69DF874D8A85323C2C /* coded_stream.h */,
+				4BC36EDFB3FD457EA8830E72 /* common.h */,
+				8687E5AEF8BC43289C37248F /* config.h */,
+				AA0C3B04B5B64C93832C5B69 /* config.h */,
+				915FAD28F91E4B25B0F329A3 /* constants.h */,
+				70963E79DD1F41238D490618 /* createpayload.h */,
+				764122F81DE043F0A2581C5D /* datapiece.h */,
+				B17EB72141A5402FB585E47D /* default_value_objectwriter.h */,
+				E7106100A4A54286916C4AC8 /* delimited_message_util.h */,
+				9634975A96DE425C9945949D /* descriptor_database.h */,
+				0D570C5F31204FD6B4C1AB2F /* descriptor.h */,
+				0D0459D4C1D94BD1809C9994 /* descriptor.pb.h */,
+				8110868BC2424783B3BFA071 /* duration.pb.h */,
+				2986B3BF2FA5418C9A3BCC2C /* dynamic_message.h */,
+				946FD7D505274027815D6905 /* ecp.h */,
+				3BF3A66CB6D54C31BFAB69AE /* empty.pb.h */,
+				82D128FF672144AB8A0BF81D /* eos_key_encode.h */,
+				A2C0C1BB93D74CB385B7FF5B /* eosapi_utils.h */,
+				DA9A69019D784500BCA17349 /* EosApi.h */,
+				F2E24F2FD13648A3880DF460 /* eosbytewriter.h */,
+				7A0A294FDE424D358359CC95 /* eosnewaccount.h */,
+				1EC301D8704D450C82FC2687 /* error_listener.h */,
+				0ED386F809054786AFB05CF2 /* EthApi.h */,
+				50794A3BCCAE45C0B2F0AC48 /* extension_set.h */,
+				3851D4E30EEA4051BAE1CE8F /* fastmem.h */,
+				B21544AAD6014CA289F32A2C /* features.h */,
+				C76CC391F0374B24AC7DC854 /* field_comparator.h */,
+				C9B7B7D8299648399B0F79F5 /* field_mask_util.h */,
+				1BFCF4AB904B41FEAB59EB26 /* field_mask_utility.h */,
+				0F696A8070D048F69D4207AA /* field_mask.pb.h */,
+				353C2A2059324179B24C9187 /* forwards.h */,
+				391860AD2887479999472F70 /* generated_enum_reflection.h */,
+				D103CD7D4D7B42C1B46A37CE /* generated_enum_util.h */,
+				5C67280A4F93437CAE7C1911 /* generated_message_reflection.h */,
+				31DF5BD4998541B39D9BA2AC /* generated_message_table_driven_lite.h */,
+				33A3202BB1664A40A7789EBD /* generated_message_table_driven.h */,
+				B8484B4BB15041549569183E /* generated_message_util.h */,
+				BD8EA72C547B4A328CDF6C6F /* gzip_stream.h */,
+				30343516335B445D97452C93 /* has_bits.h */,
+				5577F5A4174B4058AC3A1B8F /* hash.h */,
+				4844721B28CD462F8E8AAA8F /* hash.h */,
+				6B354243F0D34985802B0149 /* hmac_sha512.h */,
+				13E5BED81489459AA07D2BCC /* hmac.h */,
+				CE3AA3743004435CB49BF52D /* implicit_weak_message.h */,
+				906FCED8922E4A7B9D547E6D /* importer.h */,
+				95FD4C7E4BDB4CE189E01D0A /* inlined_string_field.h */,
+				B4D825AAECFF465BB9FD94F0 /* int128.h */,
+				83613868525E47D98ACA19A4 /* io_win32.h */,
+				C4529E4DF6514D7AADA2B5FE /* json_escaping.h */,
+				5AFD6FD16F0E4CB6882DB52C /* json_objectwriter.h */,
+				5C5AB03F5B31488E97351DC1 /* json_stream_parser.h */,
+				7EE97645231B4166803A9A9D /* json_tool.h */,
+				E4FDD6305609409C94945238 /* json_util.h */,
+				F7F68C20C3ED4C51914ECD12 /* json_valueiterator.inl */,
+				C656C5EEA1C94E7FA2FFB445 /* json.h */,
+				BDA158E862264BEE9EEB5127 /* keccak256.h */,
+				941BF51F953D47C49DBF0C23 /* location_tracker.h */,
+				CE3CB98D15D84F7CAD5729C9 /* logging.h */,
+				5719DF9A70404B96A58AF7DB /* macroECC.h */,
+				1BB94AC50B0C4CA78BB657E7 /* macros.h */,
+				3516807221B047A0B92DCE5F /* map_entry_lite.h */,
+				55468B0DA1C74CE2AA6999A4 /* map_entry.h */,
+				6953555066374510A30A6874 /* map_field_inl.h */,
+				24C7F7E9519845978C1FE902 /* map_field_lite.h */,
+				458D56119EAE43AF8CAAEA8E /* map_field.h */,
+				D053E8F91E2C4645A2AD3A09 /* map_type_handler.h */,
+				790CCD794CF34A91AB4CFFB5 /* map_util.h */,
+				27B3310551994E53B95F53B7 /* map.h */,
+				6EAAFDD8E13C40158B5678CA /* mathlimits.h */,
+				550DE0BD502C47ACA5AF6869 /* mathutil.h */,
+				E3B6CEF6C02C4924A4679444 /* message_differencer.h */,
+				1447B233BBD04FB6A449B66D /* message_lite.h */,
+				75B6E88BFD0A40519E55F15E /* message.h */,
+				D98E72AE09704536A8E63379 /* metadata_lite.h */,
+				BF66A958052842C6A6A75216 /* metadata.h */,
+				45CE615AB04C46D081122E52 /* mutex.h */,
+				D806427F51DE47079BB46CFB /* object_location_tracker.h */,
+				C8036F745CEC458A963BA1D4 /* object_source.h */,
+				6B10F027A8E34ED4805C82AF /* object_writer.h */,
+				3E1EE4DFC413452C90168D79 /* once.h */,
+				E464B9A650C24D12A5C9AC76 /* packedtransaction.h */,
+				6106D54894E841D4985FDCBF /* parser.h */,
+				E79D31449E6D47808FF26364 /* pbkdf2.h */,
+				BF86CEA23D5B4D509D23A62E /* platform_macros.h */,
+				BF8C6915CCE74AE7B110627F /* port.h */,
+				3F153B59CD5D481EA726D244 /* printer.h */,
+				7502B4A273C34FBC8BE1CF2E /* proto_writer.h */,
+				19D412AACABF4CACB10A0782 /* protostream_objectsource.h */,
+				6481B57F62F848F9AF81F84C /* protostream_objectwriter.h */,
+				3CCD258B0C1447B3BBBAFBA3 /* reader.h */,
+				C7BFDBCF7A244A028B53C766 /* reflection_internal.h */,
+				7C8B79B804A04946A48DEDDE /* reflection_ops.h */,
+				2883097E708F4242BF6AF7C7 /* reflection.h */,
+				40F2A2BFD6EC467C9B788DAA /* repeated_field.h */,
+				20A5CFF455FD4833AD409334 /* ripemd160.h */,
+				63C5A4C258A542518F54A6BD /* RLP.h */,
+				C91E14EB0A12496F8DAEDFB7 /* script.h */,
+				0DC3B0E7C6D24700BC74CD9A /* service.h */,
+				6EA6A2AF9BC64D50B64D6BB6 /* sha1.h */,
+				503428FF02AD4450BFB103D9 /* sha2.h */,
+				EB305C8C7A98461AAA17D1DE /* sha256.h */,
+				D4D4A27A03BC494985FAB5F5 /* sha512.h */,
+				C16B5843F26443A5982F35AC /* sign.h */,
+				F93AD94FCC7C487999279C18 /* signedtransaction.h */,
+				913836D41C084941B0651A2B /* singleton.h */,
+				5A5B2168E78B43D681101696 /* source_context.pb.h */,
+				5E240A2B633343189A3E2DB8 /* status_macros.h */,
+				A6B8C52DE2C7460A8A3BA2E3 /* status.h */,
+				A52AF8B6AECA4549A8A9E49D /* statusor.h */,
+				DB092FAD9ABA41D2BB8221CE /* stl_util.h */,
+				36F2F2BEB1184E65B9F4A078 /* stringpiece.h */,
+				C52B4BB65F5145809C14E6BB /* stringprintf.h */,
+				D0A66B2A25D244ECB8190378 /* strtod.h */,
+				9BAE25BE45EC4E94A6ABFA1A /* struct.pb.h */,
+				E4163F56BEEA407E9EABCDE1 /* structured_objectwriter.h */,
+				949136A15C524BB8A8F6638F /* strutil.h */,
+				C3A24AEDFF764B21A93AA537 /* substitute.h */,
+				F56DB8AED4FA4D529D2402C5 /* text_format.h */,
+				EC6B406B705F426794E27984 /* time_util.h */,
+				45AAF679AC484D109CB0EACC /* time.h */,
+				1EE2C25240F54D1BB723D1ED /* timestamp.pb.h */,
+				71A840D0DDF746968C57CFE3 /* TokenCommon.h */,
+				6EFBB652FADF4564895F9040 /* tokenizer.h */,
+				88DC0AD82C6944B2A1F90848 /* transaction.h */,
+				AD980E83E08441A9979D7EE2 /* Transaction.pb.h */,
+				E60F2B0BC5DC40039C83DDE5 /* transactionextension.h */,
+				D02739B78AFC44D8B1CE3412 /* transactionheader.h */,
+				AFFCF6A5C0654B9EABBC4B46 /* TronApi.h */,
+				47B493D4A38041FA9373664F /* tx_util.h */,
+				09EC011B6FB642B298BF4C5C /* type_info_test_helper.h */,
+				C17A9F1662B64AA6B69C1844 /* type_info.h */,
+				12A425BFF032410F9EF3BA8A /* type_resolver_util.h */,
+				1D1CC7626B0B416F991E4E66 /* type_resolver.h */,
+				7853C1EB396C4E30853A69D5 /* type.pb.h */,
+				7F10DEAC73C04B55BDC40D96 /* typeaccountpermissionweight.h */,
+				5B5C119CD8D0496987762B46 /* typeauthority.h */,
+				FAC1E8B86A1C431FAF09049E /* typekeypermissionweight.h */,
+				A49F329C6CA24B0EA91028C8 /* typename.h */,
+				A2F4FC2C5DD04B67B3A09220 /* typepermissionlevel.h */,
+				597774BB46B249A1911B202C /* types.h */,
+				8F629CDA4A294099AC1CA3C2 /* typewaitweight.h */,
+				AF27D23BBFE74E64AA7CE141 /* u256.h */,
+				B0237661ABB14B2A9328A486 /* uECC_vli.h */,
+				A1E47ECC53E2477F9F7F4BB6 /* uECC.h */,
+				B3D1DB1D84A843A1872C7144 /* unknown_field_set.h */,
+				34CE3B13CFFF4ADAAC8D293A /* util.h */,
+				12CD5996DA324EADA73059C8 /* utility_tools.h */,
+				26563D237CA1481AA8FB4FC2 /* utility.h */,
+				532CADFA27524402AB1DB0A4 /* value.h */,
+				DD54EBDCD7E6410191E487FA /* version.h */,
+				016F964B3CC04D568B0591BC /* wire_format_lite_inl.h */,
+				EBFDD1853A72423B86F942CD /* wire_format_lite.h */,
+				753FA1C798684F29AFC87842 /* wire_format.h */,
+				F018C389A333456E83DDCE58 /* wrappers.pb.h */,
+				8C953434682B40B1AE906847 /* writer.h */,
+				21BDF005C2AE4C718F9A2FAA /* zero_copy_stream_impl_lite.h */,
+				41F2AD361668416796EF8877 /* zero_copy_stream_impl.h */,
+				4C26719388784A76907BF7F1 /* zero_copy_stream.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		8FA9C2A9BFFE407596C046AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DD010A772AC437491C9F64D /* libtokencore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE27033C0F264F9DAD0A8577 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D86FD06CF5854D4B8C60854C = {
+			isa = PBXGroup;
+			children = (
+				18B56C508C61477189C22265 /* tokencore */,
+				12521EEEE83D4718B38A49E4 /* ALL_BUILD */,
+				8FA9C2A9BFFE407596C046AE /* Products */,
+				E9CDB07C46B84EEF8C81B36B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9CDB07C46B84EEF8C81B36B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		99FCE5EE277378CD00EC1ADF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B1A98FA29340491BAAFEC1AA /* tokencore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095EF21D2C3441E4AFA1A25B /* Build configuration list for PBXNativeTarget "tokencore" */;
+			buildPhases = (
+				99FCE5EE277378CD00EC1ADF /* Headers */,
+				12449A69AA8C413A8A272990 /* Sources */,
+				34F920BE423D490B8362B22D /* Frameworks */,
+				99FCE7F52773808800EC1ADF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D30E1FA439A34CB791225C56 /* PBXTargetDependency */,
+			);
+			name = tokencore;
+			productName = tokencore;
+			productReference = 9DD010A772AC437491C9F64D /* libtokencore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9FE8AD649244185B8D6A109 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 6E9B7519C26D430B856CBE82 /* Build configuration list for PBXProject "Project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D86FD06CF5854D4B8C60854C;
+			projectDirPath = tools;
+			projectRoot = "";
+			targets = (
+				85E86B10F5154E07B44C4583 /* ALL_BUILD */,
+				759A930033FA4B419A4D6C05 /* ZERO_CHECK */,
+				B1A98FA29340491BAAFEC1AA /* tokencore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		978801CE64D49F6FAF28A2AC /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				/Users/isodev/Desktop/iOS/TokenCore/iOS/CMakeFiles/ZERO_CHECK,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/isodev/Desktop/iOS/TokenCore/iOS\n  make -f /Users/isodev/Desktop/iOS/TokenCore/iOS/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/isodev/Desktop/iOS/TokenCore/iOS\n  make -f /Users/isodev/Desktop/iOS/TokenCore/iOS/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/isodev/Desktop/iOS/TokenCore/iOS\n  make -f /Users/isodev/Desktop/iOS/TokenCore/iOS/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/isodev/Desktop/iOS/TokenCore/iOS\n  make -f /Users/isodev/Desktop/iOS/TokenCore/iOS/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5B1ACEE20D40102FF221438 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				/Users/isodev/Desktop/iOS/TokenCore/iOS/CMakeFiles/ALL_BUILD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/isodev/Desktop/iOS/TokenCore/iOS\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/isodev/Desktop/iOS/TokenCore/iOS\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/isodev/Desktop/iOS/TokenCore/iOS\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/isodev/Desktop/iOS/TokenCore/iOS\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12449A69AA8C413A8A272990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5641CB24FD2B49BDA97F6CEC /* bhp_transaction.cpp in Sources */,
+				3C077CFF91414CEE95A8B68E /* BhpApi.cpp in Sources */,
+				A132D067EFA94096B5E8F0FB /* script.cpp in Sources */,
+				FACAD19D8F21474781E6B6E7 /* BtcApi.cpp in Sources */,
+				E5AD1035EAB84B4A98197FBE /* action.cpp in Sources */,
+				2C2072500F59422EBD9CDEE7 /* chainmanager.cpp in Sources */,
+				EE2B98BA28334A9497433417 /* eos_key_encode.cpp in Sources */,
+				33CF1DBB6B2940E795B6ED30 /* eosapi_utils.cpp in Sources */,
+				03E85B9124E1419587495D97 /* eosbytewriter.cpp in Sources */,
+				CD17D579751844ED86FFB68C /* eosnewaccount.cpp in Sources */,
+				277916B1BF5C4FB8B47D03B7 /* packedtransaction.cpp in Sources */,
+				0C03F268FBB64128A828DB51 /* signedtransaction.cpp in Sources */,
+				B25872C7FB244D87917D2263 /* transaction.cpp in Sources */,
+				21E534982365468E93967D1A /* transactionextension.cpp in Sources */,
+				4F0EB84BA9BD4ECF8501B868 /* transactionheader.cpp in Sources */,
+				95D0676567DD4893B4FC23EB /* typeaccountpermissionweight.cpp in Sources */,
+				4C0515E077D14C708C0B3A34 /* typeauthority.cpp in Sources */,
+				7410A937F7F04B45800F6760 /* typekeypermissionweight.cpp in Sources */,
+				236FEF145444421AB228781A /* typename.cpp in Sources */,
+				EF1CA88ED9BC463CABE4C590 /* typepermissionlevel.cpp in Sources */,
+				E1E753A0C96A4851911D425D /* typewaitweight.cpp in Sources */,
+				BBB85BAF76A14F36888A70C0 /* EosApi.cpp in Sources */,
+				ED9E1FB0FE9C4E20966B920B /* RLP.c in Sources */,
+				5E053E9D182B4DBA810C2B21 /* EthApi.cpp in Sources */,
+				68D4B771FFCE4050BAD9B52F /* TokenCommon.cpp in Sources */,
+				34245B49D82547CABBF917F4 /* Transaction.pb.cc in Sources */,
+				7F46788E0FC7401CB1EC1DB8 /* cJSON.c in Sources */,
+				57312BA381364F68B3BBA633 /* cJsonObject.cpp in Sources */,
+				1055715578984894B97FBB8F /* any.cc in Sources */,
+				35A1EDC7B6C64DF89B17D7C3 /* any.pb.cc in Sources */,
+				50AE3ACE22054EC6B3A1B5DC /* api.pb.cc in Sources */,
+				A0979CB1DA744DBCA0B728EC /* arena.cc in Sources */,
+				927C243F46DB4B96A909E3D4 /* arenastring.cc in Sources */,
+				4F57E246527346DB928CFAD8 /* importer.cc in Sources */,
+				07C10A32B39A40769ADCC2F0 /* parser.cc in Sources */,
+				D874CE351BAC4F55827BA721 /* descriptor.cc in Sources */,
+				9C5E6BCA4ED74620A7DE3C43 /* descriptor.pb.cc in Sources */,
+				22EECF1B8BD549DB80EE55A9 /* descriptor_database.cc in Sources */,
+				0C8B13CA30F94DFAAF9C7D06 /* duration.pb.cc in Sources */,
+				39196333289B40989BA51B69 /* dynamic_message.cc in Sources */,
+				F2B347B5CCDF4B8BB921EFED /* empty.pb.cc in Sources */,
+				7B0D1AF1534F485F83F8FE28 /* extension_set.cc in Sources */,
+				D014AF680C314E6D93E399CE /* extension_set_heavy.cc in Sources */,
+				BFFDCDA3A96743EAA08876BE /* field_mask.pb.cc in Sources */,
+				53552C8F7E064D9FA1D410AD /* generated_message_reflection.cc in Sources */,
+				4E5DC02BE8A842DFA0319B3D /* generated_message_table_driven.cc in Sources */,
+				5B7523DF6EEC4DCD9C106883 /* generated_message_table_driven_lite.cc in Sources */,
+				797295E7A22B4BA9A1846A20 /* generated_message_util.cc in Sources */,
+				7D4FF3D763AD48DEA39AE087 /* implicit_weak_message.cc in Sources */,
+				BC1EE12F3F8F48F89BA8C4A4 /* coded_stream.cc in Sources */,
+				CD5A712DCC8E4925AFD8FFE4 /* gzip_stream.cc in Sources */,
+				85C850855B3B4B37B49B1523 /* printer.cc in Sources */,
+				83C0ABCF65DE450D99A0DC5B /* strtod.cc in Sources */,
+				877E8CCD37094E63AFC417E7 /* tokenizer.cc in Sources */,
+				C6FCA33AE03444738405B7CA /* zero_copy_stream.cc in Sources */,
+				278F43E25324490DA9218C63 /* zero_copy_stream_impl.cc in Sources */,
+				937FBE1B25C44E64B969619D /* zero_copy_stream_impl_lite.cc in Sources */,
+				148AD2431D784E0B98A527BF /* map_field.cc in Sources */,
+				EC876E8A241C4681A7268CAC /* message.cc in Sources */,
+				58554B1253F0421EA1628E72 /* message_lite.cc in Sources */,
+				D45E943CB1B2406C933D5481 /* reflection_ops.cc in Sources */,
+				3711A31739844305B798B71B /* repeated_field.cc in Sources */,
+				BC4AB64E893C4FB7945FBEBC /* service.cc in Sources */,
+				FFBCE2BEA72C462884A903E0 /* source_context.pb.cc in Sources */,
+				53CE56F36328402399445C13 /* struct.pb.cc in Sources */,
+				F2052FB6879E43A2B15136AC /* bytestream.cc in Sources */,
+				7B21C3A6278F4E42B25D700F /* common.cc in Sources */,
+				0DB8506FC3E84E2FA72B04AE /* int128.cc in Sources */,
+				021913B0D9BD4A159F732AD6 /* io_win32.cc in Sources */,
+				FE450DE6A16448B6B93670FE /* mathlimits.cc in Sources */,
+				C959688B6513447E8A9ADCCC /* status.cc in Sources */,
+				90B4E8EE32F0412E88AC3864 /* statusor.cc in Sources */,
+				00B29132A953403F9AB1ECD7 /* stringpiece.cc in Sources */,
+				05BEC6BCE3424A68840EC82D /* stringprintf.cc in Sources */,
+				A64DEC51613D4BBB87282114 /* structurally_valid.cc in Sources */,
+				2CDD23E91236454AA8042F1D /* strutil.cc in Sources */,
+				5F4023E31424436C8A3B44B8 /* substitute.cc in Sources */,
+				74E409338CB948848E1DCEB4 /* time.cc in Sources */,
+				CF101938811A447CB9EBBC25 /* text_format.cc in Sources */,
+				EA32692FD36F4A17BD1DEC97 /* timestamp.pb.cc in Sources */,
+				EB9C47C20D19461888732EE1 /* type.pb.cc in Sources */,
+				17A19E56F9CA4FA8A5BB4E0D /* unknown_field_set.cc in Sources */,
+				0F8535BF9F43474C95315F51 /* delimited_message_util.cc in Sources */,
+				D75F18CE86314D28A6178240 /* field_comparator.cc in Sources */,
+				F06EF9FA6C224EA28547385C /* field_mask_util.cc in Sources */,
+				EB33AFE525C542398E6140AF /* datapiece.cc in Sources */,
+				95C3ACE260A24CC295E371C4 /* default_value_objectwriter.cc in Sources */,
+				13444639409A412F9A4890C9 /* error_listener.cc in Sources */,
+				7C9F930739024EBB83C7FD0D /* field_mask_utility.cc in Sources */,
+				B25BDDDD1728414CB10824F1 /* json_escaping.cc in Sources */,
+				7385541501FE4635BE68F710 /* json_objectwriter.cc in Sources */,
+				F7D25BA751F448F995A62A8D /* json_stream_parser.cc in Sources */,
+				13D881F3E6274E43B6514E16 /* object_writer.cc in Sources */,
+				6D7578BE82C3485D9FD8E955 /* proto_writer.cc in Sources */,
+				706830642682488088A496F9 /* protostream_objectsource.cc in Sources */,
+				7D54A05126F14F939EE13EFB /* protostream_objectwriter.cc in Sources */,
+				4F0248B1F8604091A5872461 /* type_info.cc in Sources */,
+				B08FDBB7A2424ACCAA1EC458 /* type_info_test_helper.cc in Sources */,
+				11A7C396896A4DF4B1FDDD06 /* utility.cc in Sources */,
+				E6BAEAAA56804A28984DCF7C /* json_util.cc in Sources */,
+				98FDB650D1DD4C9ABE667B8C /* message_differencer.cc in Sources */,
+				79440549DCD240BF9D6FE70F /* time_util.cc in Sources */,
+				D42C792BA94B4D1D8D7C4756 /* type_resolver_util.cc in Sources */,
+				CDF79815FE1F4CFDA3D9DD6E /* wire_format.cc in Sources */,
+				738E494EE2674C09A5F3FBA0 /* wire_format_lite.cc in Sources */,
+				2C7483D46601429FB63534D8 /* wrappers.pb.cc in Sources */,
+				3FA7E161F5A24430B9B02AB9 /* TronApi.cpp in Sources */,
+				CD170F399DB042DABB7BCF97 /* createpayload.cpp in Sources */,
+				6844C1CD0EA14F3DA90E42F9 /* base58.cpp in Sources */,
+				37AF5E36FC2A4048AC0DCFC1 /* bip.cpp in Sources */,
+				2DC5AE9E96C14C54AC402BC2 /* bx_plat.cpp in Sources */,
+				C97C790718D24B8B84A9C46B /* bx_str.cpp in Sources */,
+				EF1F138DB9144066AD4F765D /* hash.cpp in Sources */,
+				05EBFD59E5BD4B0897B38330 /* hmac.cpp in Sources */,
+				4F362E90094541E8BCF4FB59 /* hmac_sha512.cpp in Sources */,
+				C603E154A4BC46AEB52A4E5B /* keccak256.c in Sources */,
+				085F5B8952E843D3B5B2AF45 /* pbkdf2.cpp in Sources */,
+				0E433B1BFD3C45308D5C2296 /* ripemd160.cpp in Sources */,
+				8103AC7F25A14B7BB4D08577 /* sha1.cpp in Sources */,
+				1379467274674918B4B4354B /* sha2.cpp in Sources */,
+				87D392B108E247EA98339726 /* sha256.cpp in Sources */,
+				BC08E9E64E9647598A74569D /* sha512.cpp in Sources */,
+				E8B651B09C594B0BAA1A00CB /* tx_util.cpp in Sources */,
+				ECFF6063068045F392F81F25 /* util.c in Sources */,
+				0C5BF66D28284AC9B9A48C0D /* utility_tools.cpp in Sources */,
+				3AFC98920DD84A2BB3E00E88 /* json_reader.cpp in Sources */,
+				7C0E8EC8D7A64053A8BF6C03 /* json_value.cpp in Sources */,
+				9C81D43BAA044CB3A2CF5A93 /* json_writer.cpp in Sources */,
+				0B2BB42A4F6A491A82BB6DCC /* bignum.c in Sources */,
+				4FA12E05EB7A44468A728AF0 /* ecp.c in Sources */,
+				953AFDE2F8504D018E3D6808 /* ecp_curves.c in Sources */,
+				D5A20F09CC2B439FADEF037C /* u256.cpp in Sources */,
+				0E6AF6CEB7074E7691922123 /* macroECC.c in Sources */,
+				7E768DEDAC254EC78187FD29 /* uECC.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4153573114754D43AF83B1AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 759A930033FA4B419A4D6C05 /* ZERO_CHECK */;
+			targetProxy = BE6B840133DA4F19993AA425 /* PBXContainerItemProxy */;
+		};
+		54110D1656F041F5891E5807 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1A98FA29340491BAAFEC1AA /* tokencore */;
+			targetProxy = 3B794CF456194AC1A1326703 /* PBXContainerItemProxy */;
+		};
+		D30E1FA439A34CB791225C56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 759A930033FA4B419A4D6C05 /* ZERO_CHECK */;
+			targetProxy = F62126FB9CD74962A11FFC03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		284774BE8FE5421487C62006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk;
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS/build;
+			};
+			name = Release;
+		};
+		2B11038950B8419EAB261C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		4A16C829F22740288BF95BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					HAVE_PTHREAD,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore,
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore/mbedtls/include,
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore/jsoncpp/include,
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore/Tron,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_STYLE = STATIC;
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-std=c++11",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = private;
+				PRODUCT_NAME = tokencore;
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+				SDKROOT = iphoneos;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		507C87F34FA54BC48F907BEC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk;
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS/build;
+			};
+			name = RelWithDebInfo;
+		};
+		5495B00EF5E94C02B2F8A69A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		58B65C5D522146AD8A4DFB9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		5E2C2A698CDA415F9D5BFB35 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					HAVE_PTHREAD,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore,
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore/mbedtls/include,
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore/jsoncpp/include,
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore/Tron,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_STYLE = STATIC;
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-std=c++11",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = private;
+				PRODUCT_NAME = tokencore;
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+				SDKROOT = iphoneos;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		678061F028EA46F2BCB4E82B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		7CFB0C88FBBC475BAA944EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk;
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS/build;
+			};
+			name = Debug;
+		};
+		87D65525293F408F8ADF406D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		948DE0D742DC4593BCAE0B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					HAVE_PTHREAD,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore,
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore/mbedtls/include,
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore/jsoncpp/include,
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore/Tron,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_STYLE = STATIC;
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-std=c++11",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = private;
+				PRODUCT_NAME = tokencore;
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+				SDKROOT = iphoneos;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		96E598B129CB4B60BF0D1AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		CE0A2439316545BAA909718F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk;
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS/build;
+			};
+			name = MinSizeRel;
+		};
+		D1070301E7064939929EA8BD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		E31C52C63CE242039C3DB9AC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		F9367BBC232D46ABBAA540E2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					HAVE_PTHREAD,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore,
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore/mbedtls/include,
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore/jsoncpp/include,
+					/Users/isodev/Desktop/iOS/TokenCore/iOS/tools/../../TokenCore/Tron,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_STYLE = STATIC;
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "  $(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-headerpad_max_install_names",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+					"-std=c++11",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = private;
+				PRODUCT_NAME = tokencore;
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+				SDKROOT = iphoneos;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/isodev/Desktop/iOS/TokenCore/iOS;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		095EF21D2C3441E4AFA1A25B /* Build configuration list for PBXNativeTarget "tokencore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A16C829F22740288BF95BE4 /* Debug */,
+				948DE0D742DC4593BCAE0B6E /* Release */,
+				F9367BBC232D46ABBAA540E2 /* MinSizeRel */,
+				5E2C2A698CDA415F9D5BFB35 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		09EEEB0E2B854D69B6A018C7 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B65C5D522146AD8A4DFB9F /* Debug */,
+				96E598B129CB4B60BF0D1AA7 /* Release */,
+				D1070301E7064939929EA8BD /* MinSizeRel */,
+				5495B00EF5E94C02B2F8A69A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6E9B7519C26D430B856CBE82 /* Build configuration list for PBXProject "Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CFB0C88FBBC475BAA944EC2 /* Debug */,
+				284774BE8FE5421487C62006 /* Release */,
+				CE0A2439316545BAA909718F /* MinSizeRel */,
+				507C87F34FA54BC48F907BEC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E5958754516E4051B0E02A9D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				678061F028EA46F2BCB4E82B /* Debug */,
+				2B11038950B8419EAB261C91 /* Release */,
+				87D65525293F408F8ADF406D /* MinSizeRel */,
+				E31C52C63CE242039C3DB9AC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9FE8AD649244185B8D6A109 /* Project object */;
+}
